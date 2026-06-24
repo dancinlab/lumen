@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Continue → break the SSMB footprint residual via compact 7-MeV SSMB-Compton (H_044).** H_043 broke
+  the accelerator power wall but left a footprint residual (still a ~50-100 m ring at undulator energies).
+  The sourced compact variant — a **7 MeV micro-bunched beam + CO₂-laser Compton scattering** reaching
+  13-14 nm — has a bending radius of ~2.3 cm (1 T) → a **metre-scale (tabletop) ring**, ~73× lower energy
+  than the 511 MeV undulator path. It synthesizes SSMB coherent-CW power (H_043) + laser-Compton
+  slice-spread-immunity at MeV (H_033), giving **compact + coherent + CW + slice-immune** — the tabletop
+  dream (H_022) resurrected through a mechanism different from the terminal-thin FEL path (H_038). Honest
+  residual: the Compton flux tax (enhancement cavity, H_034/036) and 13.5 nm kW from a 7-MeV SSMB-Compton
+  ring undemonstrated. Counts (qa.py): 43 verified 🟢 · 1 falsified 🔴 · 10 abstract 🜂.
+
 - **Novel breakthrough on the accelerator power wall — Steady-State MicroBunching (H_043).** Asked to
   break the accelerator wall with a NOVEL mechanism, surfaced **SSMB** — a third accelerator architecture
   (beyond compact-LPA and single-pass FEL): a storage ring micro-bunched at the radiation wavelength every

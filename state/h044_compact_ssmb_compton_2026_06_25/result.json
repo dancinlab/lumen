@@ -1,0 +1,48 @@
+{
+  "metrics": {
+    "rho_compact_m": 0.0233492,
+    "rho_undulator_m": 1.7044915999999999,
+    "energy_ratio": 73.0,
+    "ring_circ_compact_m": 1.1467073503743976,
+    "combines_ssmb": true,
+    "combines_compton": true,
+    "compton_flux_tax": true,
+    "euv_kw_demonstrated": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-FP-1 LOW-ENERGY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FP-2 TINY-RING",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FP-3 ENERGY-RATIO",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FP-4 SYNTHESIS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FP-5 HONEST-RESIDUAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FP-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
