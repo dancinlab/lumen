@@ -4,6 +4,17 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- Run three more hypotheses (all 🟢 SUPPORTED, deterministic) — the honest walls
+  that balance the accelerator chain: **H_008 flux/average-power wall** (at present
+  LPA rep rates in-band EUV power is ~10³–10⁵× below the ~167 W for 100 WPH → the
+  compact path is flux-limited, not wavelength-limited), **H_009 beam-quality
+  linewidth** (~1% energy spread → ~2.24% line > 2% in-band budget, swamps
+  harmonics), **H_010 synchrotron vs LPA** (storage ring meets HVM power but ~4
+  EUV-tools cost + ~200× footprint; landscape is a footprint↔throughput trade).
+  Added `power_for_throughput`, `average_power`, `undulator_natural_linewidth`,
+  `energy_spread_broadening` to `tool/lumen_optics.py`; "compact-accelerator open
+  walls" map + H_006/H_007 lines in `state/light-source-paths.md`.
+
 - Extract YouTube transcript (`sidecar research yt`, EUV source-problem talk) to
   `state/euv-yt-2KDLZMG8FAs-transcript.md`; fold new facts into the pillar notes —
   `light-source-paths.md` (HVM ≈100 WPH throughput floor + LDP <60 WPH gap, 6.5 nm

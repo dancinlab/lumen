@@ -31,6 +31,16 @@ uncertain is marked `?` and should be verified before use.
 - **H_001** 🟢 — a representative LPP budget (~250 W → ~1.5 kW pushed) falls ~2 kW short of that ~3.5 kW demand → LPP power-scaling alone insufficient for 6.5 nm (engineering-horizon wall, reopenable).
 - **H_005** 🟢 — at the same source, 6.5 nm prints only ~11 WPH vs the ~100 WPH HVM floor (1/14 photons → 1/14 throughput); restoring the floor needs ~2.4 kW (beyond the H_001 ceiling) → throughput/economics wall, not just power.
 - **H_004** 🟢 — a compact LPA reaches 1 GeV in ~1 cm vs ~33 m of RF (~3200×) → the compactness that makes an accelerator-driven EUV source a candidate path.
+- **H_006** 🟢 — undulator (0.47 GeV) / inverse-Compton (2 MeV) turn that beam into 13.5 nm photons → accelerator path makes light, not just electrons.
+- **H_007** 🟢 — the same undulator tunes 13.5/6.5/5/3 nm over a ~2.1× energy dial (≤1 GeV) → shorter λ is a knob, not an emitter(Sn→Gd/Lu/La)+multilayer(Mo/Si→La/B) swap.
+
+## Compact-accelerator open walls (honest map)
+
+The accelerator route wins wavelength/compactness (H_004/006/007) but is **not** free — the remaining walls:
+
+- **H_008** 🟢 flux/average-power — at present LPA rep rates the in-band EUV power is ~10³–10⁵× below the ~167 W HVM needs. The binding wall is **rep-rate/brightness**, not wavelength. (Reopenable: high-average-power LPA is an active frontier.)
+- **H_009** 🟢 beam quality — ~1% electron energy spread broadens the undulator line to ~2.2%, overfilling the 2% in-band budget and killing higher harmonics → cuts in-band flux further. (Reopenable: staged LPA reaches <0.1%.)
+- **H_010** 🟢 vs synchrotron — a storage ring meets HVM power but costs ~4 EUV-tools and ~200× the footprint; the compact LPA inverts it. The landscape is a **footprint ↔ throughput** trade — pick which wall to break.
 
 ## The 6.5 nm ("Beyond-EUV" / BEUV) wall
 
