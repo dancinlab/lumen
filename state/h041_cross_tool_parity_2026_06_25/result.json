@@ -1,0 +1,43 @@
+{
+  "metrics": {
+    "n_match": 5,
+    "n_total": 5,
+    "all_match": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-XT-a_optics_mult",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XT-b_ics_MeV",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XT-c_mingxie",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XT-d_breakeven",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XT-e_undulator_eV",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XT-ALL",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

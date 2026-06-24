@@ -4,6 +4,19 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Close gap top-3 (cross-tool · landscape · ssot) + add the qa.py SSOT (H_041/042 + tool/qa.py).**
+  A `/gap` 40-lens sweep surfaced gaps; a 3-lane fleet closed the top 3. **#1 cross-tool/byzantine (H_041):**
+  the 5 load-bearing numbers, re-derived independently inline, match the shared harness to 1e-9 → byzantine-clean;
+  the check *worked* — it first flagged a mismatch, root-caused to a unit-convention bug in the test caller
+  (NOT the harness), now fixed. **#2 landscape/first-peak (H_042):** no non-accelerator EUV family (HHG 0.30×,
+  DPP 4e-4×, all-optical, recombination) reaches the ~100 W HVM floor; the FEL clears it 40× → 'accelerator is
+  the answer' survives the head-to-head (not first-peak bias), with the honest nuance that the compact form
+  wins WAVELENGTH not power (H_008 reconfirmed). **#3 ssot/temporal:** added **`tool/qa.py`** as the single
+  source of truth — it recomputes the tier counts from REGISTRY.jsonl and re-runs every `state/*/run_*.py`
+  checking determinism + verdict-match (fixed a live README count-drift: an ASCII line said "32" vs the true 41);
+  market facts in `state/sourced-parameters.md` now carry an `as-of 2026-06` stamp. Counts (qa.py): **41 verified
+  🟢 · 1 falsified 🔴 · 10 abstract 🜂 · 42/42 deterministic+matched**.
+
 - **Band verdict census — the compact verdict is requirement-driven, '다음' depleted (H_040).** Deepening
   M10 across every no-incumbent band shows the EUV 'compact terminal-thin / conventional robust' verdict
   does NOT generalize — it tracks the *application's flux requirement*, not the wavelength. EUV litho

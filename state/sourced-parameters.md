@@ -1,4 +1,10 @@
-# Sourced parameters — real public data vs the campaign's representative values
+# Sourced parameters
+
+> ⏱️ **as-of 2026-06.** Market/program facts below (xLight funding & dates, KEK/EUV-tool CAPEX, $/kWh,
+> demonstrated LPA-FEL floor, "zero funded LPA programs") DECAY — re-source if >18 months old. Physics
+> relations (optics R^N, ICS λ_L/4γ², Ming-Xie, undulator λ, break-even formula) are TIMELESS (no stamp).
+> The verified-count is computed by `tool/qa.py` (never hand-copied). [gap top-3 #3]
+ — real public data vs the campaign's representative values
 
 > Goal "실측 + 검증 고갈": ground each key hypothesis parameter in published/measured data, mark
 > CONFIRMED (representative value within the real range) or CORRECTED (real data differs materially).

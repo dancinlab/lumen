@@ -15,7 +15,7 @@ one wavelength: EUV is the first instance, not the boundary.
 engineering / volume problem, reopenable down to one thermodynamic floor.**
 
 ```
-Framing claim                     lumen verdict (32 verified hypotheses)
+Framing claim                     lumen verdict (41 verified hypotheses)
 ─────────────────────────         ───────────────────────────────────────
 "no alternative beyond EUV"   →   wavelength has NO floor (H_011: λ ~ 1/E²)
                               →   the wall is FLUX, and flux is NOT a physics
@@ -81,7 +81,7 @@ with all shared physics in a single deterministic harness.
   power, undulator/inverse-Compton, ERL, cost-of-ownership, falsifier ledger).
 - `state/` — per-hypothesis runs + result.json, pillar notes, brainstorms, meta-laws.
 
-**Status:** 39 verified 🟢 + 1 falsified 🔴 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
+**Status:** 41 verified 🟢 + 1 falsified 🔴 + 10 abstract 🜂 (counts computed by `tool/qa.py`, never hand-copied) (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
 are **sourced against published data** (`state/sourced-parameters.md`, H_026): the core values are
 real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), with three optimistic links honestly
 corrected (all "harder, not easier"). The three self-found weaknesses (integration, the thin FEL

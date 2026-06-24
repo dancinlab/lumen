@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "n_nonaccel_clear": 0,
+    "accel_fel_frac": 40.0,
+    "compact_wins_wavelength": true,
+    "compact_alone_meets_power": false,
+    "best_nonaccel_frac": 0.3
+  },
+  "falsifiers": [
+    {
+      "name": "F-LS-1 HHG-LOSES",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LS-2 DPP-LOSES",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LS-3 NO-NONACCEL-CLEARS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LS-4 ACCEL-CLEARS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LS-5 COMPACT-WAVELENGTH-NOT-POWER",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LS-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
