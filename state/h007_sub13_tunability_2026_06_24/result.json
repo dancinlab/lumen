@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "energy_mev": {
+      "13.5nm": 466.47608629409086,
+      "6.5nm": 672.2635904324576,
+      "5.0nm": 766.498425,
+      "3.0nm": 989.5452116397383
+    },
+    "max_energy_mev": 989.5452116397383,
+    "lpa_reach_mev": 1000.0,
+    "sqrt_law_holds": true,
+    "dial_ratio_3_over_135": 2.1213203435596424
+  },
+  "falsifiers": [
+    {
+      "name": "F-TUN-1 SPAN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-TUN-2 SQRT-LAW",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-TUN-3 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-TUN-4 DIAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-TUN-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

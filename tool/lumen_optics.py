@@ -118,6 +118,56 @@ def accelerator_length(target_energy_ev: float, gradient_v_per_m: float) -> floa
     return target_energy_ev / gradient_v_per_m
 
 
+# --- electron-beam light generation (undulator / inverse-Compton) ------------
+# Standard relativistic radiation relations. m_e c^2 = 0.51099895 MeV.
+
+_ELECTRON_REST_EV = 510998.95  # eV
+
+
+def lorentz_gamma(energy_ev: float) -> float:
+    """Lorentz factor gamma = E_total / (m_e c^2). Ultra-relativistic regime."""
+    if energy_ev <= 0:
+        raise ValueError(f"energy must be > 0: {energy_ev}")
+    return energy_ev / _ELECTRON_REST_EV
+
+
+def undulator_wavelength(period_nm: float, gamma: float, k: float, harmonic: int = 1) -> float:
+    """On-axis undulator radiation wavelength (nm):
+    lambda_n = period / (2 n gamma^2) * (1 + K^2/2).
+    K is the deflection parameter (K = 0.9337 * B[T] * period[cm])."""
+    if gamma <= 0 or harmonic < 1:
+        raise ValueError(f"bad gamma/harmonic: {gamma}, {harmonic}")
+    return period_nm / (2.0 * harmonic * gamma ** 2) * (1.0 + k ** 2 / 2.0)
+
+
+def energy_for_undulator_wavelength(target_nm: float, period_nm: float, k: float,
+                                    harmonic: int = 1) -> float:
+    """Electron energy (eV) whose undulator fundamental hits target wavelength."""
+    if target_nm <= 0:
+        raise ValueError(f"target must be > 0: {target_nm}")
+    gamma_sq = period_nm * (1.0 + k ** 2 / 2.0) / (2.0 * harmonic * target_nm)
+    return math.sqrt(gamma_sq) * _ELECTRON_REST_EV
+
+
+def inverse_compton_wavelength(laser_nm: float, gamma: float) -> float:
+    """Head-on inverse-Compton backscatter wavelength (nm):
+    lambda_x ~ laser / (4 gamma^2)."""
+    if gamma <= 0:
+        raise ValueError(f"gamma must be > 0: {gamma}")
+    return laser_nm / (4.0 * gamma ** 2)
+
+
+# --- HVM throughput (wafers-per-hour) ----------------------------------------
+
+def hvm_throughput_wph(source_power_w: float, ref_power_w: float, ref_wph: float) -> float:
+    """Wafer-per-hour throughput under the first-order assumption that, at fixed
+    dose, throughput scales linearly with in-band source power delivered to the
+    wafer: WPH = ref_wph * (source_power / ref_power)."""
+    if ref_power_w <= 0:
+        raise ValueError(f"ref_power must be > 0: {ref_power_w}")
+    return ref_wph * source_power_w / ref_power_w
+
+
 # --- falsifier harness --------------------------------------------------------
 
 @dataclass

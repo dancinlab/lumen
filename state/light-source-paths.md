@@ -18,10 +18,18 @@ uncertain is marked `?` and should be verified before use.
 
 > **Compact-accelerator path** — the "if we had a CERN accelerator" angle resolves to a *tabletop* laser-plasma accelerator, not a km ring. Accelerator physics is reference-matched to `dancinlab/demiurge` cern-accelerator (Dawson field E₀ = 96.16 GV/m @ 1e18 cm⁻³, PIC-verified). lumen adds the light-source compactness axis — see `HYPOTHESES/cards/H_004_compact_accelerator.md`.
 
+## Throughput is the production gate (WPH)
+
+- **HVM floor ≈ 100 WPH** (wafers per hour; 150–180 cited as targets). Optical quality alone is not enough — what gates production is wafers-per-hour. (Source: transcript `euv-yt-2KDLZMG8FAs-transcript.md`.)
+- **LDP (China) ≈ <60 WPH** ("1분에 한 장도 어렵다") → framed as ~50k vs ~500 wafers/month vs ASML LPP (~100× gap). This is why LDP is "limited" for HVM despite producing 13.5 nm light.
+- **6.5 nm element candidates**: Gd / Lu / La plasmas (transcript) — refines the earlier `Gd/Tb ?` note (still verify exact band per element).
+- **LPP mechanism detail**: ~40–50 µm nozzle, ~50k–100k Sn droplets/min, ~50 kW CO₂ drive, a pre-pulse flattens each droplet ("pancake") before the main pulse vaporizes it. Cymer (source) + TRUMPF (CO₂ laser) + Zeiss (optics) inside the ASML ecosystem.
+
 ## Verified findings (HYPOTHESES lab)
 
 - **H_002** 🟢 — at the same 11-mirror column, 6.5 nm (La/B R=0.55) passes ~14× fewer photons than 13.5 nm (Mo/Si R=0.70) → ~14× source-power demand (optics-side wall).
 - **H_001** 🟢 — a representative LPP budget (~250 W → ~1.5 kW pushed) falls ~2 kW short of that ~3.5 kW demand → LPP power-scaling alone insufficient for 6.5 nm (engineering-horizon wall, reopenable).
+- **H_005** 🟢 — at the same source, 6.5 nm prints only ~11 WPH vs the ~100 WPH HVM floor (1/14 photons → 1/14 throughput); restoring the floor needs ~2.4 kW (beyond the H_001 ceiling) → throughput/economics wall, not just power.
 - **H_004** 🟢 — a compact LPA reaches 1 GeV in ~1 cm vs ~33 m of RF (~3200×) → the compactness that makes an accelerator-driven EUV source a candidate path.
 
 ## The 6.5 nm ("Beyond-EUV" / BEUV) wall

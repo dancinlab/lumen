@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "target_nm": 13.5,
+    "undulator_energy_mev": 466.47608629409086,
+    "undulator_roundtrip_nm": 13.5,
+    "ic_energy_mev": 2.1989893591994183,
+    "ic_roundtrip_nm": 13.5,
+    "lpa_reach_mev": 1000.0
+  },
+  "falsifiers": [
+    {
+      "name": "F-UND-1 REACH",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-UND-2 ROUNDTRIP",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IC-3 LOW-E",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IC-4 ROUNDTRIP",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

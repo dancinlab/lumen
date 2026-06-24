@@ -20,6 +20,15 @@ NA ↑   →  DoF ↓ (NA² 로)  →  레지스트 극박막·초점 제어 난
 - High-NA uses **anamorphic** optics (different magnification in x/y, 4×/8×) → half-field
   imaging, stitching, throughput implications `?`.
 
+## NA generations (timeline)
+
+NA is the variable that separates EUV generations (source: transcript `euv-yt-2KDLZMG8FAs-transcript.md`):
+
+- **Gen 1** — NA 0.33, first HVM ~**2017**.
+- **Gen 2 (High-NA)** — NA 0.55, HVM ramping **2024–2025**; physical resolution ~**8 nm**. Tied to DRAM nodes D1c → D1d → 0a (single-digit-nm features from 0a).
+- **Gen 3** — projected **~2035–2039** (~9–10 yr cadence). Source has some information but **almost no surrounding ecosystem** — viability by then is unpredictable, and it is far harder than Gen 1/2.
+- **Beyond Gen 3** — "no clear alternative"; this is lumen's central target (the sub-13.5 nm source). See `HYPOTHESES/` H_004/H_006/H_007 (compact-accelerator route).
+
 ## Mirror / multilayer challenge
 
 - EUV is absorbed by everything → all-reflective optics with **multilayer mirrors**.

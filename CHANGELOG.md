@@ -4,6 +4,25 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- Extract YouTube transcript (`sidecar research yt`, EUV source-problem talk) to
+  `state/euv-yt-2KDLZMG8FAs-transcript.md`; fold new facts into the pillar notes —
+  `light-source-paths.md` (HVM ≈100 WPH throughput floor + LDP <60 WPH gap, 6.5 nm
+  Gd/Lu/La candidates, LPP mechanism detail), `optics.md` (NA generation timeline:
+  Gen1 0.33/2017 → Gen2 0.55/2024–25/8 nm → Gen3 ~2035–39 → beyond = no alternative).
+
+- Run three more hypotheses to verdict (all 🟢 SUPPORTED, 5/5 falsifiers, deterministic),
+  extending the accelerator path and the sub-13.5 nm question:
+  **H_005 HVM throughput floor** — at the same source 6.5 nm prints only ~11 WPH vs the
+  ~100 WPH floor (1/14 photons → 1/14 throughput); restoring it needs ~2.4 kW (beyond
+  H_001) → throughput/economics wall. **H_006 accelerator→EUV photons** — undulator makes
+  13.5 nm at ~0.47 GeV (single-stage LPA reach), inverse-Compton at ~2 MeV; closes H_004's
+  electron→photon gap. **H_007 sub-13.5 nm tunability** — the same undulator spans
+  13.5/6.5/5/3 nm at 466/672/766/990 MeV (~2.1× energy dial, all ≤1 GeV); shorter
+  wavelength is an electron-energy knob, not the LPP emitter(Sn→Gd/Lu/La)+multilayer
+  (Mo/Si→La/B) double-swap. Added `hvm_throughput_wph`, `lorentz_gamma`,
+  `undulator_wavelength`, `energy_for_undulator_wavelength`, `inverse_compton_wavelength`
+  to `tool/lumen_optics.py`; updated ARCHITECTURE harness + compact-accelerator nodes.
+
 - Rename `UNIVERSE/` → **`HYPOTHESES/`** (folder) and its registry `HYPOTHESES.jsonl`
   → `REGISTRY.jsonl` (avoid `HYPOTHESES/HYPOTHESES.jsonl` redundancy); all references
   updated (cards · CLAUDE.md · ARCHITECTURE.json · harness docstrings · `source` field).

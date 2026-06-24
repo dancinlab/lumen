@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "hvm_floor_wph": 100.0,
+    "wph_135": 150.0,
+    "h002_multiplier": 14.1934788751956,
+    "wph_65_same_source": 10.568233575359645,
+    "power_needed_for_floor_w": 2365.5798125326
+  },
+  "falsifiers": [
+    {
+      "name": "F-WPH-1 BASELINE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-WPH-2 SHORTFALL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-WPH-3 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-WPH-4 POWER-GAP",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-WPH-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
