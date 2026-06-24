@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "tgu_tolerates_percent": true,
+    "tgu_fel_ever_lased": false,
+    "lwfa_fel_floor_nm": 275.0,
+    "tgu_dispersion_breaks_lpa": true,
+    "conventional_erl_clears": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-TG-1 TGU-UNDEMONSTRATED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-TG-2 DISPERSION-COST",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-TG-3 LWFA-FLOOR",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-TG-4 ERL-CLEARS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-TG-5 WALL-CLASSIFIED",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

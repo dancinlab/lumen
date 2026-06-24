@@ -15,7 +15,7 @@ one wavelength: EUV is the first instance, not the boundary.
 engineering / volume problem, reopenable down to one thermodynamic floor.**
 
 ```
-Framing claim                     lumen verdict (19 verified hypotheses)
+Framing claim                     lumen verdict (32 verified hypotheses)
 ─────────────────────────         ───────────────────────────────────────
 "no alternative beyond EUV"   →   wavelength has NO floor (H_011: λ ~ 1/E²)
                               →   the wall is FLUX, and flux is NOT a physics
@@ -24,23 +24,30 @@ Framing claim                     lumen verdict (19 verified hypotheses)
                                   to the M8 waste-heat floor (H_019)
 ```
 
-- **Wavelength is free.** A compact laser-plasma accelerator + undulator tunes
-  13.5 / 6.5 / 5 / 3 nm by an electron-energy dial (H_004/H_006/H_007/H_011) —
-  no emitter-element swap (Sn→Gd/Lu/La) + multilayer swap (Mo/Si→La/B) needed.
+- **Wavelength has no *physics* floor** (H_011: λ ~ 1/E²) — an accelerator + undulator
+  tunes 13.5 / 6.5 / 5 / 3 nm by an electron-energy dial (H_004/H_006/H_007), no
+  emitter-element swap (Sn→Gd/Lu/La) + multilayer swap (Mo/Si→La/B) needed. **But the dial
+  is bounded by beam *slice energy spread*** (H_031/032): only a beam compressed to ≪0.1%
+  slice lases at 13.5 nm — which a conventional ERL achieves (FLASH, 2006) but a raw ~0.5%
+  LPA beam does not (demonstrated LPA-FEL floor ~25 nm).
 - **The wall is flux (average power), not wavelength** (H_008/H_005), and flux has
   **no brightness/Liouville ceiling for a coherent source** (H_016) — only
   efficiency + waste-heat (the M8 floor) survive.
-- **The answer: the tabletop (compact laser-plasma) accelerator, in combination.**
-  No single lever wins, but the stack **LPA + ERL + FEL + cooling + module-array**
-  clears every campaign wall at once — flux floor (~200 W), CAPEX (< LPP at ~10
-  modules), and wavelength tunability — and each lever is necessary (H_022). It is
-  the route that wins the CAPEX terminal wall via the M7 learning curve (H_021),
-  which a monolithic synchrotron cannot ride. The @-partner space is **mapped and
-  dry** (H_025): of four families exactly this one (accelerator-coherent ERL+FEL)
-  clears all walls; the others fall on distinct walls. Its binding link is FEL beam
-  quality, opened by **cooling, not by raising the Pierce ρ** (which traps the ERL
-  recovery, H_024). The remaining work is CAPEX/M7 mass-production + a cooling stage,
-  not more source search.
+- **The answer: an accelerator-driven FEL EUV source — and, after a full real-data
+  reference-match (H_030/031/032), its funded and physically-coherent form is a SHARED
+  CONVENTIONAL energy-recovery linac (ERL) FEL amortized across many scanners (the
+  xLight/KEK shape), NOT the tabletop laser-plasma (LPA) module-array first emphasized.**
+  Why the relocation: (1) the funded driver is a conventional ERL — zero funded programs
+  use an LPA driver (H_030); (2) the win is **M9-amortization** (one ~$260 M / 10 kW source
+  → ~$26 M/scanner at fan-out ~10, ~8× < LPP; it *inverts* at N=1), not the **M7
+  module-learning** curve, whose cryomodule Wright slope is shallow ~0.95 (H_031); (3) the
+  wavelength "dial" is bounded by **slice energy spread** — a real ~0.5% LPA beam sits ~5×
+  over the FEL gain criterion, single-pass cooling is undemonstrated, dechirping is not
+  cooling, and the last orthogonal escape (a transverse-gradient undulator) is undemonstrated
+  and breaks the LPA emittance budget (H_032); demonstrated LPA-FEL floor ~25–27 nm, never
+  13.5 nm. The conventional ERL clears that slice wall by RF compression (FLASH lased 13 nm,
+  2006). The LPA combination (H_022) stays a coherent **longer-horizon** variant; the concept
+  itself is not novel (Nakajima 2014).
 - **Economics is a conjunction** (H_019): a compact coherent source beats LPP
   $/wafer-layer only with efficiency η ≥ ~4× *and* amortization across ≥ ~3
   scanners — neither lever alone — and never below the M8 waste-heat floor.
@@ -63,7 +70,7 @@ with all shared physics in a single deterministic harness.
   power, undulator/inverse-Compton, ERL, cost-of-ownership, falsifier ledger).
 - `state/` — per-hypothesis runs + result.json, pillar notes, brainstorms, meta-laws.
 
-**Status:** 31 verified 🟢 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
+**Status:** 32 verified 🟢 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
 are **sourced against published data** (`state/sourced-parameters.md`, H_026): the core values are
 real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), with three optimistic links honestly
 corrected (all "harder, not easier"). The three self-found weaknesses (integration, the thin FEL

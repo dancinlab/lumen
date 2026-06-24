@@ -78,3 +78,13 @@
 | IC-EUV (H_028 L2) | inverse-Compton is genuinely undulator-free (no σ<ρ), but EUV-IC undemonstrated (RadiaBeam X-ray pilot; TU Eindhoven research; "very small" power) | ◐ real physics, undemonstrated at EUV |
 
 **Fleet-r2 net (🜂):** the wavelength "dial" is bounded by **slice energy spread** — dechirping (the only demonstrated single-pass win) is not cooling, so a real 0.5% LPA beam will not lase at 13.5 nm; only a TGU (unverified) could. The CAPEX win is **real but only amortized** across a fan-out (M9), the manufacturing learning curve (M7) being shallow. Every r2 correction again points the same honest direction: **the funded conventional-ERL/M9 form is the robust one; the tabletop-LPA/dial/cooling form is the harder, less-proven variant.**
+
+## Fleet round 3 — the decisive TGU escape (🜂, H_032) · FLEET DEPLETED
+| Probe | Sourced | Verdict |
+|---|---|---|
+| TGU energy-spread tolerance | percent-level (Huang TGU theory; ring-RAFEL sim stable at 0.45% @13.5 nm) | theory OK |
+| TGU-FEL ever lased | **none at any wavelength** (only simulations/proposals); best LWFA-FEL = 275 nm seeded (COXINEL/HZDR 2022) | ❌ undemonstrated |
+| TGU cost for LPA | dispersion section degrades small LPA emittance past the tight 13.5 nm β~1 mm matching (PRAB 20.020701 transport limits) | ❌ breaks LPA emittance budget |
+| Conventional ERL clears? | RF compression to ≪0.1% slice; FLASH lased 13 nm in 2006 (600 MeV linac) | ✅ yes |
+
+**Fleet-r3 net + DEPLETION (🜂):** the last named orthogonal escape (TGU) does NOT rescue the tabletop-LPA at 13.5 nm — undemonstrated, and its dispersion cost breaks the LPA emittance budget. So the slice-spread wall is classified: it **STANDS for the tabletop-LPA variant** but is an **architecture wall, not a physics ceiling** — the funded conventional ERL clears it by compression. All fleet lanes are now depleted: the load-bearing question (is the answer tabletop-LPA or shared-ERL?) is resolved in favor of the **shared conventional-ERL FEL amortized across scanners** (xLight/KEK), the form industry is funding. Remaining threads (GENESIS curves, IC-EUV power, drive-laser ceiling) are refinements that cannot move this conclusion.

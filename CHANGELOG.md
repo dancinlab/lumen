@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Fleet round 3 → TGU escape classified, fleet DEPLETED (H_032).** The decisive break-walls
+  probe: the one named orthogonal escape to the slice-spread wall — a transverse-gradient
+  undulator (TGU) — is **insufficient for an LPA** (no TGU-FEL has lased at any wavelength;
+  best LWFA-FEL is 275 nm; its dispersion section breaks the LPA emittance budget past 13.5 nm
+  matching). So the slice-spread wall **stands for the tabletop-LPA variant** but is an
+  **architecture wall, not a physics ceiling** — the funded conventional ERL clears it by RF
+  compression (FLASH lased 13 nm, 2006). All fleet lanes depleted; the load-bearing question
+  resolves in favor of the **shared conventional-ERL FEL amortized across scanners** (xLight/KEK).
+  README "the answer" relocated from tabletop-LPA to shared-ERL accordingly. Registry: 32 verified 🟢.
+
 - **Fleet round 2 → slice-spread wall + amortization break-even (H_031).** Deeper sourcing
   sharpened two corrections: (A) the FEL constraint that bounds the wavelength dial is **slice
   energy spread**, not undulator length — single-pass cooling is undemonstrated and DESY LUX's
