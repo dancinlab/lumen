@@ -4,6 +4,15 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Continue → risk localization capstone (H_045).** After H_043 (power) and H_044 (footprint), the
+  compact SSMB-Compton path addresses all four mapped walls — wavelength (free dial + Compton at MeV),
+  beam quality (Compton slice-spread-immunity), footprint (7 MeV metre-scale ring), power (SSMB coherent-N²
+  CW). So the entire next-generation compact-coherent-EUV question reduces to ONE measurable milestone:
+  the steady-state micro-bunching factor achievable at ~13.5 nm precision. The mechanism is proof-of-
+  principle demonstrated (Nature 2021) at longer wavelength; EUV-precision bunching is the single unproven
+  binding step the whole path is gated on — where the closed-form lab honestly hands off to experiment.
+  Counts (qa.py): 44 verified 🟢 · 1 falsified 🔴 · 10 abstract 🜂.
+
 - **Continue → break the SSMB footprint residual via compact 7-MeV SSMB-Compton (H_044).** H_043 broke
   the accelerator power wall but left a footprint residual (still a ~50-100 m ring at undulator energies).
   The sourced compact variant — a **7 MeV micro-bunched beam + CO₂-laser Compton scattering** reaching

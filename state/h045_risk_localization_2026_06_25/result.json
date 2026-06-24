@@ -1,0 +1,44 @@
+{
+  "metrics": {
+    "n_addressed": 4,
+    "n_open": 1,
+    "mechanism_demo_longer": true,
+    "euv_precision_demonstrated": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-RL-1 OTHERS-ADDRESSED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RL-2 SINGLE-RISK",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RL-3 MECHANISM-DEMO",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RL-4 MEASURABLE-MILESTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RL-5 HONEST-GATE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RL-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
