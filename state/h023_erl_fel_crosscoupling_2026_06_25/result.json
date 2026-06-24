@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "sigma_cooled": 0.0085,
+    "fel_rho": 0.01,
+    "fel_margin": 1.1764705882352942,
+    "sigma_post_fel": 0.013124404748406688,
+    "erl_acceptance": 0.02,
+    "erl_margin": 1.5238786355189187,
+    "fel_is_tightest": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-CC-1 FEL-GAIN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CC-2 ERL-ACCEPT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CC-3 FEL-TIGHTEST",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CC-4 POSITIVE-MARGIN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CC-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "fel_base": 1.1764705882352942,
+    "erl_base": 1.5238786355189187,
+    "fel_cooled": 2.0,
+    "erl_cooled": 1.7888543819998317,
+    "fel_raised_rho": 2.3529411764705883,
+    "erl_raised_rho": 0.9203309184584745,
+    "rho_crossover": 0.018103866990231674
+  },
+  "falsifiers": [
+    {
+      "name": "F-CR-1 COOLING-WINS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CR-2 RHO-TRAP",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CR-3 COOLING-MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CR-4 RHO-OPPOSED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CR-5 CROSSOVER",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

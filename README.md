@@ -35,8 +35,12 @@ Framing claim                     lumen verdict (19 verified hypotheses)
   clears every campaign wall at once — flux floor (~200 W), CAPEX (< LPP at ~10
   modules), and wavelength tunability — and each lever is necessary (H_022). It is
   the route that wins the CAPEX terminal wall via the M7 learning curve (H_021),
-  which a monolithic synchrotron cannot ride. Dark horse: a recombination EUV laser
-  (H_017, intrinsically narrow, undulator-free).
+  which a monolithic synchrotron cannot ride. The @-partner space is **mapped and
+  dry** (H_025): of four families exactly this one (accelerator-coherent ERL+FEL)
+  clears all walls; the others fall on distinct walls. Its binding link is FEL beam
+  quality, opened by **cooling, not by raising the Pierce ρ** (which traps the ERL
+  recovery, H_024). The remaining work is CAPEX/M7 mass-production + a cooling stage,
+  not more source search.
 - **Economics is a conjunction** (H_019): a compact coherent source beats LPP
   $/wafer-layer only with efficiency η ≥ ~4× *and* amortization across ≥ ~3
   scanners — neither lever alone — and never below the M8 waste-heat floor.

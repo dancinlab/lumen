@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "n_families": 4,
+    "n_clears_all": 1,
+    "n_partial": 3,
+    "n_distinct_failure_walls": 3,
+    "taxonomy_size": 4,
+    "spine_clears": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-DP-1 SPINE-CLEARS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DP-2 SINGLE-CLEARER",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DP-3 DISTINCT-WALLS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DP-4 TAXONOMY-COMPLETE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DP-5 DEPLETION",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

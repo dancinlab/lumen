@@ -4,6 +4,19 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Deepen the combination breakthrough to depletion** (goal: "tabletop accelerator + @ combination
+  + deepen-to-depletion"). **H_023** — the H_022 levers co-exist on one beam: the cooled beam sits
+  inside the FEL Pierce bandwidth (margin 1.18×) and the post-FEL beam inside the ERL acceptance
+  (1.52×); FEL beam-quality is the binding cross-coupling. A **fleet-full Workflow** fanned out the
+  4 @-partner families (`state/at-frontier-census.md`). **H_024** — cooling is the clean lever,
+  raising the FEL Pierce ρ is a trap: deeper cooling lifts both margins, while raising ρ widens the
+  FEL margin but crushes the ERL energy-acceptance below 1 (recovery fails) past ρ≈1.8%. **H_025
+  (DEPLETION)** — the @-combination space is mapped and dry: of 4 families exactly one clears all
+  walls (the accelerator-coherent spine, H_022), the other three fall on distinct walls
+  (flux/RLS-defect/CAPEX-redundant), and the supply(3 primitives)+demand(1 multiplier) taxonomy is
+  complete → no second independent all-wall path. The goal is met; the binding work is now CAPEX/M7
+  + a cooling stage, not more @-search. Registry: 25 verified 🟢 + 10 abstract 🜂.
+
 - **Revive the tabletop accelerator + combination wall-breakthrough** (goal: "tabletop accelerator
   + @ combination"). **H_021** — the compact (tabletop laser-plasma) accelerator wins the CAPEX
   terminal wall via the M7 learning curve: small replicable modules ride a Wright's-law curve and
