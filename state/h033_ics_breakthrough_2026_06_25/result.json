@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "ics_E_135_MeV": 2.1989893591994183,
+    "ics_E_3nm_MeV": 4.664760862940907,
+    "ics_bandwidth": 0.01,
+    "energy_ratio_vs_fel": 454.7543605959367,
+    "ics_euv_power_demonstrated": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-BK-1 ICS-LOW-ENERGY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BK-2 WHOLE-BAND-SUB5MEV",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BK-3 SLICE-ONLY-BROADENS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BK-4 BIG-ENERGY-SAVING",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BK-5 HONEST-RESIDUAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BK-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
