@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "n_families_enumerated": 3,
+    "ics_derating_fundamental": true,
+    "compact_terminal_thin": true,
+    "robust_answer_erl": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-LC-1 FAMILIES-ENUMERATED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LC-2 ICS-FUNDAMENTAL-TAX",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LC-3 COMPACT-TERMINAL-THIN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LC-4 CONVERGES-TO-ERL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LC-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

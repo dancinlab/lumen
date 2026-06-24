@@ -1,0 +1,29 @@
+{
+  "metrics": {
+    "frac_high_div": 0.02,
+    "frac_low_div": 0.02,
+    "recovery": 1.0,
+    "lever_works": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-HB-1 BRIGHTNESS-RECOVERS",
+      "triggered": true,
+      "status": "FAIL"
+    },
+    {
+      "name": "F-HB-2 KINEMATIC-INVARIANT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-HB-3 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 2,
+  "n_total": 3,
+  "all_pass": false,
+  "verdict": "FALSIFIED"
+}

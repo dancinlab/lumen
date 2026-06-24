@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Loop cycle 3 → honest FALSIFIED + convergence (H_037/038).** 돌파 attempt **H_037**: tested whether a
+  high-brightness beam beats the H_036 bandwidth-collection derating — **FALSIFIED** (reported honestly, not
+  tuned to green): λ(θ)=λ₀(1+γ²θ²) is radiation kinematics, so off-axis photons are out-of-band regardless of
+  beam (recovery 1.0×) → the ~50× derating is a *fundamental* ICS tax. 심화 **H_038**: with the brightness
+  escape falsified, the three orthogonal supply-side radiation families are classified (FEL slice-spread-bound
+  → ERL; ICS/gain-free terminal-thin; recombination harder), all routing back to conventional-ERL-class
+  beam + recirculation → **break-walls dry, the loop CONVERGES**: the robust litho-power answer is the
+  conventional ERL FEL (H_030); compact coherent EUV is terminal-thin (a longer-horizon bet, not retired).
+  Three full loop cycles executed. Registry: 37 verified 🟢 + 1 falsified 🔴 + 10 abstract 🜂.
+
 - **Loop cycle 2 (돌파→검증→심화) — ICS flux: cavity reclassified, then honestly de-rated (H_035/036).**
   돌파 **H_035**: the "EUV enhancement cavity is impossible" worry is a misclassification — the cavity is at
   the IR DRIVE wavelength (finesse 1e4–1e5 routine), not at EUV (R~0.70 → finesse ~9); so the H_034
