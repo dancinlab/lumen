@@ -4,6 +4,15 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Band verdict census — the compact verdict is requirement-driven, '다음' depleted (H_040).** Deepening
+  M10 across every no-incumbent band shows the EUV 'compact terminal-thin / conventional robust' verdict
+  does NOT generalize — it tracks the *application's flux requirement*, not the wavelength. EUV litho
+  (extreme ~100 W in-band) is the outlier; the wavelength-agnostic engine WINS at the THz gap (3.4 MeV,
+  slice-spread irrelevant at long λ), WORKS at the water window (1.08 GeV, bio imaging), and ALREADY
+  EXISTS at hard X-ray (Lyncean compact ICS) and nuclear gamma (HIGS/ELI-NP). The M10 dial-free + flux-wall
+  structure recurs at every rung; only the verdict flips with the requirement. The no-incumbent bands are
+  censused and the verdict-driver identified → '다음' depleted. Registry: 39 verified 🟢 + 1 falsified 🔴 + 10 abstract 🜂.
+
 - **Generalization — EUV is the first instance, not the boundary (H_039, meta-law M10).** The verified
   EUV machinery transfers across the spectrum: the dial λ ∝ 1/γ² makes one accelerator + undulator/ICS
   span THz (3.4 MeV) → far-IR (11 MeV) → EUV (511 MeV) → water window (1.08 GeV) → hard X-ray (5.94 GeV),

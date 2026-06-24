@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "n_terminal_thin": 1,
+    "n_compact_ok": 4,
+    "verdict_tracks_flux": true,
+    "compact_exists_elsewhere": true,
+    "n_bands": 5
+  },
+  "falsifiers": [
+    {
+      "name": "F-BV-1 EUV-OUTLIER",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BV-2 REQUIREMENT-DRIVEN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BV-3 COMPACT-EXISTS-ELSEWHERE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BV-4 STRUCTURE-RECURS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BV-5 DEPLETION",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BV-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
