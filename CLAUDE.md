@@ -20,6 +20,10 @@ lumen/
 - Scope is the **source problem**, not one wavelength: EUV is the first instance, not the boundary.
 - Artifacts go under `state/` only (commons preserve-state). No scattered report/notes dirs.
 - Code/design change → update `ARCHITECTURE.json` in lockstep; log in `CHANGELOG.md`.
+- **Research before real measurement (실측전 research).** Before renting compute or running an
+  expensive real measurement (DFT / simulation sweep / GPU pod / long bench), do a literature
+  research pass FIRST — the answer may already be in the literature, or a cheap proxy may suffice.
+  Only spend on real compute after research justifies it.
 
 ## Gotchas
 
