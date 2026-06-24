@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Architecture final ranking — light-source node re-ranked (ARCHITECTURE.json).** Replaced the
+  accreted compact-accelerator cell with a clean 8-rank ordering of the EUV-litho source architectures,
+  reflecting the full verified campaign: 1) shared conventional ERL FEL (funded, xLight/KEK, M9-amortized,
+  H_030/042); 2) SSMB (novel, demonstrated mechanism, coherent CW, H_043); 3) compact 7-MeV SSMB-Compton
+  (tabletop, gated on one physics-allowed milestone, H_044-046); 4) LPP (incumbent, superseded); 5) LDP
+  (China incumbent variant); 6) compact LPA + single-pass FEL (terminal-thin, longer-horizon, H_038); 7)
+  recombination laser (dark horse, H_017); 8) non-accelerator HHG/DPP (fail HVM, H_042). Ranking is for the
+  EUV-litho high-flux requirement; other bands re-rank by requirement (H_040/H_047). synchrotron kept as
+  the large-facility ancestor context.
+
 - **Band fleet → SSMB synthesis boundary, fleet depleted (H_047).** Applying the compact SSMB-Compton
   synthesis (H_043-046) to every no-incumbent band (THz, EUV, water window, hard X-ray, nuclear gamma)
   splits them into two regimes by the achievable micro-bunch length (σ_z ~ 3 nm): the **SSMB-coherent**
