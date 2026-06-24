@@ -1,0 +1,71 @@
+---
+id: H_XXX
+slug: short-kebab-slug
+title: one-line falsifiable claim (what, and the expected direction/magnitude)
+domain: light-source | photochemistry | optics | system
+status: pre-register-frozen | supported | partial | falsified
+exploration_method: how the candidate was framed (closed-form / sim / survey)
+verification_method: deterministic harness + N pre-registered falsifiers
+pre_register_frozen: true
+frozen_at: YYYY-MM-DD
+deterministic: true
+llm: none
+---
+
+# H_XXX — <short title>
+
+## Hypothesis
+
+State the claim operationally: what quantity, computed how, predicted to do what.
+A hypothesis that cannot be numerically falsified does not belong here.
+
+## Why
+
+Tie to the state notes (`light-source-paths.md` / `photochemistry.md` /
+`optics.md` / `euv-source-problem.md`) and to sister hypotheses.
+
+## Predictions
+
+- **P1**: ... (a specific number or inequality)
+- **P2**: ...
+
+## Variables
+
+- list each input with its pre-registered value and source (mark `?` if unverified)
+- list each measured output quantity
+
+## Run Protocol
+
+- **harness**: `tool/lumen_optics.py` (functions used)
+- **run script**: `state/<hX>_<slug>_<date>/run_<id>.py`
+- **deterministic**: stdlib only, no randomness, $0 local
+- **run cmd**: `python3 state/<hX>_<slug>_<date>/run_<id>.py`
+- **artifacts**: `state/<hX>_<slug>_<date>/result.json`
+
+## Criteria
+
+- **C1 ...**: ...
+- **verdict_rule**: SUPPORTED = all falsifiers PASS; FALSIFIED = any trigger.
+
+## Falsifiers (pre-registered, measurable — aim for >=5)
+
+- **F-..-1**: <condition that, if true, refutes a component> (measured how)
+- ... (include at least one negative control and one bounds check)
+
+## Honest Limits (aim for >=3)
+
+- **L1**: where the numbers are representative not measured
+- **L2**: what the model ignores
+- **L3**: what would move the result
+
+## Cross-Links
+
+- **state notes**: ...
+- **sister H**: ...
+- **harness**: `tool/lumen_optics.py`
+
+## Verdict
+
+_None yet — pre-register-frozen, still-to-run._
+
+<!-- After running, paste the VERBATIM stdout in a fenced block + link result.json. -->

@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "res_lo_nm": 12.272727272727272,
+    "res_hi_nm": 7.363636363636362,
+    "dof_lo_nm": 61.98347107438016,
+    "dof_hi_nm": 22.314049586776857,
+    "res_gain": 1.6666666666666667,
+    "dof_loss": 2.777777777777778,
+    "na_ratio_sq": 2.777777777777778
+  },
+  "falsifiers": [
+    {
+      "name": "F-DOF-1 RES-GAIN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DOF-2 DOF-LOSS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DOF-3 QUADRATIC",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DOF-4 PENALTY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DOF-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

@@ -1,0 +1,43 @@
+{
+  "metrics": {
+    "R_euv": 0.7,
+    "R_beuv": 0.55,
+    "n_mirrors": 11,
+    "throughput_euv": 0.019773267429999988,
+    "throughput_beuv": 0.0013931233916552746,
+    "power_multiplier": 14.1934788751956,
+    "power_multiplier_control": 1.0,
+    "power_multiplier_n7": 5.409379534874502
+  },
+  "falsifiers": [
+    {
+      "name": "F-MW-1 WALL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MW-2 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MW-3 NEG-CONTROL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MW-4 N-SENSITIVITY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MW-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "baseline_w": 250.0,
+    "ceiling_w": 1500.0,
+    "h002_multiplier": 14.1934788751956,
+    "demand_6p5nm_w": 3548.3697187989,
+    "supply_gap_w": 2048.3697187989,
+    "ce_in_bounds": true,
+    "coll_in_bounds": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-PC-1 SUPPLY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PC-2 BASELINE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PC-3 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PC-4 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PC-5 GAP-SIGN",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

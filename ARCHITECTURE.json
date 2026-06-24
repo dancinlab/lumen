@@ -34,7 +34,8 @@
           "children": [
             { "id": "light-source.lpp", "role": "LPP (Laser-Produced Plasma) — ASML incumbent path for EUV; tin-droplet plasma, ~30yr ecosystem moat." },
             { "id": "light-source.ldp", "role": "LDP (Laser-induced Discharge Plasma) — path ASML abandoned; revisited by China for indigenous lithography." },
-            { "id": "light-source.synchrotron", "role": "Synchrotron / storage-ring radiation — basic-science route to EUV/shorter wavelengths; low throughput today, long-term variable." }
+            { "id": "light-source.synchrotron", "role": "Synchrotron / storage-ring radiation — basic-science route to EUV/shorter wavelengths; low throughput today, long-term variable." },
+            { "id": "light-source.compact-accelerator", "role": "Compact (laser-plasma-wakefield) accelerator + undulator/inverse-Compton — cm-scale GV/m gradient replaces km-scale RF (no CERN required); accelerator physics reference-matched to dancinlab/demiurge cern-accelerator. Compactness verified (H_004); photon-generation downstream." }
           ]
         },
         {
@@ -54,12 +55,23 @@
       ]
     },
     {
+      "id": "verification",
+      "role": "HYPOTHESES — hypothesis-verification system (pre-register → falsify → run → verdict), modeled on anima's HYPOTHESES/. Turns pillar open-questions into numerically falsifiable, runnable cards.",
+      "children": [
+        { "id": "verification.registry", "role": "HYPOTHESES/REGISTRY.jsonl — flat registry, one JSON line per hypothesis (id, slug, tier, title, card, verdict, artifacts)." },
+        { "id": "verification.cards", "role": "HYPOTHESES/cards/H_*.md — one card per hypothesis: frozen pre-registration + predictions + >=5 measurable falsifiers + honest limits + verbatim run verdict. _TEMPLATE.md is the skeleton." },
+        { "id": "verification.harness", "role": "tool/lumen_optics.py — shared deterministic stdlib-only physics harness (mirror_chain_throughput, source_power_multiplier, resolution/DoF, lpp_source_power, Falsifier/evaluate). Anima-parity: shared machinery in repo-root tool/." },
+        { "id": "verification.runs", "role": "state/<hX>_<slug>_<date>/run_*.py + result.json — per-hypothesis deterministic run importing tool/; verdict = verbatim stdout (no LLM self-judge)." }
+      ]
+    },
+    {
       "id": "dataflow",
-      "role": "Form = research hub. Tree (this file) is the table of contents; per-pillar research lives flat in state/.",
+      "role": "Form = research hub + hypothesis lab. Tree (this file) is the table of contents; per-pillar research lives flat in state/; open-questions become HYPOTHESES cards.",
       "children": [
         { "id": "dataflow.input", "role": "Input — sources/devices/papers/specs on the lithography light-source problem." },
         { "id": "dataflow.curate", "role": "Curate — organize each finding under one of the three reference pillars (light-source · photochemistry · optics)." },
-        { "id": "dataflow.output", "role": "Output — structured notes in state/: light-source-paths.md (path comparison table), photochemistry.md, optics.md, euv-source-problem.md (sourced framing)." }
+        { "id": "dataflow.output", "role": "Output — structured notes in state/: light-source-paths.md (path comparison table), photochemistry.md, optics.md, euv-source-problem.md (sourced framing)." },
+        { "id": "dataflow.verify", "role": "Verify — a pillar open-question becomes a HYPOTHESES card (frozen falsifiers) → runs via tool/ harness in state/ → verdict feeds back into the notes/tree." }
       ]
     }
   ]

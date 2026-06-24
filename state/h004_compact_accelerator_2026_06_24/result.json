@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "omega_p_rad_s": 56414602311806.266,
+    "e0_gvm": 96.15919872735485,
+    "demiurge_e0_gvm": 96.15919872735485,
+    "parity_abs_gvm": 0.0,
+    "rf_gradient_mvm": 30.0,
+    "gradient_ratio": 3205.3066242451614,
+    "len_lpa_m": 0.010399421097874909,
+    "len_rf_m": 33.333333333333336,
+    "len_ratio": 3205.306624245162,
+    "e0_lo_gvm": 48.079599363677424
+  },
+  "falsifiers": [
+    {
+      "name": "F-CA-1 PARITY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CA-2 GRADIENT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CA-3 COMPACT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CA-4 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CA-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
