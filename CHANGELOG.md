@@ -4,6 +4,11 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **검증지식 전수수집(全數) census — `state/knowledge-census-2026-06-25.md`.** `HYPOTHESES/REGISTRY.jsonl`
+  (단일 SSOT, 60 엔트리) 전수 파싱: 검증됨 49🟢 SUPPORTED(result.json+falsifier all-PASS) · 1🔴 FALSIFIED
+  (H_037) · 7🜂 ABSTRACT-open(미검증 conjecture) + 3 promoted(H_A4→012·H_B1→014·H_B4→017). embedded atlas
+  atom 없음. additive state/ census + 본 CHANGELOG 한 줄만 추가(카드 미수정).
+
 - **Architecture figures + moved papers to root `papers/`.** Per user, relocated the two papers from
   `state/papers/` to a top-level `papers/` directory (demiurge PAPERS/ convention). Added TWO images per
   paper: (i) a precise TikZ-rendered architecture schematic (`figures/architecture.png`, 300 dpi,
