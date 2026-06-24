@@ -192,6 +192,18 @@ def average_power(rep_rate_hz: float, pulse_energy_j: float) -> float:
     return rep_rate_hz * pulse_energy_j
 
 
+def wright_unit_cost(first_unit_cost: float, cumulative_units: int,
+                     learning_rate: float) -> float:
+    """Wright's-law unit cost after producing `cumulative_units`:
+    C(N) = C1 * N**log2(LR). learning_rate 0.85 = 15% cost cut per doubling.
+    Replicable modules ride the curve; a one-off monolith (N=1) does not."""
+    if not (0.0 < learning_rate <= 1.0):
+        raise ValueError(f"learning_rate out of (0,1]: {learning_rate}")
+    if cumulative_units < 1:
+        raise ValueError("cumulative_units >= 1")
+    return first_unit_cost * cumulative_units ** math.log2(learning_rate)
+
+
 def cost_of_ownership(capex_unit: float, opex_base: float, eta_ratio: float,
                       n_scanners: int) -> float:
     """Normalized $/wafer-layer for a coherent/ERL source:

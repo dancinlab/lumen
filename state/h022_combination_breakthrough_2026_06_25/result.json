@@ -1,0 +1,48 @@
+{
+  "metrics": {
+    "stack_power_w": 199.99999999999983,
+    "stack_capex": 0.874230603490197,
+    "power_no_fel_w": 1.999999999999998,
+    "capex_no_array": 1.5,
+    "flux_cleared": true,
+    "capex_cleared": true,
+    "wavelength_tunable": true,
+    "all_walls_cleared": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-CMB-1 FLUX",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CMB-2 CAPEX",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CMB-3 FEL-NECESSARY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CMB-4 ARRAY-NECESSARY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CMB-5 ALL-WALLS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CMB-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
