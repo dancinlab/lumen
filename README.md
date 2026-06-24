@@ -74,7 +74,7 @@ with all shared physics in a single deterministic harness.
   power, undulator/inverse-Compton, ERL, cost-of-ownership, falsifier ledger).
 - `state/` — per-hypothesis runs + result.json, pillar notes, brainstorms, meta-laws.
 
-**Status:** 34 verified 🟢 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
+**Status:** 36 verified 🟢 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
 are **sourced against published data** (`state/sourced-parameters.md`, H_026): the core values are
 real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), with three optimistic links honestly
 corrected (all "harder, not easier"). The three self-found weaknesses (integration, the thin FEL

@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "derate": 49.99999999999998,
+    "margin_after_derate": 0.30000000000000016,
+    "recovery": 100.0,
+    "margin_recovered": 30.000000000000014,
+    "both_levers_maxed_demonstrated": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-DR-1 DERATE-REAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DR-2 MARGIN-LOST",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DR-3 HEADROOM-EXISTS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DR-4 RECOVERED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DR-5 HONEST-MAXED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-DR-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

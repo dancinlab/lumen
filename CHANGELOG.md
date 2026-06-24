@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Loop cycle 2 (돌파→검증→심화) — ICS flux: cavity reclassified, then honestly de-rated (H_035/036).**
+  돌파 **H_035**: the "EUV enhancement cavity is impossible" worry is a misclassification — the cavity is at
+  the IR DRIVE wavelength (finesse 1e4–1e5 routine), not at EUV (R~0.70 → finesse ~9); so the H_034
+  recirculation gain rests on demonstrated IR-cavity tech (margin robust). 심화 **H_036** (honest negative):
+  the margin does NOT survive bandwidth-limited collection — low-γ ICS emits a wide ~1/γ cone but the 2%
+  in-band needs a narrow collection angle, de-rating flux ~50× and eating the 15× margin (→0.3×, LOST);
+  recoverable only by stacking demonstrated headroom (finesse ×10 AND ERL current ×10 = ×100 → ~30×),
+  both-maxed-at-EUV undemonstrated → compact-ICS is *possible but margin-thin*, reinforcing the conventional
+  ERL (H_030) as the funded answer. Two full loop cycles now executed. Registry: 36 verified 🟢 + 10 abstract 🜂.
+
 - **Loop (돌파→검증→심화) — deepen the ICS breakthrough's flux residual (H_034).** ICS relocated
   the wall to average power; quantified: the ~100 W in-band litho target (6.8e18 ph/s) is ~7e5× above
   the best demonstrated Compton flux (~1e13 ph/s). That gap is reopenable in principle by the same

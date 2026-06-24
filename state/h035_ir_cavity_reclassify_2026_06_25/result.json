@@ -1,0 +1,45 @@
+{
+  "metrics": {
+    "euv_cavity_finesse": 8.761483309705643,
+    "ir_finesse": 10000.0,
+    "cavity_at_drive_wavelength": true,
+    "margin_demonstrated_basis": true,
+    "integrated_euv_ics_demonstrated": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-CV-1 CAVITY-AT-IR",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CV-2 IR-FINESSE-REAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CV-3 EUV-CAVITY-FORBIDDEN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CV-4 MARGIN-ROBUST",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CV-5 HONEST-INTEGRATION",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CV-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
