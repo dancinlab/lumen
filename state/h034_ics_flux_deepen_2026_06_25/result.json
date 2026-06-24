@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "litho_ph_s": 6.78424899397909e+18,
+    "gap": 678424.899397909,
+    "recirc_gain": 10000000.0,
+    "closes_in_principle": true,
+    "margin": 14.7400250328,
+    "litho_power_ics_demonstrated": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-FX-1 GAP-REAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FX-2 CAVITY-DEMOd",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FX-3 ERL-GAIN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FX-4 RECIRC-CLOSES",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FX-5 HONEST-UNDEMO",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FX-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

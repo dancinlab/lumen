@@ -4,6 +4,13 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Loop (돌파→검증→심화) — deepen the ICS breakthrough's flux residual (H_034).** ICS relocated
+  the wall to average power; quantified: the ~100 W in-band litho target (6.8e18 ph/s) is ~7e5× above
+  the best demonstrated Compton flux (~1e13 ph/s). That gap is reopenable in principle by the same
+  recirculation family as H_016 — an optical enhancement cavity (~1e4) × an ERL (~1e3) = ~1e7 > gap
+  (~15× margin). Honest residual: litho-power ICS-EUV is undemonstrated and the thin margin needs
+  near-maximal cavity AND ERL together (the new front). Registry: 34 verified 🟢 + 10 abstract 🜂.
+
 - **돌파 (breakthrough) — inverse-Compton sidesteps the slice-spread wall (H_033).** break-walls
   forbids calling a wall terminal after one escape (TGU). The slice-spread wall (H_031/032) is
   *FEL-gain-specific*; the orthogonal gain-free mechanism — **inverse-Compton scattering** —
