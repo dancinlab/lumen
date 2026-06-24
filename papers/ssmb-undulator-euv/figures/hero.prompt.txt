@@ -1,0 +1,6 @@
+A clean technical scientific illustration of a steady-state microbunching (SSMB) storage-ring
+EUV light source for semiconductor lithography. A circular electron storage ring (several
+hundred MeV) glowing with a tightly bunched blue electron beam, an undulator section emitting a
+focused beam of extreme-ultraviolet light at 13.5 nm. Cutaway engineering-diagram aesthetic,
+cool blue and white palette, subtle teal EUV glow, dark clean background, isometric perspective,
+crisp vector-like rendering, no text, no people. Professional accelerator-physics concept art.

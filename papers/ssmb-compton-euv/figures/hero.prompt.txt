@@ -1,0 +1,7 @@
+A clean technical scientific illustration of a compact tabletop SSMB-Compton EUV light source.
+A small ~1 meter electron storage ring at low energy with an infrared drive laser striking the
+electron beam at a Compton interaction point, up-converting to a focused beam of extreme-
+ultraviolet light at 13.5 nm. Tabletop scale next to a hint of a lab bench, warm-orange laser
+beam meeting a blue electron beam, teal EUV output glow, cutaway engineering-diagram aesthetic,
+dark clean background, isometric perspective, crisp rendering, no text, no people. Professional
+compact-accelerator concept art.

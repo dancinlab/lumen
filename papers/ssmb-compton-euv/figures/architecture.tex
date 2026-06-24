@@ -1,0 +1,18 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{siunitx}\usepackage{xcolor}
+\usepackage{tikz}\usetikzlibrary{arrows.meta,positioning}
+\begin{document}
+\begin{tikzpicture}[node distance=8mm and 13mm,every node/.style={font=\small},
+  box/.style={draw,rounded corners,align=center,inner sep=5pt,minimum height=9mm,fill=orange!6},
+  obox/.style={draw,rounded corners,align=center,inner sep=5pt,minimum height=9mm,fill=green!8}]
+  \node[box] (gun) {injector\\\SI{7}{\mega\electronvolt}};
+  \node[box,right=of gun] (ring) {compact ring\\$\sim$\SI{1}{\meter}\\(SSMB)};
+  \node[box,right=of ring] (ip) {Compton IP\\$\lambda_x\!=\!\lambda_L/4\gamma^2$};
+  \node[box,above=10mm of ip] (cav) {IR cavity\\finesse $10^{4}$--$10^{5}$};
+  \node[obox,right=of ip] (o) {\textbf{coherent CW}\\\SI{13.5}{\nano\meter}\\slice-immune};
+  \draw[-{Latex}] (gun)--(ring); \draw[-{Latex}] (ring)--(ip);
+  \draw[-{Latex},green!45!black,thick] (ip)--(o); \draw[-{Latex}] (cav)--(ip);
+  \draw[-{Latex},dashed] (ip.south) to[out=-35,in=-35,looseness=1.5] node[below,font=\scriptsize]{beam reused} (ring.south);
+  \node[font=\bfseries,above=1mm of ring,yshift=10mm] {Architecture II --- compact SSMB-Compton (rank 3)};
+\end{tikzpicture}
+\end{document}
