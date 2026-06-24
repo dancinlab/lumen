@@ -71,6 +71,18 @@ Framing claim                     lumen verdict (49 verified hypotheses)
   γ) are exactly the engine's **no-incumbent market**, and the campaign's whole structure (dial free ·
   flux the wall · conventional accelerator the robust form · compact-coherent terminal-thin) **recurs
   at every rung** (`state/band-generalization.md`).
+- **Final source-architecture ranking** (EUV-litho high-flux requirement; ARCHITECTURE.json tree):
+  **①** shared conventional ERL FEL (funded near-term answer, xLight/KEK · H_030) · **②** SSMB
+  (novel, demonstrated mechanism, coherent CW · H_043) · **③** compact 7-MeV SSMB-Compton (tabletop
+  dream resurrected, ~1 m ring, slice-immune · H_044-046) · ④ LPP (incumbent) · ⑤ LDP · ⑥ compact
+  LPA-FEL (terminal-thin) · ⑦ recombination laser · ⑧ non-accelerator (fails HVM). The two novel
+  paths ②③ **converge on one shared, physics-allowed, undemonstrated gate** — steady-state
+  micro-bunching at 13.5 nm — so a single experiment de-risks both (H_048).
+- **Where it ends (honest terminus):** the closed-form lab is **complete** (H_049) — every wall is
+  classified, all 50 hypotheses run deterministically, and the question reduces to **one physical
+  experiment** (13.5 nm micro-bunching + resist materials), out of in-silico scope. Fresh 2025-26
+  arXiv work **corroborates** the conclusions, and the cooling lever the lab derived closed-form
+  (H_024) is exactly what the latest SSMB frontier adds (OSC, arXiv:2512.09399 · H_050).
 
 ## How the lab works (HYPOTHESES system)
 
@@ -90,15 +102,12 @@ with all shared physics in a single deterministic harness.
   power, undulator/inverse-Compton, ERL, cost-of-ownership, falsifier ledger).
 - `state/` — per-hypothesis runs + result.json, pillar notes, brainstorms, meta-laws.
 
-**Status:** 49 verified 🟢 + 1 falsified 🔴 + 10 abstract 🜂 (counts computed by `tool/qa.py`, never hand-copied) (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
-are **sourced against published data** (`state/sourced-parameters.md`, H_026): the core values are
-real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), with three optimistic links honestly
-corrected (all "harder, not easier"). The three self-found weaknesses (integration, the thin FEL
-margin, module replicability) are each attacked by ≥3 independent break-walls lenses (H_027/028/029)
-— reopenable, not terminal, though not retired (each lens names an escape, not a build).
-The abstraction lane peeled meta-laws **M1–M9** (`state/euv-meta-laws.md`); the fleet
-loop closed three times (a frozen meta-law prediction → a verified hypothesis: P4→H_013,
-flux-verdict→H_016, Q3→H_019).
+**Status (computed by `tool/qa.py`, never hand-copied):** **49 verified 🟢 · 1 falsified 🔴 · 10
+abstract 🜂**, all deterministic (each re-run is byte-identical and verdict-matched to the registry).
+Key inputs are **sourced against published data, as-of 2026-06** (`state/sourced-parameters.md`,
+H_026) — core values real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), three optimistic
+links honestly corrected (all "harder, not easier"). The abstraction lane peeled meta-laws **M1–M10**
+(`state/euv-meta-laws.md`). Run `python3 tool/qa.py` to re-verify counts + determinism at any time.
 
 ## Run it
 
