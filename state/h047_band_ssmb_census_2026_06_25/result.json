@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "n_coherent": 2,
+    "n_incoherent": 3,
+    "n_bands": 5,
+    "euv_in_coherent": true,
+    "gamma_incoherent": true,
+    "verdict_tracks_flux": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-BC-1 SSMB-REGIME",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BC-2 BREAKS-SHORT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BC-3 ICS-REAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BC-4 VERDICT-DRIVEN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BC-5 COVERAGE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BC-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

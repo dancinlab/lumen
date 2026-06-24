@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Band fleet → SSMB synthesis boundary, fleet depleted (H_047).** Applying the compact SSMB-Compton
+  synthesis (H_043-046) to every no-incumbent band (THz, EUV, water window, hard X-ray, nuclear gamma)
+  splits them into two regimes by the achievable micro-bunch length (σ_z ~ 3 nm): the **SSMB-coherent**
+  (N² CW) regime covers λ ≳ ~10 nm (THz b²=1.0, EUV b²=0.14) — exactly where EUV-litho's extreme flux
+  lives — while the shorter bands (b²→0, too short to micro-bunch) fall to plain **incoherent inverse-
+  Compton**, which is **already real today** (Lyncean / HIGS / ELI-NP) and suffices at their lower flux
+  needs. So the SSMB coherent-CW breakthrough is **targeted, not universal** — it matters only at the one
+  high-flux band. Per-band verdict stays requirement-driven (H_040); only EUV-litho is terminal-thin. Band
+  fleet depleted (band-space mapped into two regimes, no new physics). Counts (qa.py): 46 verified 🟢 · 1 🔴 · 10 🜂.
+
 - **Continue → micro-bunching feasibility (H_046): the one milestone is physics-ALLOWED.** Closed-form
   check of the single gating milestone (H_045): coherent 13.5 nm needs a bunch length below the wavelength,
   and at the published SSMB-EUV design target σ_z ~ 3 nm the bunching factor b = exp(−½(2πσ_z/λ)²) ≈ 0.38

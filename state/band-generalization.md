@@ -52,3 +52,20 @@ exists**. So M10 sharpens: the engine is the no-incumbent market's natural sourc
 conventional choice is set by the application's flux requirement, and EUV litho is simply the most
 demanding rung. **'다음' (other bands) depleted** — the census is complete and the verdict-driver is
 identified; further bands only re-apply the same requirement-driven rule.
+
+## SSMB synthesis boundary across bands (H_047, band-fleet)
+Applying the compact SSMB-Compton synthesis (H_043-046) to every no-incumbent band splits them into
+two regimes by the achievable micro-bunch length (σ_z ~ 3 nm):
+```
+band            λ        b²      regime           verdict        exists today
+─────────────   ──────   ─────   ──────────────   ────────────   ──────────────
+THz gap         300µm    1.00    SSMB-coherent    wins           synchrotron THz-FEL
+EUV litho       13.5nm   0.14    SSMB-coherent    terminal-thin  none (SSMB-EUV concept)
+water window    3nm      ~0      incoherent-ICS   works          synchrotron only
+hard X-ray      0.1nm    ~0      incoherent-ICS   real-today     Lyncean compact ICS
+nuclear gamma   ~5pm     ~0      incoherent-ICS   real-today     HIGS / ELI-NP
+```
+**The SSMB coherent-CW breakthrough is TARGETED, not universal:** it applies at λ≳~10nm (THz, EUV) — exactly
+where EUV-litho's extreme flux lives — and is unnecessary at the shorter bands, which fall to plain incoherent
+inverse-Compton that is **already real** (Lyncean/HIGS/ELI) and suffices at their lower flux needs. Band fleet
+depleted: the band-space is mapped into two regimes, the verdict stays requirement-driven (H_040), no new physics.
