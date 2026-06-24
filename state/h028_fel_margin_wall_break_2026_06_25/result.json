@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "fel_margin_cooled": 2.0,
+    "ic_needs_pierce": false,
+    "crossover_2pct": 0.018103866990231674,
+    "crossover_3pct": 0.028770644761631603,
+    "n_independent_lenses": 3
+  },
+  "falsifiers": [
+    {
+      "name": "F-FB-1 COOLING",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FB-2 IC-SIDESTEP",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FB-3 ACCEPTANCE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FB-4 MULTI-LENS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FB-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

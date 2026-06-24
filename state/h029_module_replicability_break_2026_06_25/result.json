@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "replicable_fraction": 0.7,
+    "bespoke_fraction": 0.3,
+    "crossover_units": 5.636811289950308,
+    "drive_fiber_combined": true,
+    "n_independent_lenses": 3
+  },
+  "falsifiers": [
+    {
+      "name": "F-MR-1 STANDARD-PARTS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MR-2 SMALL-BATCH",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MR-3 FIBER-PATH",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MR-4 MULTI-LENS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MR-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

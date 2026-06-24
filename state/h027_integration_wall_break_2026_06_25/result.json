@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "min_subsystem_trl": 4,
+    "precedent_integrated": true,
+    "s2e_sim": true,
+    "n_independent_lenses": 3
+  },
+  "falsifiers": [
+    {
+      "name": "F-IN-1 NO-INVENTION",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IN-2 PRECEDENT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IN-3 S2E",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IN-4 MULTI-LENS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IN-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

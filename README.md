@@ -63,7 +63,12 @@ with all shared physics in a single deterministic harness.
   power, undulator/inverse-Compton, ERL, cost-of-ownership, falsifier ledger).
 - `state/` — per-hypothesis runs + result.json, pillar notes, brainstorms, meta-laws.
 
-**Status:** 19 verified 🟢 (all deterministic, 4–5/5 falsifiers PASS) + 10 abstract 🜂.
+**Status:** 29 verified 🟢 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
+are **sourced against published data** (`state/sourced-parameters.md`, H_026): the core values are
+real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), with three optimistic links honestly
+corrected (all "harder, not easier"). The three self-found weaknesses (integration, the thin FEL
+margin, module replicability) are each attacked by ≥3 independent break-walls lenses (H_027/028/029)
+— reopenable, not terminal, though not retired (each lens names an escape, not a build).
 The abstraction lane peeled meta-laws **M1–M9** (`state/euv-meta-laws.md`); the fleet
 loop closed three times (a frozen meta-law prediction → a verified hypothesis: P4→H_013,
 flux-verdict→H_016, Q3→H_019).

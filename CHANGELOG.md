@@ -4,6 +4,20 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Real-data re-verification + break the 3 self-found weaknesses (multi-lens).** Sourced the key
+  parameters against published data (`state/sourced-parameters.md`): the campaign's CORE inputs are
+  real (Mo/Si 70%, LPP 205–250 W, CE 4–5%, scanner ~1.17 MW, **~0.02% wall-plug** — a direct anchor,
+  EUV tool $200–400 M, throughput ≥135 WPH) — **H_026** records this plus three honest CORRECTIONS
+  (best La/B 0.58 → 6.5 nm optics wall ~8× not 14×; demonstrated 46.9 nm XRL gL≈8.3 < 14 saturation →
+  recombination route harder; raw LPA σγ/γ often several % → FEL needs cooling) — every correction is
+  "harder, not easier," and the physics-wall conclusions hold. Then broke the three honest weaknesses
+  by break-walls multi-lens (each ≥3 independent lenses): **H_027** integration wall → bounded
+  engineering (subsystems standalone-demonstrated, synchrotron/FEL precedent, start-to-end sim);
+  **H_028** FEL thin-margin → 3 escapes (cooling 2.0×, inverse-Compton sidesteps σ<ρ, larger ERL
+  acceptance pushes the ρ-trap crossover 1.81%→2.88%); **H_029** module replicability → bounded leap
+  (~70% standard parts, ~6-unit crossover, fiber-combining drive; risk concentrates on a ~30% bespoke
+  minority). Sourced via WebSearch. Registry: 29 verified 🟢 + 10 abstract 🜂.
+
 - **Deepen the combination breakthrough to depletion** (goal: "tabletop accelerator + @ combination
   + deepen-to-depletion"). **H_023** — the H_022 levers co-exist on one beam: the cooled beam sits
   inside the FEL Pierce bandwidth (margin 1.18×) and the post-FEL beam inside the ERL acceptance

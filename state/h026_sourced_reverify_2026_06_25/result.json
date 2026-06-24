@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "mult_measured": 7.913534698725049,
+    "bbu_margin": 50.0,
+    "xrl_gl_meas": 8.28,
+    "xrl_saturates_demo": false,
+    "core_confirmed": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-SR-1 OPTICS-HOLDS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SR-2 BBU-HOLDS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SR-3 XRL-CORRECTED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SR-4 CORE-CONFIRMED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SR-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
