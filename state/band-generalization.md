@@ -33,3 +33,22 @@ emitter.** Falsifiable: name a band with NO stable compact emitter that the acce
 dial cannot reach below ~10 GeV — none is known across THz→hard-X-ray. The EUV campaign is M10 evaluated
 at the 13.5 nm rung; the same verdict structure (dial free · flux wall · conventional form robust)
 recurs at every other rung.
+
+## Band verdict census — the compact verdict is REQUIREMENT-driven (H_040, '다음' depletion)
+The EUV verdict (compact-coherent = terminal-thin, conventional = robust) does NOT generalize —
+it is driven by the *application's flux requirement*, not the wavelength:
+```
+band            energy     flux need   compact-path verdict
+─────────────   ────────   ─────────   ──────────────────────
+THz gap         3.4 MeV    modest      WINS (slice-spread irrelevant at long λ, low-E cheap)
+EUV litho       511 MeV    EXTREME     terminal-thin  ← the outlier (campaign)
+water window    1.08 GeV   moderate    WORKS (bio imaging, lower bar than litho)
+hard X-ray      5.94 GeV   moderate    REAL — Lyncean-class compact ICS exists today
+nuclear gamma   ~50 MeV    low         REAL — HIGS / ELI-NP compact ICS gamma exist today
+```
+**EUV-litho is the outlier:** only its extreme in-band flux (~100 W) + tight slice-spread make the
+compact path terminal-thin. Everywhere else the wavelength-agnostic engine **wins, works, or already
+exists**. So M10 sharpens: the engine is the no-incumbent market's natural source; the compact-vs-
+conventional choice is set by the application's flux requirement, and EUV litho is simply the most
+demanding rung. **'다음' (other bands) depleted** — the census is complete and the verdict-driver is
+identified; further bands only re-apply the same requirement-driven rule.
