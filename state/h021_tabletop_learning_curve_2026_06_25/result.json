@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "compact_n1": 1.5,
+    "compact_n10": 0.874230603490197,
+    "compact_n100": 0.509519432052556,
+    "crossover_units": 5.636811289950308,
+    "lpp_tool": 1.0,
+    "synchrotron_capex": 4.0
+  },
+  "falsifiers": [
+    {
+      "name": "F-LC-1 CROSSOVER",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LC-2 DESCENT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LC-3 BEATS-LPP",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LC-4 SYNCH-STUCK",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LC-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

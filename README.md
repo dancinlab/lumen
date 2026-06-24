@@ -30,8 +30,13 @@ Framing claim                     lumen verdict (19 verified hypotheses)
 - **The wall is flux (average power), not wavelength** (H_008/H_005), and flux has
   **no brightness/Liouville ceiling for a coherent source** (H_016) — only
   efficiency + waste-heat (the M8 floor) survive.
-- **Front-runner: ERL+FEL** (de-risked, ~200 W compact); **dark horse: a
-  recombination EUV laser** (H_017, intrinsically narrow, undulator-free).
+- **The answer: the tabletop (compact laser-plasma) accelerator, in combination.**
+  No single lever wins, but the stack **LPA + ERL + FEL + cooling + module-array**
+  clears every campaign wall at once — flux floor (~200 W), CAPEX (< LPP at ~10
+  modules), and wavelength tunability — and each lever is necessary (H_022). It is
+  the route that wins the CAPEX terminal wall via the M7 learning curve (H_021),
+  which a monolithic synchrotron cannot ride. Dark horse: a recombination EUV laser
+  (H_017, intrinsically narrow, undulator-free).
 - **Economics is a conjunction** (H_019): a compact coherent source beats LPP
   $/wafer-layer only with efficiency η ≥ ~4× *and* amortization across ≥ ~3
   scanners — neither lever alone — and never below the M8 waste-heat floor.

@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Revive the tabletop accelerator + combination wall-breakthrough** (goal: "tabletop accelerator
+  + @ combination"). **H_021** — the compact (tabletop laser-plasma) accelerator wins the CAPEX
+  terminal wall via the M7 learning curve: small replicable modules ride a Wright's-law curve and
+  cross below LPP tool CAPEX at ~6 units, while a monolithic synchrotron (no replication) stays stuck
+  at ~4×. **H_022 (capstone)** — the COMBINATION (LPA + ERL + FEL + cooling + module-array) clears
+  every campaign wall at once: flux floor (~200 W), CAPEX (0.87 < LPP), and wavelength tunability —
+  and each lever is necessary (drop FEL → 2 W, drop array → 1.5×). Added `wright_unit_cost` to
+  `tool/lumen_optics.py`; updated ARCHITECTURE compact-accelerator node (FRONT-RUNNER) + README
+  (the answer = the tabletop accelerator in combination). Registry: 22 verified 🟢 + 10 abstract 🜂.
+
 - **Settle the campaign's last open unknown (H_020).** Real-units cost-of-ownership with public-order
   figures (2nd-gen EUV tool ~$350M, maintenance ~1/4 tool/yr, ~1 MW wall-plug, $0.10/kWh) shows the
   M8 energy + waste-heat term is **~0.5% of LPP cost-of-ownership** — CAPEX + maintenance dominate
