@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "lambda_at_GeV": {
+      "0.5GeV": 11.750396710549612,
+      "1GeV": 2.937599177637403,
+      "2GeV": 0.7343997944093508,
+      "5GeV": 0.11750396710549611,
+      "10GeV": 0.029375991776374028
+    },
+    "energy_3nm_gev": 0.9895452116397383,
+    "energy_1nm_gev": 1.7139425829465245,
+    "energy_0p1nm_gev": 5.419962340863083,
+    "inv_square_ratio": 0.25
+  },
+  "falsifiers": [
+    {
+      "name": "F-WR-1 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-WR-2 INVERSE-SQUARE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-WR-3 SINGLE-STAGE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-WR-4 FEW-STAGE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-WR-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
