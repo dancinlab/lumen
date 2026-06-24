@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "required_w": 166.66666666666666,
+    "lpa_now_w": 0.001,
+    "lpa_pushed_w": 0.09999999999999999,
+    "gap_now": 166666.66666666666,
+    "gap_pushed": 1666.6666666666667
+  },
+  "falsifiers": [
+    {
+      "name": "F-FLX-1 WALL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FLX-2 SEVERE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FLX-3 REP-LEVER",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FLX-4 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-FLX-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

@@ -168,6 +168,33 @@ def hvm_throughput_wph(source_power_w: float, ref_power_w: float, ref_wph: float
     return ref_wph * source_power_w / ref_power_w
 
 
+def power_for_throughput(target_wph: float, ref_power_w: float, ref_wph: float) -> float:
+    """Inverse of hvm_throughput_wph: in-band power (W) needed for target WPH."""
+    if ref_wph <= 0:
+        raise ValueError(f"ref_wph must be > 0: {ref_wph}")
+    return ref_power_w * target_wph / ref_wph
+
+
+def average_power(rep_rate_hz: float, pulse_energy_j: float) -> float:
+    """Average power (W) of a pulsed source = rep rate * energy per pulse."""
+    return rep_rate_hz * pulse_energy_j
+
+
+def undulator_natural_linewidth(harmonic: int, n_periods: int) -> float:
+    """Relative spectral width of an ideal undulator line ~ 1/(n*N)."""
+    if harmonic < 1 or n_periods < 1:
+        raise ValueError(f"bad harmonic/n_periods: {harmonic}, {n_periods}")
+    return 1.0 / (harmonic * n_periods)
+
+
+def energy_spread_broadening(sigma_gamma_rel: float) -> float:
+    """Relative undulator-line broadening from electron energy spread:
+    delta_lambda/lambda ~ 2 * (sigma_gamma/gamma)."""
+    if sigma_gamma_rel < 0:
+        raise ValueError(f"sigma must be >= 0: {sigma_gamma_rel}")
+    return 2.0 * sigma_gamma_rel
+
+
 # --- falsifier harness --------------------------------------------------------
 
 @dataclass

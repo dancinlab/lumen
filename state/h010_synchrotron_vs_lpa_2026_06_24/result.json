@@ -1,0 +1,34 @@
+{
+  "metrics": {
+    "footprint_ratio": 200.0,
+    "sync_cost_in_euv_tools": 4.285714285714286,
+    "sync_meets_hvm": true,
+    "lpa_meets_hvm": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-SYN-1 FOOTPRINT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SYN-2 COST",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SYN-3 TRADE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SYN-4 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 4,
+  "n_total": 4,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

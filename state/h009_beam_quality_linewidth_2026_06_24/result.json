@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "sigma_gamma_rel": 0.01,
+    "natural_n1": 0.01,
+    "broadening": 0.02,
+    "total_n1": 0.022360679774997897,
+    "natural_n3": 0.0033333333333333335,
+    "total_n3": 0.020275875100994066,
+    "euv_inband_bw": 0.02
+  },
+  "falsifiers": [
+    {
+      "name": "F-BQ-1 DOMINATE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BQ-2 OVERFILL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BQ-3 HARMONIC",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BQ-4 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BQ-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
