@@ -4,6 +4,15 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Docs cleanup — README consolidated to the current-state SSOT.** Fixed a broken Status line (an
+  incremental-edit artifact had duplicated "+ 10 abstract 🜂" and the determinism fragment); brought
+  the "answer" section current with the **final 8-rank source-architecture ranking** (① conventional
+  ERL FEL · ② SSMB · ③ compact SSMB-Compton · ④–⑧), the **one-shared-gate** convergence of the two
+  novel paths (H_048), the **honest in-silico terminus** (H_049 — closed-form complete, only physical
+  experiment remains), and the **fresh-literature corroboration** (H_050); corrected the meta-law
+  count M1–M9 → **M1–M10**. No content invented — drift removed, SSOT made current. qa.py unchanged
+  (49🟢 · 1🔴 · 10🜂, 50/50 deterministic).
+
 - **Fresh-literature reference-match (H_050) — the campaign frontier is corroborated by 2025-26 arXiv.** A
   `sidecar research arxiv` sweep grounded the verified conclusions in the freshest work (`state/research-arxiv-2026.md`):
   the latest accelerator-light-source paper, **Stochastic Cooling Enhanced SSMB** (X. Deng, arXiv:2512.09399,
