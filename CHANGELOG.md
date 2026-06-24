@@ -4,6 +4,15 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Settle the campaign's last open unknown (H_020).** Real-units cost-of-ownership with public-order
+  figures (2nd-gen EUV tool ~$350M, maintenance ~1/4 tool/yr, ~1 MW wall-plug, $0.10/kWh) shows the
+  M8 energy + waste-heat term is **~0.5% of LPP cost-of-ownership** — CAPEX + maintenance dominate
+  (~99.5%). So the M8 waste-heat thermodynamic floor is REAL but **economically negligible** (~200×
+  below LPP all-in cost): NOT the decision wall. **The binding economic wall is CAPEX-per-wafer —
+  M7 learning curve + M9 amortization.** Updates the `state/euv-meta-laws.md` economic verdict and
+  the README terminal-wall note (the source problem is, at bottom, a CAPEX/volume question — not
+  wavelength, not flux, not waste-heat). Registry: 20 verified 🟢 + 10 abstract 🜂.
+
 - Run a fleet-full cycle on the **economic terminal question** (after flux was shown reopenable):
   the abstraction lane peeled the economics to meta-laws **M6–M9** (`state/euv-meta-laws.md`:
   η–coherence coupling · CAPEX–footprint/learning-curve · **M8 Landauer waste-heat OPEX floor =

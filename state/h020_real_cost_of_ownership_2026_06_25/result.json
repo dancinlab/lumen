@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "capex_annual_musd": 70.0,
+    "maint_annual_musd": 87.5,
+    "energy_total_musd": 0.7665,
+    "coo_annual_musd": 158.2665,
+    "m8_energy_fraction": 0.004843096928282359,
+    "capex_maint_fraction": 0.9951569030717177
+  },
+  "falsifiers": [
+    {
+      "name": "F-M8-1 NEGLIGIBLE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-M8-2 CAPEX-DOMINANT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-M8-3 ORDERING",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-M8-4 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-M8-5 M8-REAL",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

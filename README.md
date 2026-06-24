@@ -82,6 +82,11 @@ lumen/
 Verified `H_0xx` are closed-form public-physics relations with representative
 parameters (each card lists its honest limits); they bound *requirements and
 scaling*, not vendor performance. Abstract `H_A*/H_B*` and meta-laws are unverified
-coordinates (🜂), not claims. The one true ceiling found is **M8** — the 2nd-law
-waste-heat OPEX floor; whether it sits above or below LPP's all-in cost is the single
-remaining decision-relevant unknown.
+coordinates (🜂), not claims.
+
+**Where the terminal wall actually sits (settled, H_020):** the one true *physical*
+ceiling is **M8** (the 2nd-law waste-heat floor) — but with real-units cost-of-ownership
+it is only **~0.5% of LPP cost-of-ownership**, economically negligible. The binding wall
+is **CAPEX-per-wafer** — attacked by **M7** (learning curve / mass-produced modules) and
+**M9** (amortization across scanners). Not wavelength, not flux, not waste-heat: the
+next-generation source problem is, at bottom, a **CAPEX / volume** question.

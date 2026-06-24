@@ -104,7 +104,11 @@ intrinsic M6, but unverified at 167 W).
 - **Q3 (terminal):** compact coherent beats LPP $/wafer-layer only when η ≥ Q1 **AND** amortized across
   M≥~3 scanners — a *conjunction*, neither lever alone. → built as **H_019**.
 
-**Economic verdict (🜂):** reopenable down to the **M8 waste-heat asymptote** (M6 efficiency + M7/M9
-amortization are reopenable engineering/volume levers; M8 is the one true ceiling). Whether the M8
-asymptote sits above or below LPP's all-in $/wafer-layer is the single decision-relevant unknown —
-settled by the Q3 cost-of-ownership spreadsheet (H_019), not by more physics.
+**Economic verdict:** reopenable down to the **M8 waste-heat asymptote** (M6 efficiency + M7/M9
+amortization are reopenable engineering/volume levers; M8 is the one true ceiling). **M8-vs-LPP
+SETTLED (H_020, real-units):** the M8 energy + waste-heat term is **~0.5% of LPP cost-of-ownership**
+— CAPEX + maintenance dominate (~99.5%). So the M8 thermodynamic floor is REAL but **economically
+negligible** (~200× below LPP all-in cost); it is NOT the decision wall. **The binding economic wall
+is CAPEX — i.e. M7 (learning curve / mass-produced modules) + M9 (amortization across scanners).**
+The campaign's terminal question is fully localized: not wavelength, not flux, not waste-heat — it is
+**CAPEX-per-wafer**, attacked by volume (learning curve) and utilization (multi-scanner amortization).
