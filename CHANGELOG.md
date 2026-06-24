@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **In-silico completion audit (H_049) — the closed-form frontier is complete.** Goal: confirm everything
+  that can be done closed-form is done. Audited the 10 abstract 🜂 conjectures: **8 are subsumed** by a later
+  verified hypothesis (the verified chain absorbed the early ideas — e.g. cavity-ICS→H_033/034/035,
+  micro-SASE FEL→H_023/038, all-optical EUV→H_042-refuted, narrow-line→H_017) and **2 are experiment-gated**
+  (H_B2 resist materials, H_B5 Geiger-mode photon-counting metrology — not in-silico resolvable by nature).
+  With verification complete (qa.py 47/47 deterministic + verdict-matched), sourcing as-of-stamped, and the
+  breakthrough chain deepened to the single physics-allowed experimental milestone (H_045/046/048), the
+  in-silico frontier is COMPLETE — the only remaining work is physical experiment (13.5 nm micro-bunching
+  demo + resist). Counts (qa.py): 48 verified 🟢 · 1 falsified 🔴 · 10 abstract 🜂.
+
 - **rank2,3 assault fleet → the two novel paths share one gate (H_048).** A focused `/fleet` deep-dive of
   the two novel architectures (rank-2 SSMB undulator, rank-3 compact SSMB-Compton) found they converge on
   the SAME single milestone: steady-state micro-bunching at 13.5 nm precision (σ_z~3 nm → b²~0.14,

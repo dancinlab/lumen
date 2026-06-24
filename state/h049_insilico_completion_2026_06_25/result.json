@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "n_abstract": 10,
+    "n_subsumed": 8,
+    "n_experiment_gated": 2,
+    "all_classified": true,
+    "qa_pass": 47,
+    "qa_total": 47
+  },
+  "falsifiers": [
+    {
+      "name": "F-IS-1 ALL-CLASSIFIED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IS-2 MOST-SUBSUMED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IS-3 GATED-ARE-MATERIALS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IS-4 VERIFICATION-COMPLETE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IS-5 FRONTIER-IS-EXPERIMENT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-IS-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
