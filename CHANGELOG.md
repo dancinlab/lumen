@@ -4,6 +4,21 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Fleet (4-lane source+verify) → funded-reality reference-match (H_030).** A `/fleet`
+  Workflow ran 4 lanes (accel-source · econ-source · lens-verify · prior-art) against
+  published/funded data (`state/sourced-parameters.md` fleet section). Outcome: the
+  accelerator-driven FEL EUV *direction* is real and funded (xLight ≤$150M CHIPS LOI +
+  2028 prototype + one source→~20 scanners; KEK 10 kW ERL), validating the campaign —
+  but **H_030** records three honest corrections: the funded **driver is a conventional
+  ERL, not the tabletop LPA** emphasized; the funded **economic lever is M9-amortization,
+  not the M7 module-array** (H_021); and **13.5 nm-on-LPA + single-pass cooling are
+  undemonstrated** (LPA-FEL floor ~25 nm; OSC is storage-ring only → H_028's cooling lens
+  is aspirational). The LPA-EUV-FEL concept predates lumen (Nakajima 2014) → not novel.
+  Robust restatement: the answer is xLight-shaped (shared ERL amortized across scanners),
+  with tabletop-LPA the longer-horizon variant. Wright 0.85 is the aggressive end (0.90
+  typical → H_021 survives only if first-unit < 2× mature); energy ~1% confirms M8
+  negligible. Registry: 30 verified 🟢 + 10 abstract 🜂. (lens-verify lane errored — relaunched.)
+
 - **Real-data re-verification + break the 3 self-found weaknesses (multi-lens).** Sourced the key
   parameters against published data (`state/sourced-parameters.md`): the campaign's CORE inputs are
   real (Mo/Si 70%, LPP 205–250 W, CE 4–5%, scanner ~1.17 MW, **~0.02% wall-plug** — a direct anchor,
