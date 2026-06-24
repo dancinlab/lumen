@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "bunching_factor": 0.3772769509544543,
+    "coherent_fraction_b2": 0.14233789772148972,
+    "sigma_z_target_nm": 3.0,
+    "required_nm": 13.5,
+    "physics_allowed": true,
+    "euv_precision_demonstrated": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-MB-1 SHORT-ENOUGH",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MB-2 SUBSTANTIAL-COHERENCE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MB-3 PHYSICS-ALLOWED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MB-4 HONEST-UNDEMO",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-MB-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

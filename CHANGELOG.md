@@ -4,6 +4,15 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Continue → micro-bunching feasibility (H_046): the one milestone is physics-ALLOWED.** Closed-form
+  check of the single gating milestone (H_045): coherent 13.5 nm needs a bunch length below the wavelength,
+  and at the published SSMB-EUV design target σ_z ~ 3 nm the bunching factor b = exp(−½(2πσ_z/λ)²) ≈ 0.38
+  gives a coherent fraction b² ≈ 0.14 — a substantial N² enhancement. No forbidding floor sits above the
+  few-nm target, so EUV-precision steady-state micro-bunching is **hard engineering, not forbidden physics**.
+  The compact-coherent-EUV risk drops from "maybe impossible" to "demonstrate it"; the closed-form lab hands
+  off to experiment. Honest residual: allowed ≠ demonstrated (needs strong modulation + low spread together).
+  Counts (qa.py): 45 verified 🟢 · 1 falsified 🔴 · 10 abstract 🜂.
+
 - **Continue → risk localization capstone (H_045).** After H_043 (power) and H_044 (footprint), the
   compact SSMB-Compton path addresses all four mapped walls — wavelength (free dial + Compton at MeV),
   beam quality (Compton slice-spread-immunity), footprint (7 MeV metre-scale ring), power (SSMB coherent-N²
