@@ -104,3 +104,10 @@ coherent (P~N², ~1e6×) CW radiation from a reused beam. Tsinghua SSMB-EUV targ
 for lithography (arXiv:2110.08987; Sci Rep s41598-022-07323-z). Mechanism **proof-of-principle demonstrated**
 (Deng/Tang/Chao, *Nature* 2021, at the Metrology Light Source, Berlin). 🜂 status: breaks the accelerator
 POWER wall; residual = still a ring facility (footprint), 13.5 nm kW output undemonstrated. (DECAYS — re-source.)
+
+## Compact SSMB-Compton (as-of 2026-06, H_044)
+The compact SSMB-EUV variant: a **7 MeV micro-bunched beam + CO₂-laser Compton scattering** reaching
+**13-14 nm** (Tsinghua SSMB-EUV compact concept, surfaced in the SSMB-EUV literature). At 7 MeV the
+bending radius is ~2.3 cm (1 T) → a metre-scale ring, ~73× lower energy than the 511 MeV undulator path.
+🜂 status: breaks the footprint wall; residual = the Compton flux tax (enhancement cavity) + 13.5 nm kW
+undemonstrated. (DECAYS — re-source.)
