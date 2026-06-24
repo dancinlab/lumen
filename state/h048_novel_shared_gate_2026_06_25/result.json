@@ -1,0 +1,47 @@
+{
+  "metrics": {
+    "both_share_gate": true,
+    "b2_at_3nm": 0.142,
+    "compton_tax": 50.0,
+    "ssmb_undulator_tax": 1.0,
+    "components_demonstrated": 3,
+    "euv_joint_demonstrated": false,
+    "shared_milestone": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-CG-1 SHARED-GATE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CG-2 PHYSICS-ALLOWED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CG-3 RANK3-EXTRA-TAX",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CG-4 COMPONENTS-DEMO",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CG-5 JOINT-UNDEMO",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CG-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

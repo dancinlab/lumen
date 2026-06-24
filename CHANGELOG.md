@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **rank2,3 assault fleet → the two novel paths share one gate (H_048).** A focused `/fleet` deep-dive of
+  the two novel architectures (rank-2 SSMB undulator, rank-3 compact SSMB-Compton) found they converge on
+  the SAME single milestone: steady-state micro-bunching at 13.5 nm precision (σ_z~3 nm → b²~0.14,
+  physics-allowed, undemonstrated). The components are individually demonstrated (SSMB mechanism PoP Nature
+  2021 at longer λ; Compton X-ray/gamma real via Lyncean/HIGS/ELI ~1e13 ph/s; IR enhancement cavities
+  finesse 1e4-1e5 routine) — only the EUV-precision joint operating point is missing. The rank2-vs-rank3
+  trade: rank3 (7 MeV tabletop) pays the Compton bandwidth-collection flux tax (~50× derate) that rank2
+  (511 MeV undulator, bigger ring) avoids. So ONE experiment — demonstrate 13.5 nm micro-bunching — de-risks
+  both novel paths. Counts (qa.py): 47 verified 🟢 · 1 🔴 · 10 🜂.
+
 - **Architecture final ranking — light-source node re-ranked (ARCHITECTURE.json).** Replaced the
   accreted compact-accelerator cell with a clean 8-rank ordering of the EUV-litho source architectures,
   reflecting the full verified campaign: 1) shared conventional ERL FEL (funded, xLight/KEK, M9-amortized,

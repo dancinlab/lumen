@@ -69,3 +69,11 @@ nuclear gamma   ~5pm     ~0      incoherent-ICS   real-today     HIGS / ELI-NP
 where EUV-litho's extreme flux lives — and is unnecessary at the shorter bands, which fall to plain incoherent
 inverse-Compton that is **already real** (Lyncean/HIGS/ELI) and suffices at their lower flux needs. Band fleet
 depleted: the band-space is mapped into two regimes, the verdict stays requirement-driven (H_040), no new physics.
+
+## The two novel paths share one gate (H_048, rank2,3 assault)
+Rank-2 SSMB (undulator) and rank-3 compact SSMB-Compton both gate on the SAME milestone — steady-state
+micro-bunching at 13.5 nm precision (σ_z~3nm → b²~0.14, physics-allowed, undemonstrated). Components are
+individually demonstrated (SSMB mechanism Nature 2021; Compton real via Lyncean/HIGS/ELI ~1e13 ph/s; IR
+cavity finesse 1e4-1e5); only the EUV-precision JOINT operating point is missing. Trade: rank3 (7 MeV,
+tabletop) pays the Compton bandwidth-collection flux tax (~50× derate, H_036) that rank2 (511 MeV undulator,
+bigger ring) avoids. **One experiment — demonstrate 13.5 nm steady-state micro-bunching — de-risks both.**
