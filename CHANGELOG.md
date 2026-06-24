@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Novel breakthrough on the accelerator power wall — Steady-State MicroBunching (H_043).** Asked to
+  break the accelerator wall with a NOVEL mechanism, surfaced **SSMB** — a third accelerator architecture
+  (beyond compact-LPA and single-pass FEL): a storage ring micro-bunched at the radiation wavelength every
+  turn radiates coherently (P ~ N², ~1e6× over the incoherent ring) and, because the ring reuses the beam
+  continuously, delivers that power CW (~1 kW at 13-14 nm, ≥10× the HVM floor). Mechanism proof-of-principle
+  demonstrated (Deng/Tang/Chao, *Nature* 2021, at the MLS Berlin); Tsinghua SSMB-EUV targets litho power
+  (arXiv:2110.08987). It is the missing middle — coherent average power from a reused ring beam — and breaks
+  the accelerator power wall. Honest residual: still a ring facility (footprint wall remains) and 13.5 nm kW
+  SSMB undemonstrated. Counts (qa.py): 42 verified 🟢 · 1 falsified 🔴 · 10 abstract 🜂 · 43/43 deterministic.
+
 - **Close gap top-3 (cross-tool · landscape · ssot) + add the qa.py SSOT (H_041/042 + tool/qa.py).**
   A `/gap` 40-lens sweep surfaced gaps; a 3-lane fleet closed the top 3. **#1 cross-tool/byzantine (H_041):**
   the 5 load-bearing numbers, re-derived independently inline, match the shared harness to 1e-9 → byzantine-clean;

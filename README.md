@@ -15,7 +15,7 @@ one wavelength: EUV is the first instance, not the boundary.
 engineering / volume problem, reopenable down to one thermodynamic floor.**
 
 ```
-Framing claim                     lumen verdict (41 verified hypotheses)
+Framing claim                     lumen verdict (42 verified hypotheses)
 ─────────────────────────         ───────────────────────────────────────
 "no alternative beyond EUV"   →   wavelength has NO floor (H_011: λ ~ 1/E²)
                               →   the wall is FLUX, and flux is NOT a physics
@@ -55,6 +55,15 @@ Framing claim                     lumen verdict (41 verified hypotheses)
 - **Economics is a conjunction** (H_019): a compact coherent source beats LPP
   $/wafer-layer only with efficiency η ≥ ~4× *and* amortization across ≥ ~3
   scanners — neither lever alone — and never below the M8 waste-heat floor.
+- **Novel breakthrough on the accelerator power wall — SSMB** (H_043): Steady-State
+  MicroBunching is a *third* accelerator architecture beyond compact-LPA and single-pass FEL —
+  a storage ring micro-bunched at the radiation wavelength **every turn**, radiating coherently
+  (P ~ N², ~1e6×) and, because the ring **reuses the beam continuously**, delivering that power
+  **CW** (~1 kW at 13-14 nm, ≥10× the HVM floor). The mechanism is **proof-of-principle
+  demonstrated** (Tsinghua/MLS, *Nature* 2021). It is the missing middle — coherent average power
+  without the FEL's dumped beam — and **breaks the accelerator power wall**. Honest residual: still
+  a ring (footprint wall remains, so it rivals the FEL on footprint, not the compact LPA), and
+  13.5 nm kW SSMB is undemonstrated.
 - **Generalization — EUV is the first instance, not the boundary** (H_039, meta-law M10):
   the dial λ ∝ 1/γ² makes one accelerator + undulator/ICS span **THz (3.4 MeV) → EUV (511 MeV) →
   water window (1.08 GeV) → hard X-ray (5.94 GeV)** — 6.5 orders of magnitude by electron energy
@@ -81,7 +90,7 @@ with all shared physics in a single deterministic harness.
   power, undulator/inverse-Compton, ERL, cost-of-ownership, falsifier ledger).
 - `state/` — per-hypothesis runs + result.json, pillar notes, brainstorms, meta-laws.
 
-**Status:** 41 verified 🟢 + 1 falsified 🔴 + 10 abstract 🜂 (counts computed by `tool/qa.py`, never hand-copied) (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
+**Status:** 42 verified 🟢 + 1 falsified 🔴 + 10 abstract 🜂 (counts computed by `tool/qa.py`, never hand-copied) (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
 are **sourced against published data** (`state/sourced-parameters.md`, H_026): the core values are
 real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), with three optimistic links honestly
 corrected (all "harder, not easier"). The three self-found weaknesses (integration, the thin FEL

@@ -1,0 +1,47 @@
+{
+  "metrics": {
+    "coherent_enhancement": 1000000.0,
+    "floor_margin": 10.0,
+    "steady_state_cw": true,
+    "novel_third": true,
+    "mechanism_demonstrated": true,
+    "footprint_compact": false,
+    "euv_kw_demonstrated": false
+  },
+  "falsifiers": [
+    {
+      "name": "F-SS-1 COHERENT-N2",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SS-2 STEADY-STATE-CW",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SS-3 CLEARS-FLOOR",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SS-4 NOVEL-THIRD",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SS-5 MECHANISM-DEMO",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SS-6 HONEST-RESIDUAL",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

@@ -97,3 +97,10 @@
 
 ## Breakthrough — inverse-Compton sidesteps the slice-spread wall (🜂, H_033)
 The slice-spread wall (H_031/032) is **FEL-gain-specific**. The orthogonal gain-free mechanism — **inverse-Compton scattering** — reaches 13.5 nm with **~2.2 MeV** (λ_x = λ_L/4γ², 1 µm laser), ≈455× less beam energy than an undulator FEL, with **no Pierce/Ming-Xie condition**, so a 0.5% slice spread only broadens the line to ~1% (within the ~2% mirror passband). The compact-source-at-13.5 nm question **reopens**; the wall **relocates to average power (flux)**, which the campaign classified as reopenable (H_016, no Liouville ceiling). **Honest residual:** ICS-EUV at lithography in-band power is undemonstrated (RadiaBeam X-ray pilot; TU Eindhoven coherent-ICS research; power "very small"). So this breaks the *slice-spread* wall, not the whole problem — the new front is ICS flux.
+
+## NOVEL accelerator path — SSMB (as-of 2026-06, H_043)
+Steady-State MicroBunching: storage-ring beam micro-bunched at the radiation wavelength every turn →
+coherent (P~N², ~1e6×) CW radiation from a reused beam. Tsinghua SSMB-EUV targets **~1 kW at 13-14 nm**
+for lithography (arXiv:2110.08987; Sci Rep s41598-022-07323-z). Mechanism **proof-of-principle demonstrated**
+(Deng/Tang/Chao, *Nature* 2021, at the Metrology Light Source, Berlin). 🜂 status: breaks the accelerator
+POWER wall; residual = still a ring facility (footprint), 13.5 nm kW output undemonstrated. (DECAYS — re-source.)
