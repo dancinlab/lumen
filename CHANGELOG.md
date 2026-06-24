@@ -4,6 +4,17 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Two CERN-style LaTeX architecture papers (state/papers/).** At user request ("demiurge의 CERN처럼"),
+  reference-matched demiurge/PAPERS/cern-accelerator's package style (article 11pt + natbib + tikz +
+  siunitx + Makefile + PAPER.md) and authored TWO papers — because ranks 2 and 3 are genuinely different
+  machines: **ssmb-undulator-euv** (Architecture I, rank 2, ~511 MeV storage-ring coherent-CW undulator)
+  and **ssmb-compton-euv** (Architecture II, rank 3, ~7 MeV metre-scale slice-immune Compton). Each is
+  self-contained, grounded in the verified hypotheses, and cross-cites the SHARED experimental gate
+  (steady-state microbunching at 13.5 nm, H_048) so the unifying finding is preserved in both. Both
+  compile clean with pdflatex (192K / 188K PDFs, 5/5 citations resolved each). Supersedes the earlier
+  single combined draft (canonical-naming: in-place restructure, no stale combined file). qa.py
+  unchanged (49🟢·1🔴·10🜂).
+
 - **Paper draft — "Two routes, one gate" SSMB EUV architecture analysis (state/paper-ssmb-euv-architecture.md).**
   At user request, drafted a closed-form feasibility-analysis preprint covering the two novel ranked
   architectures (② SSMB undulator, ③ compact 7-MeV SSMB-Compton). Central thesis: both reduce to ONE
