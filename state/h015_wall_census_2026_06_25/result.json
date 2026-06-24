@@ -1,0 +1,47 @@
+{
+  "metrics": {
+    "n_architectures": 6,
+    "any_binds_on_wavelength": false,
+    "all_in_cost_set": true,
+    "accel_routes_bind_on_flux_M4": true,
+    "census": {
+      "LPP (tin droplet)": "M2",
+      "Synchrotron (storage ring)": "M3",
+      "LPA-undulator": "M4",
+      "Inverse-Compton": "M4",
+      "Recombination EUV laser": "M2",
+      "6.5 nm BEUV optics (any src)": "M1"
+    }
+  },
+  "falsifiers": [
+    {
+      "name": "F-CEN-1 NO-WAVELENGTH",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CEN-2 IN-SET",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CEN-3 COVERAGE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CEN-4 FLUX-TERMINAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-CEN-5 ALL-WALLS-HIT",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

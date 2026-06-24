@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "spf_transmission": 0.7,
+    "recovery": 1.4285714285714286,
+    "narrow_can_skip_spf": true,
+    "broadband_must_keep_spf": true,
+    "recovery_at_0p60": 1.6666666666666667
+  },
+  "falsifiers": [
+    {
+      "name": "F-SPF-1 RECOVER",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SPF-2 NARROW-REQ",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SPF-3 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SPF-4 NO-FREE-LUNCH",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-SPF-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

@@ -4,6 +4,19 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- Run a fleet-full cycle on the **flux terminal question** (research→implement→abstract): the
+  abstraction lane peeled the M4 flux face to a decisive verdict — **the flux floor is REOPENABLE,
+  not a true thermodynamic ceiling** (no brightness/Liouville theorem floors in-band power for a
+  *coherent/non-thermal* source; only energy-conservation + waste-heat efficiency bounds survive),
+  so the terminal question mutates to "can a coherent/ERL source deliver 167 W in a non-stadium
+  volume at affordable wall-plug?" (`state/euv-meta-laws.md` flux-ceiling section). The build lane
+  verified three: **H_014** no-SPF in-band recovery (~43%, promotes abstract H_B1), **H_015** wall
+  census (binding wall is always one of {M1,M2,M3,M4}, never wavelength — confirms M5/P5; accel
+  routes bind on M4 flux), **H_016** ERL reopens the flux floor (rep-rate ceiling lifts by 1/(1−η)
+  with no thermodynamic cap; ERL+FEL reaches 200 W compact, ERL alone 2 W = product wall — the
+  abstraction verdict's first probe). Added `spf_recovery`, `erl_rep_rate_ceiling` to
+  `tool/lumen_optics.py`. Registry: 16 verified 🟢 + 10 abstract 🜂.
+
 - Run a fleet cycle (3 lanes) for the flux wall: ① **build lane** promotes abstract H_A4 to verified
   **H_012** (spectral gating + grazing-incidence column → ~8× wafer in-band flux at 6.5 nm, 5/5);
   ② **abstraction lane** peels the verified law-set to meta-laws **M1–M5** (`state/euv-meta-laws.md`:

@@ -46,3 +46,30 @@ C1–C4 are *cost* faces; C5 is the lone *freedom* face — the wall is never wa
 - **True ceilings:** M4 flux-face (charge × rep-rate, thermodynamic) is the hardest; M3 gradient in its breakdown form is a material ceiling (but footprint-face reopenable); M5 is not a ceiling.
 - **Reopenable substrate walls:** M1 (grazing/coherent), M2 (non-thermal emitter — already half-broken, which is why the problem migrates to M3/M4), M4-quality face (dissipative cooling).
 - **Attack first → E4/P4:** the quality sub-wall is a 2.24%-vs-2% miss (the smallest hard margin in the whole law-set), breakable by a non-conservative mechanism, cheapest to probe, and it cleanly *separates* the beatable quality-wall from the stubborn flux-wall (H_008) — the single most decision-relevant unknown for HVM viability. → built as **H_013**.
+
+## Flux-face ceiling verdict (🜂 — the decisive peel)
+
+Is the **flux sub-wall** (M4 flux face) a true thermodynamic ceiling or reopenable? Decomposing
+P_ib = Q·f·N_ib·E_γ (charge × rep-rate × in-band photons/bunch × 13.5 nm quantum):
+
+- **Q** REOPENABLE — bounded by injector space-charge (a non-conserved collective force, suppressed ∝1/γ² by high-energy injection); not a conservation law.
+- **f** REOPENABLE (engineering/economic) — bounded by removable heat-flux + wall-plug €, not principle. **ERL** (energy-recovery linac) recovers beam energy → lifts the ceiling by 1/(1−η_rec) (verified **H_016**).
+- **N_ib** MIXED — spectral-capture floor = the *quality sub-wall* (beatable by cooling, H_013); FEL extraction efficiency has a soft, regime-reopenable ceiling.
+
+**Brightness theorem:** the radiance/étendue 2nd-law floor (Planck B_ν(T)) binds only *thermal/
+incoherent* radiators (= M2) — and is **evaded by non-thermal coherent sources** (FEL, inverse-
+Compton, recombination laser), whose photon mode-occupancy ≫1. Liouville for the photon beam binds
+only passive optics, not the electron→photon *generation* step. There is **no conservation
+inequality that floors average in-band EUV power for a coherent source** at given wall-plug + volume.
+
+**Verdict: the flux face is REOPENABLE, not a true ceiling.** The only surviving hard laws are
+energy conservation (P_ib ≤ η·P_wallplug) and the 2nd-law waste-heat minimum — both *efficiency/
+economic* bounds, not power floors. The terminal question therefore mutates from "is flux a ceiling?"
+(no) to **"can a coherent or energy-recovered source deliver 167 W in a non-stadium volume at
+affordable wall-plug?"** — engineering/economic, not thermodynamic.
+
+- **Highest-leverage escape: ERL** (attacks f *and* wall-plug/heat together) → **H_016** (SUPPORTED:
+  1/(1−η) lift, no cap; ERL+FEL reaches 200 W compact; ERL alone insufficient = product wall).
+- **The load-bearing 🜂 claim** ("no brightness/Liouville floor for a coherent source") is the one
+  most worth an adversarial check — predicted falsifier: coherent B_ν exceeds the thermal Planck
+  bound at equal drive by ≥10³× (next probe).

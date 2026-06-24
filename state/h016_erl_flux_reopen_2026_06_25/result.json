@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "f_noerl_hz": 100000.0,
+    "f_erl90_hz": 1000000.0000000001,
+    "f_erl95_hz": 1999999.9999999981,
+    "lift_at_0p90": 10.000000000000002,
+    "p_erl_spontaneous_w": 1.999999999999998,
+    "p_erl_fel_w": 199.99999999999983,
+    "hvm_floor_w": 167.0
+  },
+  "falsifiers": [
+    {
+      "name": "F-ERL-1 LIFT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-ERL-2 REACH",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-ERL-3 NECESSARY",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-ERL-4 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-ERL-5 NO-CEILING",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
