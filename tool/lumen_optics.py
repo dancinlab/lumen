@@ -192,6 +192,27 @@ def average_power(rep_rate_hz: float, pulse_energy_j: float) -> float:
     return rep_rate_hz * pulse_energy_j
 
 
+def erl_rep_rate_ceiling(heat_budget_w: float, energy_per_bunch_j: float,
+                         eta_recover: float) -> float:
+    """Thermal-limited rep-rate ceiling [Hz] with energy-recovery linac (ERL):
+    only the un-recovered fraction (1 - eta) deposits heat, so
+    f_max = heat_budget / (energy_per_bunch * (1 - eta_recover)).
+    As eta_recover -> 1 the ceiling diverges (no thermodynamic floor)."""
+    if not (0.0 <= eta_recover < 1.0):
+        raise ValueError(f"eta_recover out of [0,1): {eta_recover}")
+    if energy_per_bunch_j <= 0 or heat_budget_w <= 0:
+        raise ValueError("heat budget and bunch energy must be > 0")
+    return heat_budget_w / (energy_per_bunch_j * (1.0 - eta_recover))
+
+
+def spf_recovery(spf_transmission: float) -> float:
+    """In-band power recovered by dropping the spectral-purity filter a broadband
+    source needs but a narrow source does not: recovery = 1 / SPF_transmission."""
+    if not (0.0 < spf_transmission <= 1.0):
+        raise ValueError(f"spf_transmission out of (0,1]: {spf_transmission}")
+    return 1.0 / spf_transmission
+
+
 def undulator_natural_linewidth(harmonic: int, n_periods: int) -> float:
     """Relative spectral width of an ideal undulator line ~ 1/(n*N)."""
     if harmonic < 1 or n_periods < 1:
