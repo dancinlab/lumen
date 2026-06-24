@@ -4,6 +4,17 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Fresh-literature reference-match (H_050) — the campaign frontier is corroborated by 2025-26 arXiv.** A
+  `sidecar research arxiv` sweep grounded the verified conclusions in the freshest work (`state/research-arxiv-2026.md`):
+  the latest accelerator-light-source paper, **Stochastic Cooling Enhanced SSMB** (X. Deng, arXiv:2512.09399,
+  2025-12), combines OSC cooling + SSMB in a 50 m several-hundred-MeV ring "using present technology" — which
+  is rank-2 SSMB (H_043) PLUS the campaign's closed-form **cooling lever** (H_013/H_024); a 2025 **cavity-based
+  compact EUV-litho** proposal (arXiv:2501.14541) matches rank-3 (H_044); a 2026 **staged-LWFA** paper
+  (arXiv:2603.28214) confirms the LPA-FEL EUV floor ~24.8 nm (H_031/H_032). Striking convergence: the cooling
+  lever the campaign derived purely closed-form is exactly what the latest SSMB frontier adds (OSC). Honest:
+  preprints + reference-match (alignment) not priority; the binding milestone stays experimental. Counts (qa.py):
+  49 verified 🟢 · 1 🔴 · 10 🜂.
+
 - **In-silico completion audit (H_049) — the closed-form frontier is complete.** Goal: confirm everything
   that can be done closed-form is done. Audited the 10 abstract 🜂 conjectures: **8 are subsumed** by a later
   verified hypothesis (the verified chain absorbed the early ideas — e.g. cavity-ICS→H_033/034/035,

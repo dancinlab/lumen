@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "n_papers": 5,
+    "n_recent": 3,
+    "ssmb_cooling_frontier": true,
+    "cavity_compact_published": true,
+    "lpa_floor_confirmed": true,
+    "direction_active_field": true
+  },
+  "falsifiers": [
+    {
+      "name": "F-LR-1 SSMB-COOLING-FRONTIER",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LR-2 CAVITY-COMPACT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LR-3 LPA-FLOOR",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LR-4 ACTIVE-FIELD",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LR-5 CORROBORATES",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-LR-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
