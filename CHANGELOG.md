@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **돌파 (breakthrough) — inverse-Compton sidesteps the slice-spread wall (H_033).** break-walls
+  forbids calling a wall terminal after one escape (TGU). The slice-spread wall (H_031/032) is
+  *FEL-gain-specific*; the orthogonal gain-free mechanism — **inverse-Compton scattering** —
+  reaches 13.5 nm with only **~2.2 MeV** (λ_x = λ_L/4γ², ≈455× less beam energy than an undulator
+  FEL) and **no Pierce/Ming-Xie condition**, so a 0.5% slice spread only broadens the line to ~1%
+  (within the ~2% mirror passband). The **compact-source-at-13.5 nm question reopens**; the wall
+  **relocates to average power (flux)**, classified reopenable (H_016, no Liouville ceiling).
+  Honest residual: ICS-EUV at lithography in-band power is undemonstrated — this breaks the
+  *slice-spread* wall, not the whole problem. Registry: 33 verified 🟢 + 10 abstract 🜂.
+
 - **Fleet round 3 → TGU escape classified, fleet DEPLETED (H_032).** The decisive break-walls
   probe: the one named orthogonal escape to the slice-spread wall — a transverse-gradient
   undulator (TGU) — is **insufficient for an LPA** (no TGU-FEL has lased at any wavelength;

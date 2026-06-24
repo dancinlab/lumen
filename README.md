@@ -29,7 +29,11 @@ Framing claim                     lumen verdict (32 verified hypotheses)
   emitter-element swap (Sn→Gd/Lu/La) + multilayer swap (Mo/Si→La/B) needed. **But the dial
   is bounded by beam *slice energy spread*** (H_031/032): only a beam compressed to ≪0.1%
   slice lases at 13.5 nm — which a conventional ERL achieves (FLASH, 2006) but a raw ~0.5%
-  LPA beam does not (demonstrated LPA-FEL floor ~25 nm).
+  LPA beam does not (demonstrated LPA-FEL floor ~25 nm). **Breakthrough (H_033):** that
+  slice-spread wall is *FEL-specific* — **inverse-Compton scattering** sidesteps it (no gain
+  condition), reaching 13.5 nm with only **~2.2 MeV** (≈455× less beam energy), slice spread
+  merely broadening the line; the compact path reopens, the wall relocating to *flux*
+  (reopenable, H_016). Honest residual: ICS-EUV at litho power is undemonstrated.
 - **The wall is flux (average power), not wavelength** (H_008/H_005), and flux has
   **no brightness/Liouville ceiling for a coherent source** (H_016) — only
   efficiency + waste-heat (the M8 floor) survive.
@@ -70,7 +74,7 @@ with all shared physics in a single deterministic harness.
   power, undulator/inverse-Compton, ERL, cost-of-ownership, falsifier ledger).
 - `state/` — per-hypothesis runs + result.json, pillar notes, brainstorms, meta-laws.
 
-**Status:** 32 verified 🟢 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
+**Status:** 33 verified 🟢 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
 are **sourced against published data** (`state/sourced-parameters.md`, H_026): the core values are
 real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), with three optimistic links honestly
 corrected (all "harder, not easier"). The three self-found weaknesses (integration, the thin FEL
