@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "throughput_baseline": 0.0009751863741586922,
+    "throughput_enhanced": 0.007831138897023755,
+    "recovery_ratio": 8.03040229492521,
+    "inband_ungated": 0.7,
+    "inband_gated": 0.98,
+    "throughput_more_grazing": 0.02096933060029501
+  },
+  "falsifiers": [
+    {
+      "name": "F-RC-1 RECOVER",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RC-2 GRAZING",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RC-3 GATING",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RC-4 MONOTONE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-RC-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
