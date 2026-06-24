@@ -4,6 +4,15 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Architecture figures + moved papers to root `papers/`.** Per user, relocated the two papers from
+  `state/papers/` to a top-level `papers/` directory (demiurge PAPERS/ convention). Added TWO images per
+  paper: (i) a precise TikZ-rendered architecture schematic (`figures/architecture.png`, 300 dpi,
+  injector→modulator→ring→undulator / injector→ring→Compton-IP→output with the beam-reuse loop) embedded
+  as the in-paper vector figure, and (ii) an AI-generated conceptual hero illustration
+  (`figures/hero.png`, via `sidecar imagine`, openai/gpt-image-2, landscape_16_9) as a frontispiece; the
+  generation prompt is saved beside each (`hero.prompt.txt`) for reproducibility. Both papers recompile
+  clean (0 LaTeX errors, 5/5 citations, 2.0 MB PDFs). qa.py unchanged (49🟢·1🔴·10🜂).
+
 - **Two CERN-style LaTeX architecture papers (state/papers/).** At user request ("demiurge의 CERN처럼"),
   reference-matched demiurge/PAPERS/cern-accelerator's package style (article 11pt + natbib + tikz +
   siunitx + Makefile + PAPER.md) and authored TWO papers — because ranks 2 and 3 are genuinely different
