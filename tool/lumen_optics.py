@@ -192,6 +192,24 @@ def average_power(rep_rate_hz: float, pulse_energy_j: float) -> float:
     return rep_rate_hz * pulse_energy_j
 
 
+def cost_of_ownership(capex_unit: float, opex_base: float, eta_ratio: float,
+                      n_scanners: int) -> float:
+    """Normalized $/wafer-layer for a coherent/ERL source:
+    CAPEX amortized over N scanners + OPEX_energy scaled by 1/(efficiency ratio).
+    = capex_unit / n_scanners + opex_base / eta_ratio."""
+    if eta_ratio <= 0 or n_scanners < 1:
+        raise ValueError("eta_ratio > 0 and n_scanners >= 1 required")
+    return capex_unit / n_scanners + opex_base / eta_ratio
+
+
+def gain_length_product(gain_per_cm: float, length_cm: float) -> float:
+    """X-ray-laser gain-length product gL (dimensionless). Saturated ASE needs
+    gL >= ~14-15 (the e^15 ~ 3e6 single-pass amplification rule of thumb)."""
+    if gain_per_cm < 0 or length_cm < 0:
+        raise ValueError("gain and length must be >= 0")
+    return gain_per_cm * length_cm
+
+
 def erl_rep_rate_ceiling(heat_budget_w: float, energy_per_bunch_j: float,
                          eta_recover: float) -> float:
     """Thermal-limited rep-rate ceiling [Hz] with energy-recovery linac (ERL):

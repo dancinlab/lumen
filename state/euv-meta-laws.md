@@ -73,3 +73,38 @@ affordable wall-plug?"** — engineering/economic, not thermodynamic.
 - **The load-bearing 🜂 claim** ("no brightness/Liouville floor for a coherent source") is the one
   most worth an adversarial check — predicted falsifier: coherent B_ν exceeds the thermal Planck
   bound at equal drive by ≥10³× (next probe).
+
+## Economic tier — M6–M9 (🜂, the mutated terminal question)
+
+Once flux is reopenable, the terminal question is economic: **compact 167 W at affordable wall-plug.**
+Figure of merit = **$/wafer-layer** = (CAPEX·CRF + OPEX) / (wafer-layers/yr), OPEX_energy ∝ (€/kWh)·P_ib/η.
+
+- **M6 — η–coherence coupling (transducer law).** OPEX_energy·η = const at fixed P_ib; the energy bill
+  falls *only* by raising η (electrical→in-band), and η rises *only* by coherent generation (occupancy ≫1,
+  no out-of-band/2%-capture loss) or beam-energy recovery (ERL). Economic image of physics escape E2.
+  Faces: LPP (low-η floor) vs FEL/IC/recombination+ERL (high-η).
+- **M7 — CAPEX–footprint gradient trade vs learning curve (size law).** For one bespoke machine,
+  $·(gradient)⁻¹ per unit beam energy is conserved (RF: cheap/m, huge; wakefield: compact, bespoke-$).
+  Escape = **volume amortization** (mass-produced module arrays descend a Wright's-law curve, b≈0.85–0.9).
+- **M8 — Landauer/2nd-law waste-heat OPEX floor (the TRUE ceiling).** P_waste ≥ (1−η)P_wall must be
+  cooled at €; cannot be escaped, only minimized by η→1. Bites hardest in small high-heat-flux (compact)
+  volume — the price of non-stadium. The asymptote the learning curve never crosses.
+- **M9 — single-source amortization/utilization law.** $/wafer-layer × (scanners served) = CAPEX·CRF/throughput;
+  a high-CAPEX central coherent source (ERL/FEL beam-split to N scanners) gets cheap *per wafer* only at high utilization.
+
+**Per-route (🜂 order-of-magnitude):** LPP = small footprint but pinned on the low-η OPEX floor (M6/M8);
+synchrotron = efficient but ~200× footprint (M7, M9-escapable); **ERL+FEL = de-risked front-runner**
+(compact ~200 W, recovery-boosted η; needs M7 learning-curve + M9 amortization to beat LPP);
+**recombination laser = high-variance dark horse** (fewest components, no undulator-capture loss = best
+intrinsic M6, but unverified at 167 W).
+
+**Predictions Q1–Q3 (🜂, all spreadsheet-grade — cheaper than any physics card):**
+- **Q1 (M6):** coherent/ERL reaches η ≥ ~3–5× LPP → OPEX_energy < LPP at €0.1–0.3/kWh.
+- **Q2 (M7/M9):** at N≥~10 modules, learning-curve CAPEX/W drops below synchrotron, within ~2× LPP.
+- **Q3 (terminal):** compact coherent beats LPP $/wafer-layer only when η ≥ Q1 **AND** amortized across
+  M≥~3 scanners — a *conjunction*, neither lever alone. → built as **H_019**.
+
+**Economic verdict (🜂):** reopenable down to the **M8 waste-heat asymptote** (M6 efficiency + M7/M9
+amortization are reopenable engineering/volume levers; M8 is the one true ceiling). Whether the M8
+asymptote sits above or below LPP's all-in $/wafer-layer is the single decision-relevant unknown —
+settled by the Q3 cost-of-ownership spreadsheet (H_019), not by more physics.

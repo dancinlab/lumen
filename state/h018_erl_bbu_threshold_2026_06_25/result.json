@@ -1,0 +1,35 @@
+{
+  "metrics": {
+    "i_needed_a": 0.0002,
+    "i_bbu_threshold_a": 0.02,
+    "margin": 100.0,
+    "i_bbu_no_damping_a": 0.001,
+    "hom_damping_gain": 20.0
+  },
+  "falsifiers": [
+    {
+      "name": "F-BBU-1 BELOW",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BBU-2 MARGIN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BBU-3 DAMPING",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-BBU-4 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 4,
+  "n_total": 4,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
