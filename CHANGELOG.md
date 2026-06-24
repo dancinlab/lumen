@@ -4,6 +4,14 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Generalization — EUV is the first instance, not the boundary (H_039, meta-law M10).** The verified
+  EUV machinery transfers across the spectrum: the dial λ ∝ 1/γ² makes one accelerator + undulator/ICS
+  span THz (3.4 MeV) → far-IR (11 MeV) → EUV (511 MeV) → water window (1.08 GeV) → hard X-ray (5.94 GeV),
+  6.5 orders of magnitude by electron energy alone. The no-stable-emitter bands (THz gap, EUV, water
+  window, hard X-ray, nuclear γ) are exactly the engine's no-incumbent market (M10), and the campaign's
+  structure (dial free · flux the wall · conventional form robust · compact-coherent terminal-thin)
+  recurs at every rung (`state/band-generalization.md`, `state/euv-meta-laws.md`). Registry: 38 verified 🟢.
+
 - **Loop cycle 3 → honest FALSIFIED + convergence (H_037/038).** 돌파 attempt **H_037**: tested whether a
   high-brightness beam beats the H_036 bandwidth-collection derating — **FALSIFIED** (reported honestly, not
   tuned to green): λ(θ)=λ₀(1+γ²θ²) is radiation kinematics, so off-axis photons are out-of-band regardless of

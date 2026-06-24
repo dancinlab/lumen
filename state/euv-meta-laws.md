@@ -112,3 +112,6 @@ negligible** (~200× below LPP all-in cost); it is NOT the decision wall. **The 
 is CAPEX — i.e. M7 (learning curve / mass-produced modules) + M9 (amortization across scanners).**
 The campaign's terminal question is fully localized: not wavelength, not flux, not waste-heat — it is
 **CAPEX-per-wafer**, attacked by volume (learning curve) and utilization (multi-scanner amortization).
+
+## M10 — no-incumbent bands are the engine's market (band generalization, H_039)
+- The undulator/ICS dial (λ ∝ 1/γ²) makes one accelerator span THz (3.4 MeV) → hard X-ray (5.94 GeV), 6.5 orders of magnitude. The bands lacking a stable natural emitter (THz gap, EUV, water window, hard X-ray, nuclear γ) are exactly where this engine has no entrenched incumbent. The EUV campaign is M10 at the 13.5 nm rung; the dial-free / flux-wall / conventional-form-robust structure recurs at every rung. See `state/band-generalization.md`.

@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "monotonic": true,
+    "E_THz_MeV": 3.4278851658930485,
+    "E_waterwindow_MeV": 1083.9924681726163,
+    "span_orders": 6.477121254719663,
+    "no_emitter_all_covered": true,
+    "E_hardxray_GeV": 5.937271269838428
+  },
+  "falsifiers": [
+    {
+      "name": "F-GN-1 MONOTONIC-DIAL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-GN-2 THZ-TABLETOP",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-GN-3 WATERWINDOW-SUB2GEV",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-GN-4 ONE-MACHINE-WIDE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-GN-5 NO-INCUMBENT-COVERED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-GN-6 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

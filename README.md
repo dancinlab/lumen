@@ -55,6 +55,13 @@ Framing claim                     lumen verdict (32 verified hypotheses)
 - **Economics is a conjunction** (H_019): a compact coherent source beats LPP
   $/wafer-layer only with efficiency η ≥ ~4× *and* amortization across ≥ ~3
   scanners — neither lever alone — and never below the M8 waste-heat floor.
+- **Generalization — EUV is the first instance, not the boundary** (H_039, meta-law M10):
+  the dial λ ∝ 1/γ² makes one accelerator + undulator/ICS span **THz (3.4 MeV) → EUV (511 MeV) →
+  water window (1.08 GeV) → hard X-ray (5.94 GeV)** — 6.5 orders of magnitude by electron energy
+  alone. The bands lacking a stable natural emitter (THz gap, EUV, water window, hard X-ray, nuclear
+  γ) are exactly the engine's **no-incumbent market**, and the campaign's whole structure (dial free ·
+  flux the wall · conventional accelerator the robust form · compact-coherent terminal-thin) **recurs
+  at every rung** (`state/band-generalization.md`).
 
 ## How the lab works (HYPOTHESES system)
 
@@ -74,7 +81,7 @@ with all shared physics in a single deterministic harness.
   power, undulator/inverse-Compton, ERL, cost-of-ownership, falsifier ledger).
 - `state/` — per-hypothesis runs + result.json, pillar notes, brainstorms, meta-laws.
 
-**Status:** 37 verified 🟢 + 1 falsified 🔴 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
+**Status:** 38 verified 🟢 + 1 falsified 🔴 (all deterministic, 4–6/5 falsifiers PASS) + 10 abstract 🜂. Key inputs
 are **sourced against published data** (`state/sourced-parameters.md`, H_026): the core values are
 real (optics R, LPP power, ~0.02% wall-plug, EUV-tool CAPEX), with three optimistic links honestly
 corrected (all "harder, not easier"). The three self-found weaknesses (integration, the thin FEL
