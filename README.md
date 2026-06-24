@@ -98,6 +98,18 @@ parameters (each card lists its honest limits); they bound *requirements and
 scaling*, not vendor performance. Abstract `H_A*/H_B*` and meta-laws are unverified
 coordinates (🜂), not claims.
 
+**Funded-reality reference-match (H_030, the strongest honesty check):** the
+accelerator-driven FEL EUV direction is **real and funded** — xLight (≤$150M CHIPS LOI,
+2028 prototype, one source → ~20 scanners) and KEK (10 kW ERL EUV-FEL) — validating
+lumen's direction. But three honest corrections land: the funded **driver is a
+conventional ERL, not the tabletop LPA** this campaign emphasized; the funded **economic
+lever is M9-amortization (shared source across scanners), not the M7 module-array**; and
+**13.5 nm-on-LPA + single-pass cooling are undemonstrated** (LPA-FEL floor ~25 nm). The
+concept predates lumen (Nakajima 2014) — the synthesis is **not novel**. The robust
+restatement of the answer is **xLight-shaped (a shared conventional-ERL FEL amortized
+across many scanners)**, with the tabletop-LPA + module-array + cooling form as the
+longer-horizon, less-proven variant.
+
 **Where the terminal wall actually sits (settled, H_020):** the one true *physical*
 ceiling is **M8** (the 2nd-law waste-heat floor) — but with real-units cost-of-ownership
 it is only **~0.5% of LPP cost-of-ownership**, economically negligible. The binding wall

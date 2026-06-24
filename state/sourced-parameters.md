@@ -52,3 +52,16 @@
 - **Net effect on conclusions:** the *physics-wall* findings hold (flux not a ceiling, CAPEX the binding
   wall, M8 ~0.5%); the *engineering margins are thinner* than the representative cards implied — the honest
   direction of every correction is "harder, not easier."
+
+## Fleet round — deeper sourcing (prior-art · accel · econ lanes, 🜂)
+| Finding | Sourced | Effect on campaign |
+|---|---|---|
+| **Concept novelty** | LPA-EUV-FEL fully designed by Nakajima (HPLSE 2014): 5cm gas-cell→660 MeV→1m undulator→1 kW@13.5nm; compact 13.5nm FEL PRSTAB 14:040702 (2011) | ⚠️ lumen's synthesis is **NOT novel** — a >10-yr published direction |
+| **Funded driver** | xLight ($40M Series-B Jul-2025; ≤$150M CHIPS LOI Dec-2025; 2028 Albany prototype; ex-LCLS CEO; 1 source→~20 scanners) + KEK 10 kW ERL EUV-FEL — both **conventional ERL/SC-linac** | ⚠️ the **tabletop-LPA driver lumen emphasized is the less-mature, less-funded variant**; industry bet on conventional ERL |
+| **Funded econ leg** | xLight model = one big source amortized across ~20 scanners | ⚠️ the funded lever is **M9-amortization, not the M7 module-array learning curve** of H_021 |
+| **LPA-FEL wavelength floor** | demonstrated 27 nm SASE (Wang, Nature 595:516, 2021); ~25 nm (2026) — **never 13.5 nm on LPA** | ⚠️ 13.5 nm on an LPA beam is unproven (~2× the target) |
+| **Cooling lever** | optical-stochastic cooling demonstrated only on storage-ring circulating beams (IOTA, Nature 2022); **no single-pass GeV-LPA cooling to <0.5%** | ⚠️ H_028's cooling lens is **aspirational** for single-pass LPA |
+| **Wright slope** | accelerator/ILC components 85–95% (0.90 typical); 0.85 is the aggressive end | ⚠️ at b=0.90, module@N=10 ≈ 35% (not 20%) → H_021 survives only if first-unit < 2× mature |
+| **Energy share** | ~$0.6/wafer-layer of ~$70 tool cost (~1%); FEL ~6× better wall-plug than LPP | ✅ confirms M8 negligible + the efficiency-edge thesis |
+
+**Fleet net (🜂):** the campaign's *direction* is validated by real industry money (xLight/KEK) — but three honest corrections land via H_030: (1) the funded driver is a **conventional ERL, not the tabletop LPA** lumen emphasized; (2) the funded economic lever is **M9-amortization, not M7 module-learning**; (3) **13.5 nm-on-LPA and single-pass cooling are undemonstrated**. The robust restatement: "a shared accelerator-driven FEL amortized across many scanners" (the xLight bet) — lumen's specific *compact-LPA + module-array + cooling* form is the longer-horizon, less-proven variant of an already-pursued idea.

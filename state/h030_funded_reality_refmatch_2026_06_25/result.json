@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "funded_programs": 2,
+    "funded_driver_is_lpa": false,
+    "funded_econ_leg": "M9-amortization",
+    "lpa_fel_floor_nm": 25.0,
+    "cooling_single_pass": false,
+    "concept_year": 2014
+  },
+  "falsifiers": [
+    {
+      "name": "F-PA-1 DIRECTION-FUNDED",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PA-2 DRIVER-CORRECTION",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PA-3 ECON-LEG-CORRECTION",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PA-4 WAVELENGTH-GAP",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PA-5 NOT-NOVEL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-PA-6 COOLING-ASPIRATIONAL",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}
