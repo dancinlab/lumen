@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "gl_saturation": 14.0,
+    "gl_reference_46p9nm": 14.0,
+    "gl_unguided": 0.1,
+    "g_required_135nm_per_cm": 1.0,
+    "waveguide_length_gain": 140.0
+  },
+  "falsifiers": [
+    {
+      "name": "F-XRL-1 REFERENCE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XRL-2 WAVEGUIDE",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XRL-3 REQUIREMENT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XRL-4 UNGUIDED-FAIL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-XRL-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

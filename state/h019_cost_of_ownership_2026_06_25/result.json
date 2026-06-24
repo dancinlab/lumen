@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "cost_lpp": 1.0,
+    "cost_both_levers": 0.5499999999999999,
+    "cost_eta_only": 1.3499999999999999,
+    "cost_amort_only": 1.0,
+    "cost_infinite_scanners": 0.15000012,
+    "m8_opex_floor": 0.15
+  },
+  "falsifiers": [
+    {
+      "name": "F-COO-1 WIN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-COO-2 ETA-INSUFFICIENT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-COO-3 AMORT-INSUFFICIENT",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-COO-4 CONJUNCTION",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-COO-5 M8-FLOOR",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

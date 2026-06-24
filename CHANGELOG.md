@@ -4,6 +4,21 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- Run a fleet-full cycle on the **economic terminal question** (after flux was shown reopenable):
+  the abstraction lane peeled the economics to meta-laws **M6–M9** (`state/euv-meta-laws.md`:
+  η–coherence coupling · CAPEX–footprint/learning-curve · **M8 Landauer waste-heat OPEX floor =
+  the one true ceiling** · single-source amortization) + predictions Q1–Q3. Build lane verified
+  three: **H_017** recombination-EUV-laser saturation requirement (waveguide makes gL≥14 reachable
+  at ~1 cm⁻¹, reference-matched to the 46.9 nm Ar laser; 13.5 nm gain is the open frontier —
+  partially promotes H_B4), **H_018** ERL beam-breakup is not the binding wall (~0.2 mA needed vs
+  ~20 mA HOM-damped BBU threshold, 100× margin → binding limit is heat/wall-plug), **H_019**
+  cost-of-ownership conjunction (Q3: compact coherent/ERL beats LPP $/wafer-layer ONLY when η≥~4×
+  AND amortized across M≥~3 scanners — neither lever alone — and the M8 waste-heat floor never
+  vanishes). Added `gain_length_product`, `cost_of_ownership` to `tool/lumen_optics.py`. Registry:
+  19 verified 🟢 + 10 abstract 🜂. Campaign converged: the sub-13.5 nm source problem is
+  physics-reopenable (flux not a ceiling) and economically reopenable down to the M8 waste-heat
+  asymptote — an engineering/volume question, not a wavelength impossibility.
+
 - Run a fleet-full cycle on the **flux terminal question** (research→implement→abstract): the
   abstraction lane peeled the M4 flux face to a decisive verdict — **the flux floor is REOPENABLE,
   not a true thermodynamic ceiling** (no brightness/Liouville theorem floors in-band power for a
