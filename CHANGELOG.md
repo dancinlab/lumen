@@ -4,6 +4,16 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Paper draft — "Two routes, one gate" SSMB EUV architecture analysis (state/paper-ssmb-euv-architecture.md).**
+  At user request, drafted a closed-form feasibility-analysis preprint covering the two novel ranked
+  architectures (② SSMB undulator, ③ compact 7-MeV SSMB-Compton). Central thesis: both reduce to ONE
+  shared, physics-allowed, undemonstrated gate — steady-state micro-bunching at 13.5 nm (b²≈0.14, H_046)
+  — so a single experiment de-risks both (H_048); they diverge only in the Compton-flux-tax-vs-ring-size
+  trade. Grounded in verified hypotheses (H_022/024/030–048/050) and reference-matched to the open
+  literature [Deng Nature 2021; arXiv:2110.08987, 2501.14541, 2512.09399, 2603.28214; Nakajima 2014].
+  Explicitly framed as closed-form (in-silico) reference-match, NOT an experimental report or priority
+  claim; the binding result is stated as an experimental milestone. qa.py unchanged (49🟢·1🔴·10🜂).
+
 - **Docs cleanup — README consolidated to the current-state SSOT.** Fixed a broken Status line (an
   incremental-edit artifact had duplicated "+ 10 abstract 🜂" and the determinism fragment); brought
   the "answer" section current with the **final 8-rank source-architecture ranking** (① conventional
