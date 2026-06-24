@@ -61,7 +61,8 @@
         { "id": "verification.registry", "role": "HYPOTHESES/REGISTRY.jsonl — flat registry, one JSON line per hypothesis (id, slug, tier, title, card, verdict, artifacts)." },
         { "id": "verification.cards", "role": "HYPOTHESES/cards/H_*.md — one card per hypothesis: frozen pre-registration + predictions + >=5 measurable falsifiers + honest limits + verbatim run verdict. _TEMPLATE.md is the skeleton." },
         { "id": "verification.harness", "role": "tool/lumen_optics.py — shared deterministic stdlib-only physics harness: mirror_chain_throughput, source_power_multiplier, resolution/DoF, lpp_source_power, hvm_throughput_wph, plasma_omega/wavebreak_field/accelerator_length, undulator/inverse-Compton + Falsifier/evaluate. Anima-parity: shared machinery in repo-root tool/." },
-        { "id": "verification.runs", "role": "state/<hX>_<slug>_<date>/run_*.py + result.json — per-hypothesis deterministic run importing tool/; verdict = verbatim stdout (no LLM self-judge)." }
+        { "id": "verification.runs", "role": "state/<hX>_<slug>_<date>/run_*.py + result.json — per-hypothesis deterministic run importing tool/; verdict = verbatim stdout (no LLM self-judge)." },
+        { "id": "verification.abstract", "role": "🜂 ABSTRACT lane — H_A*/H_B* cards (cards/H_[AB]*.md) are unverified conjectures (falsifiable prediction, no run/verdict), tier-separated from verified H_0xx. Sources: brainstorms (state/*-brainstorm.md) + meta-law abstraction (state/euv-meta-laws.md: M1–M5 conserved trades → escapes → predictions). Loop: meta-law → prediction → promote to verified H_0xx (e.g. P4→H_013, H_A4→H_012)." }
       ]
     },
     {

@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "natural": 0.01,
+    "sigma_crit": 0.008660254037844387,
+    "line_before": 0.022360679774997897,
+    "line_after": 0.01972308292331602,
+    "inband_bw": 0.02,
+    "flux_before_w": 0.001,
+    "flux_after_w": 0.001
+  },
+  "falsifiers": [
+    {
+      "name": "F-QW-1 BEFORE-FAIL",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-QW-2 AFTER-PASS",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-QW-3 THRESHOLD",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-QW-4 FLUX-STUBBORN",
+      "triggered": false,
+      "status": "PASS"
+    },
+    {
+      "name": "F-QW-5 BOUNDS",
+      "triggered": false,
+      "status": "PASS"
+    }
+  ],
+  "n_pass": 5,
+  "n_total": 5,
+  "all_pass": true,
+  "verdict": "SUPPORTED"
+}

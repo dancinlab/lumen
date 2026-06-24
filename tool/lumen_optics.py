@@ -31,6 +31,18 @@ def mirror_chain_throughput(reflectivity: float, n_mirrors: int) -> float:
     return reflectivity ** n_mirrors
 
 
+def column_throughput_mixed(r_graze: float, n_graze: int, r_image: float, n_image: int) -> float:
+    """Throughput of a mixed column: n_graze grazing-incidence surfaces (high R)
+    feeding n_image near-normal imaging mirrors = r_graze**n_graze * r_image**n_image.
+    Grazing optics suit collection/transport, not high-NA imaging (see card limits)."""
+    for name, v in (("r_graze", r_graze), ("r_image", r_image)):
+        if not (0.0 < v <= 1.0):
+            raise ValueError(f"{name} out of (0,1]: {v}")
+    if n_graze < 0 or n_image < 0:
+        raise ValueError("mirror counts must be >= 0")
+    return r_graze ** n_graze * r_image ** n_image
+
+
 def source_power_multiplier(r_ref: float, r_new: float, n_mirrors: int) -> float:
     """How many times more source power a lower-reflectivity band needs to hold
     constant wafer dose through the same N-mirror column.

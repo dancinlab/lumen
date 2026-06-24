@@ -4,6 +4,19 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- Run a fleet cycle (3 lanes) for the flux wall: ① **build lane** promotes abstract H_A4 to verified
+  **H_012** (spectral gating + grazing-incidence column → ~8× wafer in-band flux at 6.5 nm, 5/5);
+  ② **abstraction lane** peels the verified law-set to meta-laws **M1–M5** (`state/euv-meta-laws.md`:
+  multiplicative reflectance · power-rep-rate floor · footprint×gradient · Liouville brightness ·
+  wavelength-has-no-floor), each with an escape + falsifiable prediction — its top prediction **P4**
+  becomes verified **H_013** (energy-spread cooling 1.0→0.85% splits the M4 wall: quality sub-wall
+  BEATEN, flux sub-wall H_008 STUBBORN, 5/5); ③ **divergence lane** brainstorms the two frontiers
+  (resist-side demand + recombination lasing) to depletion (`state/resist-laser-brainstorm.md`, ~90
+  ideas → 8 themes), top-5 frozen as 🜂 **H_B1–H_B5** (no-SPF narrow line · high-σ resist · two-color
+  arm · re-invertible recombination XRL · photon-counting litho). Added `column_throughput_mixed`
+  to `tool/lumen_optics.py`; `verification.abstract` node to ARCHITECTURE. Registry: 13 verified 🟢
+  + 10 abstract 🜂.
+
 - Brainstorm the flux-wall breakthroughs to depletion (8 rounds → 8 themes → top-5) and freeze
   the result: full divergence in `state/flux-wall-brainstorm.md`; top-5 as **🜂 ABSTRACT
   hypotheses** `H_A1`–`H_A5` (`cards/H_A*.md`) — unverified conjectures with a falsifiable
