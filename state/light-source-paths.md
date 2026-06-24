@@ -41,6 +41,7 @@ The accelerator route wins wavelength/compactness (H_004/006/007) but is **not**
 - **H_008** 🟢 flux/average-power — at present LPA rep rates the in-band EUV power is ~10³–10⁵× below the ~167 W HVM needs. The binding wall is **rep-rate/brightness**, not wavelength. (Reopenable: high-average-power LPA is an active frontier.)
 - **H_009** 🟢 beam quality — ~1% electron energy spread broadens the undulator line to ~2.2%, overfilling the 2% in-band budget and killing higher harmonics → cuts in-band flux further. (Reopenable: staged LPA reaches <0.1%.)
 - **H_010** 🟢 vs synchrotron — a storage ring meets HVM power but costs ~4 EUV-tools and ~200× the footprint; the compact LPA inverts it. The landscape is a **footprint ↔ throughput** trade — pick which wall to break.
+- **H_011** 🟢 wavelength reach — no theoretical short-λ floor: λ ~ 1/E² walks EUV→water-window→X-ray. Single-stage LPA (≤1 GeV) → ~3 nm, a few stages (≤2 GeV) → ~1 nm, ~5 GeV → 0.1 nm. So "how low?" = arbitrarily low in *wavelength*; the cap is flux (H_008) / beam quality (H_009), not the band.
 
 ## The 6.5 nm ("Beyond-EUV" / BEUV) wall
 

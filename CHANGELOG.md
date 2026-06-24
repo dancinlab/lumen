@@ -4,6 +4,13 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- Run **H_011 accelerator wavelength reach** (🟢 SUPPORTED, 5/5, deterministic):
+  no theoretical short-wavelength floor — λ ~ 1/E² walks EUV→water-window→X-ray
+  (0.5/1/2/5/10 GeV → 11.75/2.94/0.73/0.12/0.03 nm; 3 nm@0.99 GeV, 1 nm@1.71 GeV,
+  0.1 nm@5.42 GeV). Single-stage LPA (≤1 GeV) reaches ~3 nm, a few stages (≤2 GeV)
+  ~1 nm; the binding wall is flux (H_008) / beam quality (H_009), not wavelength.
+  Answers "이론상 몇 nm까지?". Note line added to `state/light-source-paths.md`.
+
 - Run three more hypotheses (all 🟢 SUPPORTED, deterministic) — the honest walls
   that balance the accelerator chain: **H_008 flux/average-power wall** (at present
   LPA rep rates in-band EUV power is ~10³–10⁵× below the ~167 W for 100 WPH → the
