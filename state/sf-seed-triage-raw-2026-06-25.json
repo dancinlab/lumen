@@ -1,0 +1,1075 @@
+{
+  "summary": "Exhaustive triage of ALL lumen SF brainstorm seeds (~180, flux-wall + resist-laser) vs the frozen EUV meta-laws; surface genuinely-new in-silico escapes never carded",
+  "agentCount": 6,
+  "logs": [
+    "triaged 134 seeds across 6/6 batches · genuinely-new = 0"
+  ],
+  "result": {
+    "n_triaged": 134,
+    "tally": {
+      "already-carded": 73,
+      "wall-frozen": 13,
+      "lab-handoff": 37,
+      "other-band": 2,
+      "pure-sf": 9
+    },
+    "genuinely_new": [],
+    "all_classifications": [
+      {
+        "seed_ref": "flux R1-1",
+        "seed_title": "Plasma-cascade staging — refill wake for many bunches/shot, >=10 bunches/pulse",
+        "category": "already-carded",
+        "maps_to": "H_016",
+        "rationale": "Multi-bunch charge/rep-rate multiplication = the Q and f flux-face reopen already carded; staging is meta-law escape E3, charge bounded by space-charge not conservation (flux verdict)."
+      },
+      {
+        "seed_ref": "flux R1-2",
+        "seed_title": "Cryo-undulator linewidth squeeze — N>=100 cold periods, Dl/l < 1%",
+        "category": "already-carded",
+        "maps_to": "H_A3",
+        "rationale": "Many-period cold undulator narrowing the line is exactly the cryo-many-period-undulator half of abstract H_A3 (recirc + cryo undulator)."
+      },
+      {
+        "seed_ref": "flux R1-3",
+        "seed_title": "Energy-chirp linewidth compensation — chirp matched to tapered undulator",
+        "category": "already-carded",
+        "maps_to": "H_013",
+        "rationale": "Chirp+dechirp compression of energy spread is the named E4 quality-wall lever verified as the cooling card H_013 (and bounded by slice-spread in H_031/H_023)."
+      },
+      {
+        "seed_ref": "flux R1-4",
+        "seed_title": "Inverse-Compton recirculated photon cavity — enhancement >=1e4",
+        "category": "already-carded",
+        "maps_to": "H_A1",
+        "rationale": "Cavity-enhanced inverse-Compton is H_A1, verified-deepened in H_033/H_034/H_035 (IR-cavity finesse 1e4 reopens the ICS flux wall)."
+      },
+      {
+        "seed_ref": "flux R1-5",
+        "seed_title": "Harmonic-undulator wavelength shortcut — 3rd/5th harmonic 6.5 nm at lower energy",
+        "category": "wall-frozen",
+        "maps_to": "M5",
+        "rationale": "Reaching shorter lambda from lower energy is a wavelength-dial play; M5 says wavelength has no floor and is never the wall — the cost just migrates to flux/quality. Confirmed by H_007/H_015."
+      },
+      {
+        "seed_ref": "flux R1-6",
+        "seed_title": "Two-laser wake refresh — interleave two drive lasers, >=1.8x thermal limit",
+        "category": "wall-frozen",
+        "maps_to": "M8",
+        "rationale": "Pure rep-rate-vs-thermal-limit engineering; the f-face is declared reopenable-but-economic, bounded by removable heat-flux (M8) which is ~0.5% of cost = negligible, not a new wall."
+      },
+      {
+        "seed_ref": "flux R1-7",
+        "seed_title": "Self-modulated proton-driver hybrid (AWAKE) — sustained current >=10x single-shot",
+        "category": "already-carded",
+        "maps_to": "H_016",
+        "rationale": "Sustained-current/charge multiplication to lift average power = the f/Q flux-face reopen already carded (ERL/flux-reopen family); current is the reopenable f-face, not a conservation law."
+      },
+      {
+        "seed_ref": "flux R1-8",
+        "seed_title": "Bunch-train undulator pulse stacking — micro-bunch train matched to scan dwell",
+        "category": "wall-frozen",
+        "maps_to": "M8",
+        "rationale": "Throughput packaging of bunches under a peak-damage cap is reopenable-f engineering bounded only by removable heat (M8-negligible); no new assumption broken."
+      },
+      {
+        "seed_ref": "flux R1-9",
+        "seed_title": "Dielectric-laser-accelerator afterburner — chip-scale DLA booster, +100 MeV",
+        "category": "already-carded",
+        "maps_to": "H_004",
+        "rationale": "Higher-gradient compact booster is the footprint-x-gradient compact-accelerator lever (E3/M3) carded as H_004; gradient trades against footprint, not a new face."
+      },
+      {
+        "seed_ref": "flux R1-10",
+        "seed_title": "SF: standing-wave gamma-ray (optical) undulator — EUV at <=50 MeV",
+        "category": "already-carded",
+        "maps_to": "H_006",
+        "rationale": "An optical/laser undulator (counter-laser as sub-micron period) is inverse-Compton scattering by another name — the IC photon-generation mechanism already carded in H_006/H_033, not SF."
+      },
+      {
+        "seed_ref": "flux R2-1",
+        "seed_title": "Energy-recovery LPA loop — decelerate spent bunches, recovery >=80%",
+        "category": "already-carded",
+        "maps_to": "H_016",
+        "rationale": "Energy-recovery linac is verbatim H_016 (ERL lifts rep-rate by 1/(1-eta), cuts wall-plug/W)."
+      },
+      {
+        "seed_ref": "flux R2-2",
+        "seed_title": "Photon-recycling cavity around wafer — resonant ring reuses un-absorbed EUV",
+        "category": "already-carded",
+        "maps_to": "H_012",
+        "rationale": "Demand-side recovery of otherwise-lost EUV photons = the gating/grazing in-band recovery family (H_012, recovery not generation); flux H_008 untouched."
+      },
+      {
+        "seed_ref": "flux R2-3",
+        "seed_title": "Many-source beam combining — sum K=20 small modules incoherently",
+        "category": "already-carded",
+        "maps_to": "H_022",
+        "rationale": "Module-array summation to reach the flux floor is the mass-produced module-array lever in H_022/H_021/H_029 (also rides the M7 learning curve)."
+      },
+      {
+        "seed_ref": "flux R2-4",
+        "seed_title": "Wafer-swarm parallel exposure — expose M=10 wafers at once via fan-out",
+        "category": "wall-frozen",
+        "maps_to": "M9",
+        "rationale": "One source fanned out to many exposure stations is the single-source amortization/utilization law M9 (per-wafer cost via served throughput); carded econ-side H_019/H_009-N>=2 fan-out."
+      },
+      {
+        "seed_ref": "flux R2-5",
+        "seed_title": "Recirculating-ring micro-storage — ~m loop, >=20 turns, avg power x20",
+        "category": "already-carded",
+        "maps_to": "H_A3",
+        "rationale": "Multi-turn recirculating micro-storage for x-N average power is the recirculating-micro-storage half of H_A3; the steady reused-ring-beam version is verified as SSMB H_043/H_044."
+      },
+      {
+        "seed_ref": "flux R2-6",
+        "seed_title": "Round-robin plasma cells — carousel of N cells, each cools while others fire",
+        "category": "wall-frozen",
+        "maps_to": "M8",
+        "rationale": "Thermal-duty-cycling cells to beat the per-cell heat limit is pure waste-heat/rep-rate engineering bounded by M8 (heat removal), declared real but ~0.5%-of-cost negligible; no new face."
+      },
+      {
+        "seed_ref": "flux R2-7",
+        "seed_title": "Spent-beam second-color harvest — second undulator for soft-X-ray metrology",
+        "category": "wall-frozen",
+        "maps_to": "M9",
+        "rationale": "Extracting extra value (a second output) from one machine is the single-source amortization/utilization law M9; it spreads CAPEX, does not break a flux/physics assumption."
+      },
+      {
+        "seed_ref": "flux R2-8",
+        "seed_title": "Drive-laser coherent combining — combine many fiber lasers, >=10 kW at >=10 kHz",
+        "category": "already-carded",
+        "maps_to": "H_029",
+        "rationale": "Fiber-laser coherent combining for high-average-power drive is the named replicability/drive-combining lever in H_029 (and the drive side of the f-face reopen)."
+      },
+      {
+        "seed_ref": "flux R2-9",
+        "seed_title": "Bunch-on-demand two-fab interleave — time-multiplex bunch train across two illuminators",
+        "category": "wall-frozen",
+        "maps_to": "M9",
+        "rationale": "Time-multiplexing one source across two illuminators/fabs is utilization-amortization (M9), the carded CAPEX-per-wafer lever (H_019/H_021), not a new flux escape."
+      },
+      {
+        "seed_ref": "flux R2-10",
+        "seed_title": "SF: SRF recirculating + LPA injection — compact injection + storage-ring avg power",
+        "category": "already-carded",
+        "maps_to": "H_016",
+        "rationale": "SRF energy-recovery/storage with compact injection is the ERL/recirculation flux-reopen (H_016) combined with the compact injector (H_004) — already carded, not SF."
+      },
+      {
+        "seed_ref": "flux R3-1",
+        "seed_title": "Higher-R 6.5 nm multilayer (La/B) — R>=0.65 -> column throughput x2",
+        "category": "already-carded",
+        "maps_to": "H_002",
+        "rationale": "La/B 6.5nm reflectance is exactly the H_002 mirror-throughput wall input; H_026 already sourced La/B R=0.58 (not 0.65), making the wall ~8x — this seed is the optimistic side of the same carded number."
+      },
+      {
+        "seed_ref": "flux R3-2",
+        "seed_title": "Fewer-mirror illuminator — N=7 not 11 via aspheres -> x3",
+        "category": "already-carded",
+        "maps_to": "H_002",
+        "rationale": "H_002 verdict explicitly computes the N=7 case (T x5.41 from dropping mirrors); reducing bounce count to beat R^N is the M1/E1 lever already carded as part of H_002/H_012."
+      },
+      {
+        "seed_ref": "flux R3-3",
+        "seed_title": "Grazing-incidence / Wolter optics — R->0.9 -> net throughput x5",
+        "category": "already-carded",
+        "maps_to": "H_012",
+        "rationale": "Grazing-incidence column at R=0.9 is the verified core of H_012 (promoted H_A4); the x5 bar is literally the H_012 falsifier (achieved 8.03x)."
+      },
+      {
+        "seed_ref": "flux R3-4",
+        "seed_title": "Diffractive/zone-plate transmission optics cut bounce count, efficiency >=40%",
+        "category": "lab-handoff",
+        "rationale": "Transmission/diffractive EUV optics efficiency is set by real fabricated zone-plate/grating diffraction efficiency and absorption in actual materials at 6.5/13.5nm — settleable only by fab+measurement, not a closed-form sweep; same demand-side optics-loss family as M1/H_002 but no new assumption broken."
+      },
+      {
+        "seed_ref": "flux R3-5",
+        "seed_title": "Photon-efficient resist (MOR) — dose-to-size <=10 mJ/cm2 -> power /3",
+        "category": "already-carded",
+        "maps_to": "H_B2",
+        "rationale": "Lower dose-to-size via metal-oxide resist is the demand-side absorption lever carded as H_B2 (high-cross-section ultrathin resist); the RLS trade is the noted risk."
+      },
+      {
+        "seed_ref": "flux R3-6",
+        "seed_title": "Quantum-yield sensitizer resist — embed Sn/Sb absorbers, absorption >=2x CAR",
+        "category": "already-carded",
+        "maps_to": "H_B2",
+        "rationale": "Embedding high-Z absorbers (Sn/Sb) to raise effective EUV absorption >=2x at equal LWR is precisely H_B2's mechanism and >=2x-effective-dose prediction."
+      },
+      {
+        "seed_ref": "flux R3-7",
+        "seed_title": "Adaptive graded multilayer — graded period catches a broad/chirped 2.2% line",
+        "category": "already-carded",
+        "maps_to": "H_009",
+        "rationale": "Capturing a broad 2.2% line is the in-band/linewidth budget of H_009 (and the cooling split H_013); a graded mirror that passes a wide line is a demand-side restatement of the same 2% capture wall, not a new escape."
+      },
+      {
+        "seed_ref": "flux R3-8",
+        "seed_title": "Membrane/pellicle-free path — delete transmissive elements -> +1.4x flux",
+        "category": "lab-handoff",
+        "rationale": "Removing the pellicle/membrane is physically plausible flux recovery but its viability is a defectivity/contamination question settled only by real fab and tool operation, not computation; same recovery (not generation) family as H_012/H_014, flux wall H_008 untouched."
+      },
+      {
+        "seed_ref": "flux R3-9",
+        "seed_title": "Cooled high-power mirrors — survive >=500 W incident, wavefront drift <=lambda/50",
+        "category": "wall-frozen",
+        "maps_to": "M8",
+        "rationale": "Surviving incident heat-flux on optics is a waste-heat cooling play; M8 (Landauer/2nd-law waste-heat) is frozen as real but ~0.5% of cost (H_020) — economically negligible, not the decision wall."
+      },
+      {
+        "seed_ref": "flux R3-10",
+        "seed_title": "SF: phase-conjugate / metamaterial flat optic replaces a multi-mirror relay",
+        "category": "lab-handoff",
+        "rationale": "An EUV metasurface/flat optic is in principle in-silico designable but its real efficiency at 13.5/6.5nm is a fabrication/absorption question; same demand-side optics-loss target as M1/H_002/H_012 with no broken meta-law — not a live in-silico escape."
+      },
+      {
+        "seed_ref": "flux R4-1",
+        "seed_title": "Shot-by-shot spectral gating — veto out-of-band shots, in-band >=98%",
+        "category": "already-carded",
+        "maps_to": "H_012",
+        "rationale": "Shot-by-shot spectral gating is the named first half of H_A4, verified inside H_012 (gating+grazing recovery); pure in-band recovery, flux H_008 untouched."
+      },
+      {
+        "seed_ref": "flux R4-2",
+        "seed_title": "ML wake-phase stabilizer — RMS energy jitter <=0.3% at >=1 kHz",
+        "category": "lab-handoff",
+        "rationale": "Real-time density/timing feedback to suppress shot-to-shot LPA energy jitter is a control-loop performance claim settleable only on a real plasma accelerator with real latency/sensor noise; reduces energy spread (H_009 territory) but is not itself a new physical escape."
+      },
+      {
+        "seed_ref": "flux R4-3",
+        "seed_title": "Dose-feedback adaptive scan — stage speed tracks live flux, recover >=90% ideal WPH",
+        "category": "lab-handoff",
+        "rationale": "Adaptive stage-speed dose control recovers usable throughput against flux swings; a scanner-control engineering claim verifiable only on a real tool, not a meta-law escape (throughput floor H_005 / flux H_008 unchanged)."
+      },
+      {
+        "seed_ref": "flux R4-4",
+        "seed_title": "Digital-twin source autotune — simulator re-optimizes setpoints, >=20% more in-band W",
+        "category": "lab-handoff",
+        "rationale": "A digital-twin autotuner squeezing 20% more in-band power from an existing source is an operations/uptime gain measurable only against a real machine; it recovers, not generates, and breaks no M1-M10 assumption."
+      },
+      {
+        "seed_ref": "flux R4-5",
+        "seed_title": "Predictive thermal throttling — ML maxes rep-rate just under damage, >=1.3x static cap",
+        "category": "wall-frozen",
+        "maps_to": "M8",
+        "rationale": "Pushing rep-rate to the heat/damage limit is a waste-heat-managed rep-rate play; the f-ceiling is engineering/heat-bounded (flux-face verdict, M8), and M8 is frozen as economically negligible (~0.5%, H_020)."
+      },
+      {
+        "seed_ref": "flux R4-6",
+        "seed_title": "Phase-space tagging + post-selection — route only in-spec bunches, <=0.5% effective spread",
+        "category": "already-carded",
+        "maps_to": "H_013",
+        "rationale": "Post-selecting low-spread bunches to reach <=0.5% effective spread targets the same M4 quality sub-wall H_013 beats by cooling; it throws away charge (a flux cost) rather than cooling, so it is the carded quality-wall, not a new lever."
+      },
+      {
+        "seed_ref": "flux R4-7",
+        "seed_title": "In-situ multilayer drift correction — track reflectivity decay, re-phase",
+        "category": "lab-handoff",
+        "rationale": "Holding multilayer reflectivity over a maintenance interval is an uptime/lifetime claim on real coated optics; measurable only by real fab/operation, no meta-law broken."
+      },
+      {
+        "seed_ref": "flux R4-8",
+        "seed_title": "Coherence-based virtual dose — partial-coherence control raises contrast, dose-to-size /1.5",
+        "category": "lab-handoff",
+        "rationale": "Cutting effective dose-to-size by tuning partial coherence is a demand-side dose reduction in the H_B2/throughput family, but the contrast-vs-CD payoff is settleable only by real imaging/resist measurement, not closed form."
+      },
+      {
+        "seed_ref": "flux R4-9",
+        "seed_title": "Federated multi-tool learning — share tuning models across fleet, ramp-to-spec /2",
+        "category": "lab-handoff",
+        "rationale": "Fleet-wide federated tuning to halve ramp time is a pure fab-operations/uptime gain measurable only across a real installed base; touches no source physics or meta-law."
+      },
+      {
+        "seed_ref": "flux R4-10",
+        "seed_title": "SF: attosecond feed-forward timing lock — fs cross-correlation locks bunch to IC laser, jitter <=1 fs",
+        "category": "already-carded",
+        "maps_to": "H_A1",
+        "rationale": "Attosecond/fs timing lock between bunch and inverse-Compton laser is exactly the timing-lock half of H_A1 (cavity-enhanced ICS + <=1fs jitter -> in-band/linewidth), with the same <=1fs prediction."
+      },
+      {
+        "seed_ref": "flux R5-1",
+        "seed_title": "Central synchrotron-to-fab fan-out (one ring feeds >=10 scanners)",
+        "category": "already-carded",
+        "maps_to": "H_030",
+        "rationale": "Shared central source amortized across N scanners = the xLight-shaped M9 amortization route already carded in H_030 (and H_010/H_019)."
+      },
+      {
+        "seed_ref": "flux R5-2",
+        "seed_title": "Source-at-reticle co-location (delete relay mirrors, <=5 surfaces)",
+        "category": "already-carded",
+        "maps_to": "H_012",
+        "rationale": "Cutting reflective surfaces to recover in-band flux is the M1/E1 optics-loss recovery lever already verified in H_012 (grazing/fewer-mirror column, ~8x)."
+      },
+      {
+        "seed_ref": "flux R5-3",
+        "seed_title": "Maskless direct-write EUV (steer a spot, no illuminator column)",
+        "category": "lab-handoff",
+        "rationale": "Litho-architecture/throughput reframing of the demand side; dwell x pixels vs scan budget is settleable only by real scanner engineering, not the in-silico source physics."
+      },
+      {
+        "seed_ref": "flux R5-4",
+        "seed_title": "Electron-beam-to-wafer (photon-free projection e-beam)",
+        "category": "lab-handoff",
+        "rationale": "Abandons the EUV photon entirely (not a light source at all); e-beam projection WPH is a fab/throughput measurement, outside the source-problem scope this campaign tests in-silico."
+      },
+      {
+        "seed_ref": "flux R5-5",
+        "seed_title": "Vacuum-integrated source-scanner (windowless plasma->wafer, +1.3x)",
+        "category": "lab-handoff",
+        "rationale": "A modest optics-loss recovery (~H_012 family) whose +1.3x payoff is a window/debris-mitigation engineering question only real integration can settle."
+      },
+      {
+        "seed_ref": "flux R5-6",
+        "seed_title": "Stepperless full-field flash (expose whole field in one pulse)",
+        "category": "wall-frozen",
+        "maps_to": "M2",
+        "rationale": "Requires field-dose x area per pulse = enormous peak/average power from one emitter; rests on the power-rep-rate product floor M2 (and the H_008 flux face), no new escape."
+      },
+      {
+        "seed_ref": "flux R5-7",
+        "seed_title": "Source-on-stage co-scan (compact source rides the stage, flux x1.5)",
+        "category": "lab-handoff",
+        "rationale": "A path-length/geometry engineering tweak (x1.5) only a real compact-source+stage build can validate; no meta-law assumption broken."
+      },
+      {
+        "seed_ref": "flux R5-8",
+        "seed_title": "Cluster-tool photon pooling (utilization >=90% -> WPH x1.4)",
+        "category": "wall-frozen",
+        "maps_to": "M9",
+        "rationale": "Raising source utilization across overlapping steps is exactly the M9 single-source amortization/utilization law (carded H_019); cheap-per-wafer-only-at-high-utilization is pre-satisfied."
+      },
+      {
+        "seed_ref": "flux R5-9",
+        "seed_title": "Hybrid lithography (EUV only for <=5 critical layers)",
+        "category": "already-carded",
+        "maps_to": "H_B3",
+        "rationale": "Reducing EUV photon demand by using EUV only on critical layers is the demand-side multiplier already carded as H_B3 (two-color/arm) / H_005 demand reduction."
+      },
+      {
+        "seed_ref": "flux R5-10",
+        "seed_title": "SF: remote mega-source beamed down via waveguide",
+        "category": "lab-handoff",
+        "rationale": "Viability hinges on EUV waveguide loss vs column loss; no known low-loss EUV waveguide exists, so it is a real-material/measurement question, not an in-silico meta-law escape."
+      },
+      {
+        "seed_ref": "flux R6-1",
+        "seed_title": "High-harmonic-generation (HHG) IR->EUV upconversion, tabletop",
+        "category": "already-carded",
+        "maps_to": "H_042",
+        "rationale": "HHG is in the non-accelerator landscape census H_042 (0.30x, far below HVM) and the all-optical card H_A5; exotic-family variant per H_025."
+      },
+      {
+        "seed_ref": "flux R6-2",
+        "seed_title": "Relativistic plasma-mirror harmonics (Doppler upshift off overdense plasma)",
+        "category": "already-carded",
+        "maps_to": "H_A5",
+        "rationale": "Plasma-mirror harmonics are the all-optical/exotic family carded in H_A5 and classified redundant in the at-frontier census (H_025/H_042)."
+      },
+      {
+        "seed_ref": "flux R6-3",
+        "seed_title": "Recombination / inner-shell plasma EUV laser (gL>=5, repetitive)",
+        "category": "already-carded",
+        "maps_to": "H_017",
+        "rationale": "Population-inverted recombination/inner-shell EUV laser is exactly H_B4 / H_017 (gL>=14 geometry verified; 13.5nm gain the open frontier)."
+      },
+      {
+        "seed_ref": "flux R6-4",
+        "seed_title": "Cluster-nanoplasma resonant emission (engineered Sn/Xe clusters, 2x flat LPP)",
+        "category": "wall-frozen",
+        "maps_to": "M2",
+        "rationale": "A plasma/discharge thermal-emitter variant (DPP-like, H_042); its average in-band power rests on the M2 power-rep-rate plasma floor, no decoupling escape."
+      },
+      {
+        "seed_ref": "flux R6-5",
+        "seed_title": "Parametric EUV up/down-conversion (nonlinear mixing)",
+        "category": "lab-handoff",
+        "rationale": "There is no known phase-matchable EUV-transparent nonlinear medium (all matter absorbs EUV); the 10^-6 proof bar is a real material/measurement question, not a clean in-silico break of M1-M10."
+      },
+      {
+        "seed_ref": "flux R6-6",
+        "seed_title": "Bragg-coherent betatron radiation (LPA betatron as built-in undulator)",
+        "category": "already-carded",
+        "maps_to": "H_025",
+        "rationale": "Betatron radiation rides the same LPA and is the exotic family explicitly classified as a CAPEX-inheriting variant in the at-frontier census (H_025); broad incoherent spectrum re-binds to H_009/H_008."
+      },
+      {
+        "seed_ref": "flux R6-7",
+        "seed_title": "Channeling radiation in a crystal (atomic-scale undulator, TV/m)",
+        "category": "already-carded",
+        "maps_to": "H_025",
+        "rationale": "Channeling radiation is the exotic-family variant named and dismissed in the at-frontier census (H_025) as riding the same accelerator (inherits CAPEX) / source-coherent restated."
+      },
+      {
+        "seed_ref": "flux R6-8",
+        "seed_title": "Superradiant atomic EUV burst (Dicke, intensity ~N^1.5)",
+        "category": "already-carded",
+        "maps_to": "H_017",
+        "rationale": "A source-coherent inverted-ensemble EUV emitter; same open frontier as the recombination laser (H_017/H_B4) -- the gating unknown is a 13.5nm inversion/gain medium, already carded, no new in-silico falsifier."
+      },
+      {
+        "seed_ref": "flux R6-9",
+        "seed_title": "Nuclear-isomer (8 eV-class) emitter",
+        "category": "other-band",
+        "rationale": "The 8 eV-class isomer transition (Th-229) is a ~150 nm VUV line, not 13.5/6.5 nm EUV; belongs to a different rung of the M10 band axis (metrology-first), not the EUV node."
+      },
+      {
+        "seed_ref": "flux R6-10",
+        "seed_title": "Free-electron-laser micro-SASE (LPA beam into short FEL)",
+        "category": "already-carded",
+        "maps_to": "H_A2",
+        "rationale": "Compact LPA-driven micro-SASE FEL is carded as H_A2 (and the slice-spread analysis H_031/H_033); exponential gain at the flux root, threatened by H_009 spread."
+      },
+      {
+        "seed_ref": "flux R6-11",
+        "seed_title": "SF: dynamical-Casimir / structured-vacuum emission",
+        "category": "pure-sf",
+        "rationale": "No physical host / not in-silico-testable as an EUV light source -- explicitly the dynamical-Casimir SF case named in the triage rubric."
+      },
+      {
+        "seed_ref": "flux R6-12",
+        "seed_title": "SF: positronium annihilation line",
+        "category": "pure-sf",
+        "rationale": "Engineered annihilation cascades have no physical host and the line is 511 keV gamma, not EUV -- the positronium SF case named in the rubric."
+      },
+      {
+        "seed_ref": "flux R7-1",
+        "seed_title": "LPA-driven micro-SASE FEL (R6-10×R1)",
+        "category": "already-carded",
+        "maps_to": "H_A2",
+        "rationale": "Exactly the H_A2 compact LPA-driven micro-SASE FEL card (R7-1/R6-10 is its named source)."
+      },
+      {
+        "seed_ref": "flux R7-2",
+        "seed_title": "Recirculating ring + cryo narrow undulator",
+        "category": "already-carded",
+        "maps_to": "H_A3",
+        "rationale": "Verbatim source of the H_A3 recirc micro-storage + cryo many-period undulator card."
+      },
+      {
+        "seed_ref": "flux R7-3",
+        "seed_title": "IC optical cavity + attosecond timing lock",
+        "category": "already-carded",
+        "maps_to": "H_A1",
+        "rationale": "Verbatim source of the H_A1 cavity-enhanced inverse-Compton + timing-lock card; also subsumed by ICS chain H_033-H_036."
+      },
+      {
+        "seed_ref": "flux R7-4",
+        "seed_title": "Spectral-gating + grazing column",
+        "category": "already-carded",
+        "maps_to": "H_012",
+        "rationale": "H_A4 promoted to verified H_012 (8.03x in-band recovery); identical seed."
+      },
+      {
+        "seed_ref": "flux R7-5",
+        "seed_title": "Photon-efficient resist + hybrid layers",
+        "category": "already-carded",
+        "maps_to": "H_B2",
+        "rationale": "Demand-side combo of high-cross-section resist (H_B2) + hybrid/two-color critical-layer reduction (H_B3); both carded."
+      },
+      {
+        "seed_ref": "flux R7-6",
+        "seed_title": "Fiber-combined drive + round-robin cells",
+        "category": "already-carded",
+        "maps_to": "H_029",
+        "rationale": "Fiber drive-laser combining + thermal round-robin = the rep-rate/replicable-module engineering already carded (H_029 fiber-combining; M2 non-thermal route)."
+      },
+      {
+        "seed_ref": "flux R7-7",
+        "seed_title": "Betatron + graded adaptive multilayer",
+        "category": "already-carded",
+        "maps_to": "H_008",
+        "rationale": "Betatron is intrinsic LPA wiggle radiation bound by the same flux/beam-quality wall (M4/H_008); graded-multilayer broad-line capture is the H_A3/H_012 optics lever. No new assumption broken."
+      },
+      {
+        "seed_ref": "flux R7-8",
+        "seed_title": "ERL + multi-source combining",
+        "category": "already-carded",
+        "maps_to": "H_016",
+        "rationale": "ERL flux reopen (H_016) + module-array amortization/replication (H_021/H_029); the capstone H_022 already stacks both."
+      },
+      {
+        "seed_ref": "flux R7-9",
+        "seed_title": "Plasma-mirror harmonics + photon-recycling illuminator",
+        "category": "already-carded",
+        "maps_to": "H_042",
+        "rationale": "Plasma-mirror/relativistic-harmonic non-accelerator source is in the H_042 landscape (none reach HVM floor); photon-recycling is the H_012-family optics recovery."
+      },
+      {
+        "seed_ref": "flux R7-10",
+        "seed_title": "Extreme all-optical EUV (HHG->plasma-mirror->metasurface)",
+        "category": "already-carded",
+        "maps_to": "H_A5",
+        "rationale": "Verbatim source of the H_A5 all-optical-EUV moonshot card; also bounded by H_042 (HHG 0.30x floor)."
+      },
+      {
+        "seed_ref": "flux R7-11",
+        "seed_title": "Chirp-compensation + SASE",
+        "category": "already-carded",
+        "maps_to": "H_013",
+        "rationale": "Chirp/dechirp is the E4/P4 quality lever verified as H_013 (energy-spread cooling); SASE leg is H_A2. No orthogonal escape."
+      },
+      {
+        "seed_ref": "flux R7-12",
+        "seed_title": "Direct e-beam litho fallback + LPA",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "Abandons the EUV-photon source problem (projection e-beam, photon-free); throughput/node viability is a fab-measurable question, not an in-silico light-source escape; akin to demand reframe H_B3 but settled by real tool measurement."
+      },
+      {
+        "seed_ref": "flux R8-1",
+        "seed_title": "Stochastic-resonance dosing",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "Resist-nonlinearity demand lever (sub-threshold noise prints) in the H_B2/H_B5 family; the 0.8x-dose claim rests on real resist chemistry/blur, settleable only by measurement."
+      },
+      {
+        "seed_ref": "flux R8-2",
+        "seed_title": "Spectral-purity-by-target-chemistry",
+        "category": "already-carded",
+        "maps_to": "H_014",
+        "rationale": "Engineer a single dominant ion transition = intrinsically-narrow line dropping the SPF; verified as H_014/H_B1 in-band recovery (narrow-line)."
+      },
+      {
+        "seed_ref": "flux R8-3",
+        "seed_title": "Cooperative self-seeded FEL",
+        "category": "already-carded",
+        "maps_to": "H_038",
+        "rationale": "Self-seeding to collapse SASE bandwidth is the FEL coherence/linewidth lever feeding the conventional-ERL-FEL answer (H_023/H_038); FEL family already mapped."
+      },
+      {
+        "seed_ref": "flux R8-4",
+        "seed_title": "Cascaded HGHG harmonic stages",
+        "category": "already-carded",
+        "maps_to": "H_031",
+        "rationale": "Seeded-FEL harmonic cascade is bound by the same FEL slice-spread wall (H_031/H_032) and routes to the conventional-ERL-FEL; wavelength dial is M5 (not the wall)."
+      },
+      {
+        "seed_ref": "flux R8-5",
+        "seed_title": "Wafer-side wavelength conversion (resist downconverter)",
+        "category": "pure-sf",
+        "maps_to": "",
+        "rationale": "A longer-wavelength source photon carries far less than an EUV quantum; single-photon up-conversion to EUV-class bond chemistry violates per-photon energy, and multiphoton needs EUV-class intensity. No physical host."
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "chemically-amplified gain runaway (turnover >=10^3 -> dose <5 mJ/cm2)",
+        "category": "lab-handoff",
+        "rationale": "Catalytic chemical-amplification turnover in a resist film is wet-chemistry/formulation; settled only by real resist synthesis + LER measurement, not closed-form sim.",
+        "maps_to": "H_B2"
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "high-Z sensitizer two-step (Sn/Sb, >=3x fewer photons)",
+        "category": "lab-handoff",
+        "rationale": "High-Z (Sn/Sb) sensitizer absorption gain is a material-formulation claim verifiable only by fabricating the resist and measuring dose-to-clear; RLS trade is the risk (cf H_B2).",
+        "maps_to": "H_B2"
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "metal-oxide cluster resists (4-6x absorption -> <=15 mJ/cm2)",
+        "category": "already-carded",
+        "maps_to": "H_B2",
+        "rationale": "Exactly H_B2 high-cross-section ultrathin resist (4-6x EUV absorption MOx); MOx named as the 'real' case in the H_B2 card."
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "dry/ALD ultrathin resist (<=40% photon budget)",
+        "category": "lab-handoff",
+        "rationale": "ALD/dry ultrathin film is a deposition+absorption variant of the high-absorption-resist family (H_B2); plausible but settleable only by fab + dose measurement.",
+        "maps_to": "H_B2"
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "resonant-cavity resist stack (absorption 30%->70%)",
+        "category": "lab-handoff",
+        "rationale": "A thin-film interference stack to boost in-film absorption is optically computable but its litho payoff (LER, dose-to-clear) is a real-resist measurement; demand-side resist family.",
+        "maps_to": "H_B2"
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "sparse-EUV (cuts only) + DSA/DUV bulk (<=10% full-field dose)",
+        "category": "already-carded",
+        "maps_to": "H_B3",
+        "rationale": "Sparse-EUV + cheap-bulk patterning dropping full-field EUV dose to <=10-20% is the two-color narrow-arm / EUV-only-arms idea carded as H_B3."
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "single-photon-counting (Geiger-mode) resist (<5 photons/pixel>)",
+        "category": "already-carded",
+        "maps_to": "H_B5",
+        "rationale": "Geiger-mode / photon-counting resist printing at ~5 photons/pixel is verbatim H_B5 digital photon-counting litho (per-photon gain >10^3 crux)."
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "two-color resist (EUV arms, cheap visible fires, <=30% EUV dose)",
+        "category": "already-carded",
+        "maps_to": "H_B3",
+        "rationale": "EUV defines the latent pattern (arms) and a cheap visible flood develops it, cutting EUV dose -- this is H_B3 two-color narrow-arm litho."
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "thermal-latent phase-change resist",
+        "category": "lab-handoff",
+        "rationale": "A phase-change / thermal-latent imaging mechanism is novel resist-material chemistry; only fab + exposure can settle whether it lowers photon demand at acceptable LER. Demand-side.",
+        "maps_to": "H_B2"
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "multi-pass dose averaging (EPE ~ 1/sqrt(K))",
+        "category": "lab-handoff",
+        "rationale": "Multi-pass exposure to average stochastic edge-placement error is a scanner/process-recipe stochastics claim; 1/sqrt(K) is trivially true but CD/throughput payoff is a real-tool measurement (cluster C4).",
+        "maps_to": "H_B5"
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "standing-wave dose concentration (>=80% dose into <20% area)",
+        "category": "lab-handoff",
+        "rationale": "Concentrating absorbed dose into the feature via standing-wave/interference is optically computable but its litho benefit is a resist+stack fab measurement; same demand-side family.",
+        "maps_to": "H_B2"
+      },
+      {
+        "seed_ref": "resist R1-R2",
+        "seed_title": "source-resist co-design (>=20% effective in-band recovered)",
+        "category": "already-carded",
+        "maps_to": "H_014",
+        "rationale": "Co-designing a narrow source so the resist sees more usable in-band power is the no-SPF / in-band-recovery lever carded as H_B1 -> verified H_014 (1.43x recovery)."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "Ni-like/Ne-like collisional XRL at 13.5 nm (gL>=14)",
+        "category": "already-carded",
+        "maps_to": "H_017",
+        "rationale": "Collisional XRL reaching saturation gL>=14 at 13.5 nm is the recombination/collisional EUV-laser geometry carded as H_B4 and verified for the saturation requirement as H_017 (13.5nm gain the open frontier)."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "inner-shell photo-pumped (pump < Auger lifetime)",
+        "category": "lab-handoff",
+        "rationale": "Inner-shell photo-pumped X-ray lasing (pump faster than Auger lifetime) is a real plasma-pump scheme; whether 13.5nm inversion is reachable is the open gain frontier of H_B4/H_017, an experiment.",
+        "maps_to": "H_017"
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "3-body recombination in rapidly-cooled plasma (gain >5 cm^-1)",
+        "category": "already-carded",
+        "maps_to": "H_017",
+        "rationale": "3-body recombination lasing in a fast-cooled plasma IS the recombination-laser mechanism behind H_B4; H_017 already shows ~1 cm^-1 over a waveguide reaches gL>=14."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "capillary-discharge Z-pinch pushed to higher Z (gL>=5)",
+        "category": "lab-handoff",
+        "rationale": "Pushing the demonstrated 46.9nm Ar capillary-discharge laser to higher-Z/shorter-lambda is a real discharge-plasma experiment; the experimental path to the H_017 13.5nm-gain frontier (reference-matched to that Ar device).",
+        "maps_to": "H_017"
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "OFI all-optical recombination laser (<1 J/pulse)",
+        "category": "already-carded",
+        "maps_to": "H_B4",
+        "rationale": "Optical-field-ionization all-optical recombination laser is a member of the recombination/collisional EUV-laser family carded as H_B4; overlaps the all-optical EUV moonshot H_A5."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "dielectronic-recombination selective feed (FWHM <0.5%)",
+        "category": "already-carded",
+        "maps_to": "H_B4",
+        "rationale": "Dielectronic-recombination selective level feeding for an intrinsically narrow line is a narrowing mechanism inside the recombination-laser family (H_B4); brainstorm R8 flags autoionizing/DR as a dup."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "HHG-seeded plasma amplifier (>100x single-pass, seed-locked line)",
+        "category": "already-carded",
+        "maps_to": "H_A5",
+        "rationale": "Seeding a plasma EUV amplifier with HHG for a locked single-pass-gain line is the HHG->plasma-mirror-amplify moonshot carded as H_A5 (all-optical EUV)."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "quasi-CW high-rep Ni-like (>=10 kHz, >=1 uJ)",
+        "category": "already-carded",
+        "maps_to": "H_B4",
+        "rationale": "High-rep (>=10 kHz) quasi-CW collisional laser delivering avg power is precisely the 're-invertible high-rep recombination laser' framing of H_B4 (gL>=14 at >=10 kHz)."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "6.5 nm Gd/Tb lanthanide lasing line (leapfrog)",
+        "category": "other-band",
+        "maps_to": "M10",
+        "rationale": "A 6.5 nm Gd/Tb line is the BEUV (6.5nm) rung, a different node on the M10 wavelength axis than the 13.5nm EUV target; explicitly the 6.5nm leapfrog band."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "plasma-waveguide gain extension (saturation in <1 cm)",
+        "category": "already-carded",
+        "maps_to": "H_017",
+        "rationale": "Plasma-waveguide extension of gain length to reach saturation in a short device is the EXACT mechanism verified in H_017 (waveguide 140x length, gL>=14 at modest gain)."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "transfer pumping (donor->acceptor plasma)",
+        "category": "lab-handoff",
+        "rationale": "Resonant energy transfer from a donor to an acceptor ion to feed a selective upper level is a real two-species plasma-pump scheme; whether it yields 13.5nm inversion is an experimental gain question inside H_B4/H_017.",
+        "maps_to": "H_017"
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "waste-energy harvest from spent LPP tin plasma (>=1% recovered coherent)",
+        "category": "wall-frozen",
+        "maps_to": "M8",
+        "rationale": "Recovering energy from the spent tin plasma is a waste-heat/efficiency play; per M8 the waste-heat term is real but ~0.5% of LPP cost-of-ownership (H_020), economically negligible -- not the decision wall."
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "magnetic confinement re-invertible column",
+        "category": "lab-handoff",
+        "rationale": "Magnetically confining the lasing plasma column for high-rep re-inversion is a plasma-engineering variant of the re-invertible high-rep laser (H_B4); settleable by plasma experiment, not the optics harness.",
+        "maps_to": "H_B4"
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "DFB plasma density grating (single-mode, dlambda/lambda<10^-3)",
+        "category": "lab-handoff",
+        "rationale": "A distributed-feedback density grating in the plasma to enforce single-mode narrow output is a real plasma-optics scheme; a narrowing/feedback mechanism inside the recombination-laser family (H_B4), settled by experiment.",
+        "maps_to": "H_B4"
+      },
+      {
+        "seed_ref": "resist R3-R4",
+        "seed_title": "EBIT-pumped HCI trap laser",
+        "category": "lab-handoff",
+        "rationale": "An electron-beam-ion-trap highly-charged-ion lasing scheme is a real (very-low-flux) trap-source experiment; another member of the source-side narrow-line laser family (H_B4), viability an experimental ion-density/gain question.",
+        "maps_to": "H_B4"
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "narrow line + resonant ultrathin resist (≥90% absorption ≤10 nm)",
+        "category": "already-carded",
+        "maps_to": "H_B2",
+        "rationale": "Resonant-cavity ultrathin high-absorption resist is exactly the high-cross-section ultrathin resist card; narrow-line pairing adds nothing new."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "coherent source + ptychography/holographic exposure (≥3× fewer photons)",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "Coherent lensless/ptychographic exposure photon-economy claim is plausible but settleable only by real exposure/metrology, not a closed-form source-wall calc; not an escape from M1-M10."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "inverse-litho stochastic budget transfer (≥25% dose cut)",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "Computational-lithography dose savings is a software/process lever validated only by stochastic resist measurement; does not break any source meta-law."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "source-flicker-aware dosing (CD σ<0.5 nm at ±20% jitter)",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "Dose-control/feedback against source jitter is a scanner-control measurement question, not an in-silico source-wall falsifier."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "no-SPF narrow-line recovery (drop spectral-purity filters → +25% in-band)",
+        "category": "already-carded",
+        "maps_to": "H_014",
+        "rationale": "This is exactly H_B1 promoted to H_014 (no-SPF in-band recovery, 1.43×)."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "interference/Talbot litho from coherent XRL (≥80% photon utilization)",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "Talbot/interference lithography photon-utilization is a real exposure-scheme question settled by fab/metrology; no source meta-law broken."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "XRL doubles as actinic inspection source",
+        "category": "already-carded",
+        "maps_to": "H_B1",
+        "rationale": "The dual-use actinic-inspection benefit is explicitly part of the H_B1/H_014 no-SPF narrow-line card."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "counted-dose feedback (10× fewer defects)",
+        "category": "already-carded",
+        "maps_to": "H_B5",
+        "rationale": "Counting-based dose feedback is the digital photon-counting litho card (H_B5)."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "coherent recirculation cavity (≥3× fluence)",
+        "category": "already-carded",
+        "maps_to": "H_034",
+        "rationale": "Optical recirculation cavity for fluence gain is the ICS recirculation lever already carded (H_034/H_035, cavity at drive wavelength)."
+      },
+      {
+        "seed_ref": "R5",
+        "seed_title": "ML latent-image denoise (60% photon count)",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "ML denoise of the latent image is a post-processing/metrology trade, settleable only by real resist data; not a physics source-wall lever."
+      },
+      {
+        "seed_ref": "R6",
+        "seed_title": "biological photoprotein resist (QY>0.9)",
+        "category": "pure-sf",
+        "maps_to": "",
+        "rationale": "Biological photoprotein at 13.5 nm has no physical host (proteins photodestruct under EUV) and is not in-silico testable; explicitly flagged SF."
+      },
+      {
+        "seed_ref": "R6",
+        "seed_title": "metamaterial perfect-absorber resist (≥95% in <15 nm)",
+        "category": "already-carded",
+        "maps_to": "H_B2",
+        "rationale": "Metamaterial perfect-absorber ultrathin resist is the stretch variant explicitly named inside H_B2."
+      },
+      {
+        "seed_ref": "R6",
+        "seed_title": "Purcell-enhanced lasing transition (≥5×)",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "Purcell enhancement of an EUV lasing transition is a plausible but real-cavity/QED-measurement question; no meta-law it breaks that the recombination-laser card (H_017) does not already cover for gain."
+      },
+      {
+        "seed_ref": "R6",
+        "seed_title": "squeezed/sub-shot-noise EUV dosing (≥3 dB)",
+        "category": "pure-sf",
+        "maps_to": "",
+        "rationale": "No physical squeezed-light EUV source exists; sub-shot-noise dosing has no in-silico host and R8 itself notes entanglement-dosing is the same theme."
+      },
+      {
+        "seed_ref": "R6",
+        "seed_title": "reaction-diffusion self-organizing litho (<10% photon budget)",
+        "category": "already-carded",
+        "maps_to": "H_B3",
+        "rationale": "Self-organizing/sparse pattern formation needing <10% full-field dose is the same dose-economy play as two-color narrow-arm / sparse-EUV (H_B3)."
+      },
+      {
+        "seed_ref": "R6",
+        "seed_title": "wafer-integrated EUV nanolaser array (≥167 W aggregate, distributed)",
+        "category": "pure-sf",
+        "maps_to": "",
+        "rationale": "A wafer-integrated distributed EUV nanolaser array has no physical inversion host at 13.5 nm and no in-silico testable mechanism; pure moonshot."
+      },
+      {
+        "seed_ref": "R6",
+        "seed_title": "Floquet/time-crystal steady inversion",
+        "category": "pure-sf",
+        "maps_to": "",
+        "rationale": "Time-crystal/Floquet steady population inversion is explicitly listed in the triage as pure-SF with no physical host."
+      },
+      {
+        "seed_ref": "R6",
+        "seed_title": "DNA-origami single-molecule resist (<2 photons/feature)",
+        "category": "pure-sf",
+        "maps_to": "",
+        "rationale": "DNA-origami single-molecule resist is named in the triage prompt as a canonical pure-SF seed."
+      },
+      {
+        "seed_ref": "R7",
+        "seed_title": "starved-source HVM stack (seeded XRL + no-SPF + MOx resist + recycle cavity → 167 W-equiv from <40 W raw)",
+        "category": "already-carded",
+        "maps_to": "H_022",
+        "rationale": "A multi-lever combination clearing the 167 W floor is the combination-breakthrough capstone (H_022), components mapping to H_014/H_B2/H_034/H_017; the @-family is depleted (H_025)."
+      },
+      {
+        "seed_ref": "R7",
+        "seed_title": "two-color narrow-arm (OFI laser arms + visible develops, ≤15% EUV dose)",
+        "category": "already-carded",
+        "maps_to": "H_B3",
+        "rationale": "Verbatim the two-color narrow-arm litho card (H_B3)."
+      },
+      {
+        "seed_ref": "R7",
+        "seed_title": "coherent ptycho-litho (≥4× photon cut)",
+        "category": "lab-handoff",
+        "maps_to": "",
+        "rationale": "Coherent ptychographic lithography photon cut is a real-exposure/metrology question (same as the R5 ptychography seed); not an in-silico source-wall escape."
+      },
+      {
+        "seed_ref": "R7",
+        "seed_title": "digital photon-counting litho (<1 ppm defect at ⟨5/pixel⟩)",
+        "category": "already-carded",
+        "maps_to": "H_B5",
+        "rationale": "Verbatim the digital photon-counting litho card (H_B5)."
+      },
+      {
+        "seed_ref": "R7",
+        "seed_title": "sparse-EUV hybrid node (≤10% full-field dose)",
+        "category": "already-carded",
+        "maps_to": "H_B3",
+        "rationale": "Sparse-EUV cuts + bulk DUV/DSA is the dose-economy play captured by the two-color/sparse card (H_B3)."
+      },
+      {
+        "seed_ref": "R7",
+        "seed_title": "re-invertible high-rep XRL engine (mag-confine + kHz + waste-harvest)",
+        "category": "already-carded",
+        "maps_to": "H_B4",
+        "rationale": "Re-invertible high-rep recombination laser is exactly H_B4 (partially promoted to H_017); magnetic confinement + kHz + waste-harvest are the same source-side escape."
+      },
+      {
+        "seed_ref": "R7",
+        "seed_title": "all-optical compact line source (OFI + DFB + waveguide → single-mode saturated, no accelerator)",
+        "category": "already-carded",
+        "maps_to": "H_017",
+        "rationale": "All-optical OFI recombination/inner-shell laser with waveguide gain extension is the recombination-laser saturation card (H_017, promotes H_B4); accelerator-free source side."
+      },
+      {
+        "seed_ref": "R8",
+        "seed_title": "entanglement dosing",
+        "category": "pure-sf",
+        "maps_to": "",
+        "rationale": "R8 declares it a dup of squeezed-light dosing; same no-physical-EUV-host SF status."
+      },
+      {
+        "seed_ref": "R8",
+        "seed_title": "CTTS (charge-transfer-to-solvent) sensitizer",
+        "category": "already-carded",
+        "maps_to": "H_B2",
+        "rationale": "R8 declares CTTS a dup of the high-Z sensitizer / high-cross-section resist family (H_B2)."
+      },
+      {
+        "seed_ref": "R8",
+        "seed_title": "autoionizing / dielectronic-recombination resonance feed",
+        "category": "already-carded",
+        "maps_to": "H_017",
+        "rationale": "R8 declares autoionizing ~ DR resonance, a narrow-line feed for the recombination laser already carded as H_017/H_B4."
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Triage"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "triage:flux R1-R2",
+      "phaseIndex": 1,
+      "phaseTitle": "Triage",
+      "agentId": "a5a53aa4fdbac35b9",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782366292749,
+      "queuedAt": 1782366292736,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "flux R1-R2",
+      "promptPreview": "You are triaging speculative brainstorm seeds for the lumen EUV-source campaign.\nGROUND TRUTH — read these two files first (read-only):\n  1. state/euv-meta-laws.md  — the FROZEN walls: meta-laws M1-M10, escapes E1-E5, the economic tier,\n     and the campaign's terminal verdict (flux is REOPENABLE; the binding wall is CAPEX = M7 learning-curve + M9 amortization; M8 waste-heat is real but ~0.5% of c…",
+      "lastProgressAt": 1782366367712,
+      "tokens": 54045,
+      "toolCalls": 4,
+      "durationMs": 74963,
+      "resultPreview": "{\"batch\":\"flux R1-R2\",\"classifications\":[{\"seed_ref\":\"flux R1-1\",\"seed_title\":\"Plasma-cascade staging — refill wake for many bunches/shot, >=10 bunches/pulse\",\"category\":\"already-carded\",\"maps_to\":\"H_016\",\"rationale\":\"Multi-bunch charge/rep-rate multiplication = the Q and f flux-face reopen already carded; staging is meta-law escape E3, charge bounded by space-charge not conservation (flux verdict…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "triage:flux R3-R4",
+      "phaseIndex": 1,
+      "phaseTitle": "Triage",
+      "agentId": "a285b2266c3fb7410",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782366292749,
+      "queuedAt": 1782366292736,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "flux R3-R4",
+      "promptPreview": "You are triaging speculative brainstorm seeds for the lumen EUV-source campaign.\nGROUND TRUTH — read these two files first (read-only):\n  1. state/euv-meta-laws.md  — the FROZEN walls: meta-laws M1-M10, escapes E1-E5, the economic tier,\n     and the campaign's terminal verdict (flux is REOPENABLE; the binding wall is CAPEX = M7 learning-curve + M9 amortization; M8 waste-heat is real but ~0.5% of c…",
+      "lastProgressAt": 1782366360046,
+      "tokens": 54032,
+      "toolCalls": 4,
+      "durationMs": 67297,
+      "resultPreview": "{\"batch\":\"flux R3-R4\",\"classifications\":[{\"seed_ref\":\"flux R3-1\",\"seed_title\":\"Higher-R 6.5 nm multilayer (La/B) — R>=0.65 -> column throughput x2\",\"category\":\"already-carded\",\"maps_to\":\"H_002\",\"rationale\":\"La/B 6.5nm reflectance is exactly the H_002 mirror-throughput wall input; H_026 already sourced La/B R=0.58 (not 0.65), making the wall ~8x — this seed is the optimistic side of the same carded…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "triage:flux R5-R6",
+      "phaseIndex": 1,
+      "phaseTitle": "Triage",
+      "agentId": "a319cd8a5dabc7d58",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782366292750,
+      "queuedAt": 1782366292736,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "flux R5-R6",
+      "promptPreview": "You are triaging speculative brainstorm seeds for the lumen EUV-source campaign.\nGROUND TRUTH — read these two files first (read-only):\n  1. state/euv-meta-laws.md  — the FROZEN walls: meta-laws M1-M10, escapes E1-E5, the economic tier,\n     and the campaign's terminal verdict (flux is REOPENABLE; the binding wall is CAPEX = M7 learning-curve + M9 amortization; M8 waste-heat is real but ~0.5% of c…",
+      "lastProgressAt": 1782366397353,
+      "tokens": 57708,
+      "toolCalls": 7,
+      "durationMs": 104603,
+      "resultPreview": "{\"batch\":\"flux R5-R6\",\"classifications\":[{\"seed_ref\":\"flux R5-1\",\"seed_title\":\"Central synchrotron-to-fab fan-out (one ring feeds >=10 scanners)\",\"category\":\"already-carded\",\"maps_to\":\"H_030\",\"rationale\":\"Shared central source amortized across N scanners = the xLight-shaped M9 amortization route already carded in H_030 (and H_010/H_019).\"},{\"seed_ref\":\"flux R5-2\",\"seed_title\":\"Source-at-reticle co…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "triage:flux R7-R8",
+      "phaseIndex": 1,
+      "phaseTitle": "Triage",
+      "agentId": "aa9e0442d26ef156e",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782366292750,
+      "queuedAt": 1782366292736,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "flux R7-R8",
+      "promptPreview": "You are triaging speculative brainstorm seeds for the lumen EUV-source campaign.\nGROUND TRUTH — read these two files first (read-only):\n  1. state/euv-meta-laws.md  — the FROZEN walls: meta-laws M1-M10, escapes E1-E5, the economic tier,\n     and the campaign's terminal verdict (flux is REOPENABLE; the binding wall is CAPEX = M7 learning-curve + M9 amortization; M8 waste-heat is real but ~0.5% of c…",
+      "lastProgressAt": 1782366359516,
+      "tokens": 54022,
+      "toolCalls": 4,
+      "durationMs": 66766,
+      "resultPreview": "{\"batch\":\"flux R7-R8\",\"classifications\":[{\"seed_ref\":\"flux R7-1\",\"seed_title\":\"LPA-driven micro-SASE FEL (R6-10×R1)\",\"category\":\"already-carded\",\"maps_to\":\"H_A2\",\"rationale\":\"Exactly the H_A2 compact LPA-driven micro-SASE FEL card (R7-1/R6-10 is its named source).\"},{\"seed_ref\":\"flux R7-2\",\"seed_title\":\"Recirculating ring + cryo narrow undulator\",\"category\":\"already-carded\",\"maps_to\":\"H_A3\",\"ratio…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "triage:resist R1-R4",
+      "phaseIndex": 1,
+      "phaseTitle": "Triage",
+      "agentId": "a832cb9c963ee7035",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782366292750,
+      "queuedAt": 1782366292736,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "resist R1-R4",
+      "promptPreview": "You are triaging speculative brainstorm seeds for the lumen EUV-source campaign.\nGROUND TRUTH — read these two files first (read-only):\n  1. state/euv-meta-laws.md  — the FROZEN walls: meta-laws M1-M10, escapes E1-E5, the economic tier,\n     and the campaign's terminal verdict (flux is REOPENABLE; the binding wall is CAPEX = M7 learning-curve + M9 amortization; M8 waste-heat is real but ~0.5% of c…",
+      "lastProgressAt": 1782366408218,
+      "tokens": 56216,
+      "toolCalls": 5,
+      "durationMs": 115468,
+      "resultPreview": "{\"batch\":\"resist R1-R4\",\"classifications\":[{\"seed_ref\":\"resist R1-R2\",\"seed_title\":\"chemically-amplified gain runaway (turnover >=10^3 -> dose <5 mJ/cm2)\",\"category\":\"lab-handoff\",\"rationale\":\"Catalytic chemical-amplification turnover in a resist film is wet-chemistry/formulation; settled only by real resist synthesis + LER measurement, not closed-form sim.\",\"maps_to\":\"H_B2\"},{\"seed_ref\":\"resist R…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "triage:resist R5-R8",
+      "phaseIndex": 1,
+      "phaseTitle": "Triage",
+      "agentId": "a57552f5ed6ed568b",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782366292750,
+      "queuedAt": 1782366292736,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "resist R5-R8",
+      "promptPreview": "You are triaging speculative brainstorm seeds for the lumen EUV-source campaign.\nGROUND TRUTH — read these two files first (read-only):\n  1. state/euv-meta-laws.md  — the FROZEN walls: meta-laws M1-M10, escapes E1-E5, the economic tier,\n     and the campaign's terminal verdict (flux is REOPENABLE; the binding wall is CAPEX = M7 learning-curve + M9 amortization; M8 waste-heat is real but ~0.5% of c…",
+      "lastProgressAt": 1782366379014,
+      "tokens": 54502,
+      "toolCalls": 5,
+      "durationMs": 86264,
+      "resultPreview": "{\"batch\":\"resist R5-R8\",\"classifications\":[{\"seed_ref\":\"R5\",\"seed_title\":\"narrow line + resonant ultrathin resist (≥90% absorption ≤10 nm)\",\"category\":\"already-carded\",\"maps_to\":\"H_B2\",\"rationale\":\"Resonant-cavity ultrathin high-absorption resist is exactly the high-cross-section ultrathin resist card; narrow-line pairing adds nothing new.\"},{\"seed_ref\":\"R5\",\"seed_title\":\"coherent source + ptychog…"
+    }
+  ],
+  "totalTokens": 330525,
+  "totalToolCalls": 29
+}

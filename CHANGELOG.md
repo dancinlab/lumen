@@ -4,6 +4,21 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **SF brainstorm-seed full triage → in-silico EXHAUSTION verdict (the `micro-exp` check).** At user
+  request ("우리도 SF 발산한거 있어 체크진행해보자" + "체크는 micro-exp 하면되"), ran an exhaustive
+  triage of ALL 134 lumen SF-divergence seeds (`flux-wall-brainstorm.md` + `resist-laser-brainstorm.md`
+  — only the 10 shortlisted 🜂 H_A*/H_B* were ever individually carded) against the frozen meta-laws
+  M1–M10 + the 60 carded hypotheses (6 parallel classifier agents). Result: **genuinely-new in-silico
+  escapes = 0** — already-carded 73 (across 27 cards), lab-handoff 37, wall-frozen 13, pure-sf 9,
+  other-band 2. Second-lens audit confirmed all 37 lab-handoff carry NO in-silico probe (not a
+  mis-bucket). The user-chosen `micro-exp` check therefore **HALTS at Stage 1.5 (empty candidate
+  matrix)** — no in-silico-testable seed remains to build a deterministic probe for; fabricating
+  candidates was refused (honesty + micro-exp infra gate). This **confirms H_049's "closed-form
+  frontier COMPLETE" at the full-seed level** (H_049 audited only the 10 shortlist). The remaining live
+  frontier is **physical (lab-handoff): resist chemistry, recombination-laser hardware, ML control** —
+  out of the in-silico domain, consistent with the terminal question already localized to CAPEX
+  (M7/M9). Verdict: `state/sf-seed-triage-2026-06-25.md`; raw: `state/sf-seed-triage-raw-2026-06-25.json`.
+
 - **Architecture figures + moved papers to root `papers/`.** Per user, relocated the two papers from
   `state/papers/` to a top-level `papers/` directory (demiurge PAPERS/ convention). Added TWO images per
   paper: (i) a precise TikZ-rendered architecture schematic (`figures/architecture.png`, 300 dpi,
