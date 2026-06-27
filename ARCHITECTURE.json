@@ -1,153 +1,219 @@
 {
-  "$schema": "c4",
-  "role": "lumen — Architecture (JSON tree · SSOT)",
+  "schemaVersion": "2.0",
+  "kind": "architecture-tree",
   "title": "lumen — Architecture",
-  "updated": "2026-06-25",
-  "ssot_note": "JSON=SSOT (AI/tool parse); humans view architecture.html via `python3 serve.py`. Update in-place (not append). History/decisions/dates → CHANGELOG.md + git (never in tree). Hierarchy decomposes via `children` (commons single-doc); one fact per node, deeper detail → child nodes.",
-  "children": [
+  "summary": "Engineer stable light sources for bands nature does not supply — the next-gen semiconductor-lithography source problem (EUV 13.5nm = first instance).",
+  "viewer": "architecture.html",
+  "serve": "python3 serve.py  (로컬 서버 + 브라우저 자동 오픈; file:// fetch 차단 우회)",
+  "columns": [
     {
-      "id": "overview",
-      "role": "Engineer stable light sources for bands nature does not supply — the next-generation semiconductor-lithography source problem. EUV (13.5 nm) is the first instance; scope generalizes to any hard-to-generate wavelength lacking a stable natural emitter.",
-      "children": [
-        {
-          "id": "scope",
-          "role": "The source problem, not one wavelength: EUV is the first instance, not the boundary. Reference fields = light-source, photochemistry, optics."
-        },
-        {
-          "id": "core-dilemma",
-          "role": "Next-gen lithography wall — three coupled constraints below.",
-          "children": [
-            {
-              "id": "dilemma.roadmap-gap",
-              "role": "Current EUV has a roadmap through ~3rd generation, but no clear technical alternative beyond it (post-2040s)."
-            },
-            {
-              "id": "dilemma.na-vs-dof",
-              "role": "Raising NA (numerical aperture) for resolution shrinks depth-of-focus, forcing extreme-thin resist control → process difficulty and error rate spike."
-            },
-            {
-              "id": "dilemma.shorter-wavelength-source",
-              "role": "Going to a shorter wavelength (e.g. 6.5 nm) is theoretically possible, but no clear engineering path to a STABLE source — the central open problem lumen targets."
-            }
-          ]
-        }
-      ]
+      "key": "name",
+      "label": "name",
+      "tree": true
     },
     {
-      "id": "components",
-      "role": "Reference fields — the three knowledge pillars of the source problem.",
-      "children": [
-        {
-          "id": "light-source",
-          "role": "Light source (광원) — how the photons are generated. FINAL RANKING below is for the EUV-litho HIGH-FLUX requirement (the binding case); other bands re-rank by their flux requirement (H_040 requirement-driven; H_047 band-regime split). Rank = readiness x robustness as verified (qa.py: 46 verified hypotheses).",
-          "children": [
-            {
-              "id": "light-source.rank1-conventional-erl-fel",
-              "role": "RANK 1 — FUNDED near-term answer. A shared CONVENTIONAL energy-recovery linac (ERL) FEL amortized across ~20 scanners (xLight, ~$150M CHIPS, 2028 prototype; KEK 10kW). Clears every EUV-litho wall (wavelength, flux, CAPEX-via-M9 amortization); cost = footprint (large facility, ~40-160m). Demonstrated-class accelerator tech; the industry's revealed bet (H_030/H_042)."
-            },
-            {
-              "id": "light-source.rank2-ssmb",
-              "role": "RANK 2 — NOVEL, demonstrated mechanism. Steady-State MicroBunching: a storage ring micro-bunched every turn radiates coherently (P~N^2) and CW (reused beam) → ~1kW @13-14nm (10x HVM floor) at smaller footprint than a full FEL. Mechanism proof-of-principle demonstrated (Deng/Tang/Chao, Nature 2021, MLS); Tsinghua SSMB-EUV funded. Residual: 13.5nm kW undemonstrated (H_043)."
-            },
-            {
-              "id": "light-source.rank3-compact-ssmb-compton",
-              "role": "RANK 3 — HIGHEST-UPSIDE / highest-risk (the tabletop dream, resurrected). 7-MeV micro-bunched beam + CO2-laser Compton → 13-14nm from a ~1m metre-scale ring (73x lower energy). Compact + coherent + CW + slice-spread-immune (synthesis of SSMB H_043 + Compton H_033). Gated on ONE milestone: EUV-precision steady-state micro-bunching — physics-ALLOWED (b^2~0.14 at sigma_z~3nm, H_046) but undemonstrated; lab hands off to experiment (H_044-046)."
-            },
-            {
-              "id": "light-source.rank4-lpp",
-              "role": "RANK 4 — INCUMBENT baseline (TRL 9, being superseded). LPP (laser-produced tin-droplet plasma) — ASML's current production EUV, ~30yr ecosystem moat. The thing being challenged: hits the 6.5nm optics wall (~8x throughput loss), the flux wall, and the CAPEX-per-wafer wall that drive the whole search. Wall-plug ~0.02% (H_001/H_002/H_020)."
-            },
-            {
-              "id": "light-source.rank5-ldp",
-              "role": "RANK 5 — INCUMBENT variant (China indigenous). LDP (laser-induced discharge plasma) — the path ASML abandoned, revisited by China; ~100-150W demonstrated (2025-26), ties LPP on throughput at lower CAPEX. A near-term incumbent-class riser, not a wall-breaker (H_042)."
-            },
-            {
-              "id": "light-source.rank6-compact-lpa-fel",
-              "role": "RANK 6 — LONGER-HORIZON, harder (the campaign's original tabletop idea). Compact laser-plasma accelerator + single-pass FEL — wins wavelength tunability but is TERMINAL-THIN on the slice-spread wall (a 0.5% LPA beam is ~5x over the FEL gain criterion; TGU escape insufficient); the LPA driver is the less-mature, less-funded variant; demonstrated LPA-FEL floor ~25nm (H_022/H_031/H_032/H_038)."
-            },
-            {
-              "id": "light-source.rank7-recombination-laser",
-              "role": "RANK 7 — DARK HORSE. Recombination / inner-shell soft-X-ray laser — intrinsically narrow, undulator-free; harder than its representative anchor (demonstrated 46.9nm gL~8.3 < saturation), undemonstrated at 13.5nm, ~2W (H_017/H_026)."
-            },
-            {
-              "id": "light-source.rank8-non-accelerator",
-              "role": "RANK 8 — FAILS the EUV-litho HVM floor. HHG (gas high-harmonic) ~0.30x, DPP (discharge plasma) ~4e-4x the ~100W floor; no non-accelerator family reaches HVM power for litho (confirms the accelerator answer is not first-peak bias). Viable only at lower-flux bands, not EUV-litho (H_042)."
-            },
-            {
-              "id": "light-source.synchrotron",
-              "role": "CONTEXT — conventional synchrotron / storage-ring radiation is the large-facility ancestor of the ranked ERL/SSMB paths (RANK 1-2); high average power but km-scale, not a compact contender on its own."
-            }
-          ]
-        },
-        {
-          "id": "photochemistry",
-          "role": "Photochemistry (광화학) — the photoresist that records the image.",
-          "children": [
-            {
-              "id": "photochemistry.thin-resist",
-              "role": "Shrinking depth-of-focus at high NA forces extreme-thin resist; thickness/uniformity control becomes the dominant difficulty and error source."
-            }
-          ]
-        },
-        {
-          "id": "optics",
-          "role": "Optics (광학계) — focusing and imaging the source.",
-          "children": [
-            {
-              "id": "optics.na-dof",
-              "role": "NA ↑ improves physical resolution but shrinks depth-of-focus (DoF); the NA/DoF trade-off drives the resist and process constraints."
-            }
-          ]
-        }
-      ]
+      "key": "role",
+      "label": "role"
     },
     {
-      "id": "verification",
-      "role": "HYPOTHESES — hypothesis-verification system (pre-register → falsify → run → verdict), modeled on anima's HYPOTHESES/. Turns pillar open-questions into numerically falsifiable, runnable cards.",
-      "children": [
-        {
-          "id": "verification.registry",
-          "role": "HYPOTHESES/REGISTRY.jsonl — flat registry, one JSON line per hypothesis (id, slug, tier, title, card, verdict, artifacts)."
-        },
-        {
-          "id": "verification.cards",
-          "role": "HYPOTHESES/cards/H_*.md — one card per hypothesis: frozen pre-registration + predictions + >=5 measurable falsifiers + honest limits + verbatim run verdict. _TEMPLATE.md is the skeleton."
-        },
-        {
-          "id": "verification.harness",
-          "role": "tool/lumen_optics.py — shared deterministic stdlib-only physics harness: mirror_chain_throughput, source_power_multiplier, resolution/DoF, lpp_source_power, hvm_throughput_wph, plasma_omega/wavebreak_field/accelerator_length, undulator/inverse-Compton + Falsifier/evaluate. Anima-parity: shared machinery in repo-root tool/."
-        },
-        {
-          "id": "verification.runs",
-          "role": "state/<hX>_<slug>_<date>/run_*.py + result.json — per-hypothesis deterministic run importing tool/; verdict = verbatim stdout (no LLM self-judge)."
-        },
-        {
-          "id": "verification.abstract",
-          "role": "🜂 ABSTRACT lane — H_A*/H_B* cards (cards/H_[AB]*.md) are unverified conjectures (falsifiable prediction, no run/verdict), tier-separated from verified H_0xx. Sources: brainstorms (state/*-brainstorm.md) + meta-law abstraction (state/euv-meta-laws.md: M1–M5 conserved trades → escapes → predictions). Loop: meta-law → prediction → promote to verified H_0xx (e.g. P4→H_013, H_A4→H_012)."
-        }
-      ]
+      "key": "id",
+      "label": "id"
     },
     {
-      "id": "dataflow",
-      "role": "Form = research hub + hypothesis lab. Tree (this file) is the table of contents; per-pillar research lives flat in state/; open-questions become HYPOTHESES cards.",
-      "children": [
-        {
-          "id": "dataflow.input",
-          "role": "Input — sources/devices/papers/specs on the lithography light-source problem."
-        },
-        {
-          "id": "dataflow.curate",
-          "role": "Curate — organize each finding under one of the three reference pillars (light-source · photochemistry · optics)."
-        },
-        {
-          "id": "dataflow.output",
-          "role": "Output — structured notes in state/: light-source-paths.md (path comparison table), photochemistry.md, optics.md, euv-source-problem.md (sourced framing)."
-        },
-        {
-          "id": "dataflow.verify",
-          "role": "Verify — a pillar open-question becomes a HYPOTHESES card (frozen falsifiers) → runs via tool/ harness in state/ → verdict feeds back into the notes/tree."
-        }
-      ]
+      "key": "detail",
+      "label": "detail"
     }
-  ]
+  ],
+  "tree": {
+    "name": "lumen",
+    "role": "Light-source research lab — engineer stable sources for bands nature does not supply (the next-gen semiconductor-litho source problem). Form = research hub + hypothesis lab.",
+    "id": "lumen",
+    "detail": "JSON=SSOT (AI/tool parse); humans view architecture.html via `python3 serve.py`. Update in-place (snapshot, not append); history/decisions/dates → CHANGELOG.md + git. One fact per node; deeper detail → child nodes.",
+    "children": [
+      {
+        "name": "overview",
+        "role": "Engineer stable light sources for bands nature does not supply — the next-generation semiconductor-lithography source problem. EUV (13.5 nm) is the first instance; scope generalizes to any hard-to-generate wavelength lacking a stable natural emitter.",
+        "id": "overview",
+        "children": [
+          {
+            "name": "scope",
+            "role": "The source problem, not one wavelength: EUV is the first instance, not the boundary. Reference fields = light-source, photochemistry, optics.",
+            "id": "scope"
+          },
+          {
+            "name": "core dilemma",
+            "role": "Next-gen lithography wall — three coupled constraints below.",
+            "id": "core-dilemma",
+            "children": [
+              {
+                "name": "roadmap gap",
+                "role": "Current EUV has a roadmap through ~3rd generation, but no clear technical alternative beyond it (post-2040s).",
+                "id": "dilemma-roadmap-gap"
+              },
+              {
+                "name": "NA vs DoF",
+                "role": "Raising NA (numerical aperture) for resolution shrinks depth-of-focus, forcing extreme-thin resist control → process difficulty and error rate spike.",
+                "id": "dilemma-na-vs-dof"
+              },
+              {
+                "name": "shorter-wavelength source",
+                "role": "Going to a shorter wavelength (e.g. 6.5 nm) is theoretically possible, but no clear engineering path to a STABLE source — the central open problem lumen targets.",
+                "id": "dilemma-shorter-wavelength-source"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "components",
+        "role": "Reference fields — the three knowledge pillars of the source problem.",
+        "id": "components",
+        "children": [
+          {
+            "name": "light source",
+            "role": "Light source (광원) — how the photons are generated. FINAL RANKING below is for the EUV-litho HIGH-FLUX requirement (the binding case); other bands re-rank by their flux requirement (H_040 requirement-driven; H_047 band-regime split).",
+            "id": "light-source",
+            "detail": "Rank = readiness x robustness as verified (qa.py: 46 verified hypotheses).",
+            "children": [
+              {
+                "name": "rank 1 — ERL FEL",
+                "role": "RANK 1 — FUNDED near-term answer. A shared CONVENTIONAL energy-recovery linac (ERL) FEL amortized across ~20 scanners (xLight, ~$150M CHIPS, 2028 prototype; KEK 10kW).",
+                "id": "light-source-rank1-conventional-erl-fel",
+                "detail": "Clears every EUV-litho wall (wavelength, flux, CAPEX-via-M9 amortization); cost = footprint (large facility, ~40-160m). Demonstrated-class accelerator tech; the industry's revealed bet (H_030/H_042)."
+              },
+              {
+                "name": "rank 2 — SSMB",
+                "role": "RANK 2 — NOVEL, demonstrated mechanism. Steady-State MicroBunching: a storage ring micro-bunched every turn radiates coherently (P~N^2) and CW (reused beam) → ~1kW @13-14nm (10x HVM floor) at smaller footprint than a full FEL.",
+                "id": "light-source-rank2-ssmb",
+                "detail": "Mechanism proof-of-principle demonstrated (Deng/Tang/Chao, Nature 2021, MLS); Tsinghua SSMB-EUV funded. Residual: 13.5nm kW undemonstrated (H_043)."
+              },
+              {
+                "name": "rank 3 — compact SSMB-Compton",
+                "role": "RANK 3 — HIGHEST-UPSIDE / highest-risk (the tabletop dream, resurrected). 7-MeV micro-bunched beam + CO2-laser Compton → 13-14nm from a ~1m metre-scale ring (73x lower energy). Compact + coherent + CW + slice-spread-immune (synthesis of SSMB H_043 + Compton H_033).",
+                "id": "light-source-rank3-compact-ssmb-compton",
+                "detail": "Gated on ONE milestone: EUV-precision steady-state micro-bunching — physics-ALLOWED (b^2~0.14 at sigma_z~3nm, H_046) but undemonstrated; lab hands off to experiment (H_044-046)."
+              },
+              {
+                "name": "rank 4 — LPP",
+                "role": "RANK 4 — INCUMBENT baseline (TRL 9, being superseded). LPP (laser-produced tin-droplet plasma) — ASML's current production EUV, ~30yr ecosystem moat.",
+                "id": "light-source-rank4-lpp",
+                "detail": "The thing being challenged: hits the 6.5nm optics wall (~8x throughput loss), the flux wall, and the CAPEX-per-wafer wall that drive the whole search. Wall-plug ~0.02% (H_001/H_002/H_020)."
+              },
+              {
+                "name": "rank 5 — LDP",
+                "role": "RANK 5 — INCUMBENT variant (China indigenous). LDP (laser-induced discharge plasma) — the path ASML abandoned, revisited by China; ~100-150W demonstrated (2025-26), ties LPP on throughput at lower CAPEX. A near-term incumbent-class riser, not a wall-breaker (H_042).",
+                "id": "light-source-rank5-ldp"
+              },
+              {
+                "name": "rank 6 — compact LPA-FEL",
+                "role": "RANK 6 — LONGER-HORIZON, harder (the campaign's original tabletop idea). Compact laser-plasma accelerator + single-pass FEL — wins wavelength tunability but is TERMINAL-THIN on the slice-spread wall (a 0.5% LPA beam is ~5x over the FEL gain criterion; TGU escape insufficient).",
+                "id": "light-source-rank6-compact-lpa-fel",
+                "detail": "The LPA driver is the less-mature, less-funded variant; demonstrated LPA-FEL floor ~25nm (H_022/H_031/H_032/H_038)."
+              },
+              {
+                "name": "rank 7 — recombination laser",
+                "role": "RANK 7 — DARK HORSE. Recombination / inner-shell soft-X-ray laser — intrinsically narrow, undulator-free; harder than its representative anchor (demonstrated 46.9nm gL~8.3 < saturation), undemonstrated at 13.5nm, ~2W (H_017/H_026).",
+                "id": "light-source-rank7-recombination-laser"
+              },
+              {
+                "name": "rank 8 — non-accelerator",
+                "role": "RANK 8 — FAILS the EUV-litho HVM floor. HHG (gas high-harmonic) ~0.30x, DPP (discharge plasma) ~4e-4x the ~100W floor; no non-accelerator family reaches HVM power for litho (confirms the accelerator answer is not first-peak bias). Viable only at lower-flux bands, not EUV-litho (H_042).",
+                "id": "light-source-rank8-non-accelerator"
+              },
+              {
+                "name": "synchrotron (context)",
+                "role": "CONTEXT — conventional synchrotron / storage-ring radiation is the large-facility ancestor of the ranked ERL/SSMB paths (RANK 1-2); high average power but km-scale, not a compact contender on its own.",
+                "id": "light-source-synchrotron"
+              }
+            ]
+          },
+          {
+            "name": "photochemistry",
+            "role": "Photochemistry (광화학) — the photoresist that records the image.",
+            "id": "photochemistry",
+            "children": [
+              {
+                "name": "thin resist",
+                "role": "Shrinking depth-of-focus at high NA forces extreme-thin resist; thickness/uniformity control becomes the dominant difficulty and error source.",
+                "id": "photochemistry-thin-resist"
+              }
+            ]
+          },
+          {
+            "name": "optics",
+            "role": "Optics (광학계) — focusing and imaging the source.",
+            "id": "optics",
+            "children": [
+              {
+                "name": "NA / DoF trade-off",
+                "role": "NA ↑ improves physical resolution but shrinks depth-of-focus (DoF); the NA/DoF trade-off drives the resist and process constraints.",
+                "id": "optics-na-dof"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "verification (HYPOTHESES)",
+        "role": "HYPOTHESES — hypothesis-verification system (pre-register → falsify → run → verdict), modeled on anima's HYPOTHESES/. Turns pillar open-questions into numerically falsifiable, runnable cards.",
+        "id": "verification",
+        "children": [
+          {
+            "name": "registry",
+            "role": "HYPOTHESES/REGISTRY.jsonl — flat registry, one JSON line per hypothesis (id, slug, tier, title, card, verdict, artifacts).",
+            "id": "verification-registry"
+          },
+          {
+            "name": "cards",
+            "role": "HYPOTHESES/cards/H_*.md — one card per hypothesis: frozen pre-registration + predictions + >=5 measurable falsifiers + honest limits + verbatim run verdict. _TEMPLATE.md is the skeleton.",
+            "id": "verification-cards"
+          },
+          {
+            "name": "harness",
+            "role": "tool/lumen_optics.py — shared deterministic stdlib-only physics harness. Anima-parity: shared machinery lives in repo-root tool/.",
+            "id": "verification-harness",
+            "detail": "Functions: mirror_chain_throughput, source_power_multiplier, resolution/DoF, lpp_source_power, hvm_throughput_wph, plasma_omega/wavebreak_field/accelerator_length, undulator/inverse-Compton + Falsifier/evaluate."
+          },
+          {
+            "name": "runs",
+            "role": "state/<hX>_<slug>_<date>/run_*.py + result.json — per-hypothesis deterministic run importing tool/; verdict = verbatim stdout (no LLM self-judge).",
+            "id": "verification-runs"
+          },
+          {
+            "name": "abstract lane",
+            "role": "🜂 ABSTRACT lane — H_A*/H_B* cards (cards/H_[AB]*.md) are unverified conjectures (falsifiable prediction, no run/verdict), tier-separated from verified H_0xx.",
+            "id": "verification-abstract",
+            "detail": "Sources: brainstorms (state/*-brainstorm.md) + meta-law abstraction (state/euv-meta-laws.md: M1–M5 conserved trades → escapes → predictions). Loop: meta-law → prediction → promote to verified H_0xx (e.g. P4→H_013, H_A4→H_012)."
+          }
+        ]
+      },
+      {
+        "name": "dataflow",
+        "role": "Form = research hub + hypothesis lab. Tree (this file) is the table of contents; per-pillar research lives flat in state/; open-questions become HYPOTHESES cards.",
+        "id": "dataflow",
+        "children": [
+          {
+            "name": "input",
+            "role": "Input — sources/devices/papers/specs on the lithography light-source problem.",
+            "id": "dataflow-input"
+          },
+          {
+            "name": "curate",
+            "role": "Curate — organize each finding under one of the three reference pillars (light-source · photochemistry · optics).",
+            "id": "dataflow-curate"
+          },
+          {
+            "name": "output",
+            "role": "Output — structured notes in state/: light-source-paths.md (path comparison table), photochemistry.md, optics.md, euv-source-problem.md (sourced framing).",
+            "id": "dataflow-output"
+          },
+          {
+            "name": "verify",
+            "role": "Verify — a pillar open-question becomes a HYPOTHESES card (frozen falsifiers) → runs via tool/ harness in state/ → verdict feeds back into the notes/tree.",
+            "id": "dataflow-verify"
+          }
+        ]
+      }
+    ]
+  }
 }
