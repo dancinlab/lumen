@@ -4,6 +4,12 @@ All notable changes to lumen are recorded here (append-only).
 
 ## Unreleased
 
+- **Add `README.easy.ko.md` — plain-language (general-public) one-page summary of the light-source
+  problem and lumen's result.** Korean easy companion to `README.md`: the electron-energy dial
+  (λ ∝ 1/γ², no wavelength floor), the flux wall as the real ceiling, and the three routes
+  (shared conventional ERL FEL · inverse-Compton · storage-ring SSMB), with honesty labels intact
+  (all closed-form / in-silico; reduces to one experiment, H_049).
+
 - **SF brainstorm-seed full triage → in-silico EXHAUSTION verdict (the `micro-exp` check).** At user
   request ("우리도 SF 발산한거 있어 체크진행해보자" + "체크는 micro-exp 하면되"), ran an exhaustive
   triage of ALL 134 lumen SF-divergence seeds (`flux-wall-brainstorm.md` + `resist-laser-brainstorm.md`
